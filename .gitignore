@@ -8,3 +8,11 @@ venv/
 dataset/raw/
 dataset/processed/
 data/
+!data/
+data/debug/
+!data/raw/
+data/raw/*
+!data/raw/coldstorage/
+data/raw/coldstorage/*
+!data/raw/coldstorage/2026-04-02/
+!data/raw/coldstorage/2026-04-02/**
