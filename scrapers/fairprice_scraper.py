@@ -67,6 +67,9 @@ def extract_product_fields(item: dict, category_slug: str) -> dict:
     meta = item.get("metaData", {})
     unit = meta.get("DisplayUnit") or meta.get("Unit Of Weight")
 
+    slug = item.get("slug")
+    product_url = f"https://www.fairprice.com.sg/product/{slug}" if slug else None
+
     return {
         "name": item.get("name"),
         "brand": brand_name,
@@ -77,6 +80,7 @@ def extract_product_fields(item: dict, category_slug: str) -> dict:
         "main_category": main_category,
         "subcategory": subcategory,
         "category_slug": category_slug,
+        "product_url": product_url,
         "store": "fairprice",
         "scraped_at": datetime.now().isoformat(),
     }

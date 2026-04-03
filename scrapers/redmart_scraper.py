@@ -85,6 +85,8 @@ CATEGORY_FILTER = {
     if slug.strip()
 }
 
+MAX_PRODUCTS_PER_CATEGORY = 410  # ~4500 total across 11 categories
+
 
 def extract_product_fields(prod_link, category_link):
     listing_text = prod_link.text.strip()
@@ -206,10 +208,16 @@ def scrape_category(driver, category_link):
             break
 
         for link in product_links:
+            if len(products) >= MAX_PRODUCTS_PER_CATEGORY:
+                break
             item = extract_product_fields(link, category_link)
             if item is None:
                 continue
             products.append(item)
+
+        if len(products) >= MAX_PRODUCTS_PER_CATEGORY:
+            print(f"    Reached cap of {MAX_PRODUCTS_PER_CATEGORY} products")
+            break
 
         try:
             next_button = driver.find_element(
