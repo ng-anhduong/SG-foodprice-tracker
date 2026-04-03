@@ -1,13 +1,13 @@
 # scrapers/shengsiong_scraper.py
 #
 # Sheng Siong uses Meteor.js (client-side rendered) + Imperva WAF.
-# Product data loads via WebSockets (DDP), not HTTP — so we use Playwright
-# to drive a headless browser, scroll to trigger infinite-scroll loading,
-# and extract from the fully-rendered DOM.
+# Product data loads via WebSockets (DDP), not plain HTTP, so we use
+# Playwright to drive a headless browser, scroll to trigger loading,
+# and extract from the fully rendered DOM.
 #
 # Install deps:
 #   pip install playwright
-#   playwright install chromium
+#   python -m playwright install chromium
 
 import asyncio
 import json
@@ -16,35 +16,31 @@ from datetime import datetime
 
 from playwright.async_api import async_playwright
 
-# ── CONFIG ────────────────────────────────────────────────────────────────────
 
 BASE_URL = "https://shengsiong.com.sg"
 
-# Real subcategory slugs (confirmed from live site navigation menu).
-# These are the actual pages with full product listings + infinite scroll.
+# Real subcategory slugs confirmed from the live site navigation.
 CATEGORIES = [
-    ("breakfast-spreads",       "Breakfast & Spreads"),
-    ("dairy-chilled-eggs",      "Dairy, Chilled & Eggs"),
-    ("fruits",                  "Fruits"),
-    ("vegetables",              "Vegetables"),
-    ("meat-poultry-seafood",    "Meat, Poultry & Seafood"),
-    ("beverages",               "Beverages"),
-    ("rice-noodles-pasta",      "Rice, Noodles & Pasta"),
-    ("frozen-goods",            "Frozen Goods"),
-    ("dried-food-herbs",        "Dried Food & Herbs"),
-    ("cooking-baking",          "Cooking & Baking"),
-    ("convenience-food-113",    "Convenience Food"),
-    ("snacks-confectioneries",  "Snacks & Confectioneries"),
+    ("breakfast-spreads", "Breakfast & Spreads"),
+    ("dairy-chilled-eggs", "Dairy, Chilled & Eggs"),
+    ("fruits", "Fruits"),
+    ("vegetables", "Vegetables"),
+    ("meat-poultry-seafood", "Meat, Poultry & Seafood"),
+    ("beverages", "Beverages"),
+    ("rice-noodles-pasta", "Rice, Noodles & Pasta"),
+    ("frozen-goods", "Frozen Goods"),
+    ("dried-food-herbs", "Dried Food & Herbs"),
+    ("cooking-baking", "Cooking & Baking"),
+    ("convenience-food-113", "Convenience Food"),
+    ("snacks-confectioneries", "Snacks & Confectioneries"),
 ]
 
 STORE = "shengsiong"
 
-PAGE_LOAD_TIMEOUT = 15_000   # ms — wait for first products to appear
-SCROLL_PAUSE      = 2_500    # ms — wait after each scroll for new products
-MAX_STALE_SCROLLS = 3        # stop after this many scrolls with no new products
+PAGE_LOAD_TIMEOUT = 15_000
+SCROLL_PAUSE = 2_500
+MAX_STALE_SCROLLS = 3
 
-
-# ── SCROLL TO LOAD ALL PRODUCTS ───────────────────────────────────────────────
 
 async def scroll_to_load_all(page) -> int:
     """Scroll down until no new products appear. Returns final product count."""
@@ -69,22 +65,21 @@ async def scroll_to_load_all(page) -> int:
     return prev_count
 
 
-# ── PRODUCT EXTRACTION FROM DOM ───────────────────────────────────────────────
-
 async def extract_from_dom(page, category_slug: str, category_name: str) -> list[dict]:
     """
     Extract all rendered product cards from the page.
     Confirmed Sheng Siong class names:
-      .product-preview          — card anchor, href = /product/<slug>
-      .product-name             — product name text
-      .product-packSize         — unit / weight (e.g. "200 g")
-      .product-price > span     — regular price
-      .product-price .promo-price    — discounted selling price
-      .product-price .previous-price — original price (strikethrough)
+      .product-preview               card anchor, href = /product/<slug>
+      .product-name                  product name text
+      .product-packSize              unit / weight
+      .product-price > span          regular price
+      .product-price .promo-price    discounted selling price
+      .product-price .previous-price original price
     """
     scraped_at = datetime.now().isoformat()
 
-    products = await page.evaluate("""
+    products = await page.evaluate(
+        """
         (args) => {
             const { category_slug, category_name, store, scraped_at } = args;
             const results = [];
@@ -99,7 +94,7 @@ async def extract_from_dom(page, category_slug: str, category_name: str) -> list
                 const priceBlock = card.querySelector('.product-price');
                 if (!priceBlock) return;
 
-                const promoEl  = priceBlock.querySelector('.promo-price');
+                const promoEl = priceBlock.querySelector('.promo-price');
                 const regularEl = priceBlock.querySelector('span:not(.promo-price)');
                 const priceText = promoEl
                     ? promoEl.innerText.trim()
@@ -138,13 +133,17 @@ async def extract_from_dom(page, category_slug: str, category_name: str) -> list
 
             return results;
         }
-    """, {"category_slug": category_slug, "category_name": category_name,
-          "store": STORE, "scraped_at": scraped_at})
+        """,
+        {
+            "category_slug": category_slug,
+            "category_name": category_name,
+            "store": STORE,
+            "scraped_at": scraped_at,
+        },
+    )
 
     return products
 
-
-# ── SCRAPE ONE CATEGORY ───────────────────────────────────────────────────────
 
 async def scrape_category(browser, category_slug: str, category_name: str) -> list[dict]:
     print(f"\n  Scraping: {category_name} ({category_slug})")
@@ -165,16 +164,14 @@ async def scrape_category(browser, category_slug: str, category_name: str) -> li
             timeout=30_000,
             wait_until="domcontentloaded",
         )
-        # Wait until first product cards appear
         await page.wait_for_selector(".product-preview", timeout=PAGE_LOAD_TIMEOUT)
     except Exception as e:
         print(f"    Failed to load page: {e}")
         await context.close()
         return []
 
-    # Scroll until all products are loaded
     total = await scroll_to_load_all(page)
-    print(f"    Finished scrolling — {total} products in DOM")
+    print(f"    Finished scrolling - {total} products in DOM")
 
     products = await extract_from_dom(page, category_slug, category_name)
 
@@ -183,14 +180,12 @@ async def scrape_category(browser, category_slug: str, category_name: str) -> li
         os.makedirs(os.path.dirname(debug_path), exist_ok=True)
         with open(debug_path, "w", encoding="utf-8") as f:
             f.write(await page.content())
-        print(f"    No products extracted — debug HTML saved to {debug_path}")
+        print(f"    No products extracted - debug HTML saved to {debug_path}")
 
     await context.close()
     print(f"    Extracted {len(products)} products")
     return products
 
-
-# ── SAVE RAW ──────────────────────────────────────────────────────────────────
 
 def save_raw(products: list[dict], category_slug: str):
     date_str = datetime.now().strftime("%Y-%m-%d")
@@ -199,10 +194,8 @@ def save_raw(products: list[dict], category_slug: str):
     filepath = os.path.join(folder, f"{category_slug}.json")
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(products, f, indent=2, ensure_ascii=False)
-    print(f"    Saved → {filepath}")
+    print(f"    Saved -> {filepath}")
 
-
-# ── MAIN ──────────────────────────────────────────────────────────────────────
 
 async def run():
     print("=" * 60)
@@ -220,7 +213,7 @@ async def run():
                 save_raw(products, slug)
                 total += len(products)
             else:
-                print(f"    Skipping save — nothing found for {slug}")
+                print(f"    Skipping save - nothing found for {slug}")
 
             await asyncio.sleep(3)
 

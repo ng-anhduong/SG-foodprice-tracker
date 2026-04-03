@@ -1,16 +1,15 @@
-# scraper/fairprice_scraper.py
+# scrapers/fairprice_scraper.py
 
-import requests
 import json
 import os
 import time
 from datetime import datetime
 
-# ── CONFIG ────────────────────────────────────────────────────────────────────
+import requests
+
 
 BASE_URL = "https://website-api.omni.fairprice.com.sg/api/product/v2"
 
-# These are the extra params FairPrice requires — keep them fixed
 FIXED_PARAMS = {
     "algopers": "prm-ppb-1,prm-ep-1,t-epds-1,t-ppb-0,t-ep-0",
     "experiments": "ls_deltime-sortA,searchVariant-B,gv-A,shelflife-B,ds-A,ls_comsl-B,cartfiller-a,catnav-hide,catbubog-B,sbanner-A,count-b,cam-a,promobanner-c,algopers-b,dlv_pref_mf-B,delivery_pref_ffs-C,delivery_pref_pfc-C,crtalc-B,crt-v-wbble-A,zero_search_swimlane-A,sd-var-a,mos-on,gsc-a,camp-lbl-B,poa-entry-B",
@@ -28,7 +27,13 @@ CATEGORIES = [
     "rice-noodles-cooking-ingredients",
     "fruits-vegetables",
     "meat-seafood",
-    "frozen"
+    "frozen",
+]
+
+CATEGORY_FILTER = [
+    slug.strip()
+    for slug in os.getenv("FAIRPRICE_CATEGORY", "").split(",")
+    if slug.strip()
 ]
 
 HEADERS = {
@@ -40,13 +45,9 @@ HEADERS = {
 }
 
 
-# ── EXTRACT FIELDS ────────────────────────────────────────────────────────────
-
 def extract_product_fields(item: dict, category_slug: str) -> dict:
-    # Price
     final_price = item.get("final_price")
 
-    # Original price and discount from storeSpecificData
     store_data = item.get("storeSpecificData", [])
     if store_data and isinstance(store_data, list):
         original_price = store_data[0].get("mrp")
@@ -55,17 +56,14 @@ def extract_product_fields(item: dict, category_slug: str) -> dict:
         original_price = None
         discount = None
 
-    # Brand
     brand = item.get("brand", {})
     brand_name = brand.get("name") if isinstance(brand, dict) else None
 
-    # Categories
     primary_cat = item.get("primaryCategory", {})
     subcategory = primary_cat.get("name") if primary_cat else None
     parent_cat = primary_cat.get("parentCategory", {}) if primary_cat else {}
     main_category = parent_cat.get("name") if parent_cat else None
 
-    # Unit from metadata
     meta = item.get("metaData", {})
     unit = meta.get("DisplayUnit") or meta.get("Unit Of Weight")
 
@@ -83,8 +81,6 @@ def extract_product_fields(item: dict, category_slug: str) -> dict:
         "scraped_at": datetime.now().isoformat(),
     }
 
-
-# ── SCRAPE CATEGORY ───────────────────────────────────────────────────────────
 
 def scrape_category(category_slug: str) -> list[dict]:
     products = []
@@ -114,7 +110,7 @@ def scrape_category(category_slug: str) -> list[dict]:
             break
 
         if response.status_code != 200:
-            print(f"    HTTP {response.status_code} on page {page} — stopping")
+            print(f"    HTTP {response.status_code} on page {page} - stopping")
             break
 
         try:
@@ -126,7 +122,7 @@ def scrape_category(category_slug: str) -> list[dict]:
         items = data.get("data", {}).get("product", [])
 
         if not items:
-            print(f"    No more products at page {page} — done")
+            print(f"    No more products at page {page} - done")
             break
 
         for item in items:
@@ -135,12 +131,10 @@ def scrape_category(category_slug: str) -> list[dict]:
         print(f"    Page {page}: {len(items)} products (total: {len(products)})")
 
         page += 1
-        time.sleep(1)  # be polite, avoid getting blocked
+        time.sleep(1)
 
     return products
 
-
-# ── SAVE RAW ──────────────────────────────────────────────────────────────────
 
 def save_raw(products: list[dict], category_slug: str):
     date_str = datetime.now().strftime("%Y-%m-%d")
@@ -152,10 +146,8 @@ def save_raw(products: list[dict], category_slug: str):
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(products, f, indent=2, ensure_ascii=False)
 
-    print(f"    Saved → {filepath}")
+    print(f"    Saved -> {filepath}")
 
-
-# ── MAIN ──────────────────────────────────────────────────────────────────────
 
 def run():
     print("=" * 60)
@@ -164,16 +156,22 @@ def run():
 
     total = 0
 
-    for category in CATEGORIES:
+    categories = (
+        CATEGORIES
+        if not CATEGORY_FILTER
+        else [category for category in CATEGORIES if category in CATEGORY_FILTER]
+    )
+
+    for category in categories:
         products = scrape_category(category)
 
         if products:
             save_raw(products, category)
             total += len(products)
         else:
-            print(f"    No products found — skipping save")
+            print("    No products found - skipping save")
 
-        time.sleep(2)  # wait between categories
+        time.sleep(2)
 
     print("\n" + "=" * 60)
     print(f"Done. Total products scraped: {total}")
