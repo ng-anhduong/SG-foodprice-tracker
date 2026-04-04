@@ -11,7 +11,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ocean-fresh-delite-frozen-salmon-portion-500g-13106181",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.908029"
+    "scraped_at": "2026-04-04T22:59:02.295362"
   },
   {
     "name": "Okeanoss Unagi Kabayaki",
@@ -25,7 +25,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/okeanoss-unagi-kabayaki-200g-13242156",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.908274"
+    "scraped_at": "2026-04-04T22:59:02.295723"
   },
   {
     "name": "Catch Seafood Salmon Portion",
@@ -39,7 +39,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-portion-pack-of-3-150g-x-3-90007411",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.908505"
+    "scraped_at": "2026-04-04T22:59:02.295935"
   },
   {
     "name": "Ocean Fresh Delite Frozen Sutchi Fillet",
@@ -53,7 +53,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ocean-fresh-delite-frozen-sutchi-fillet-800g-13260288",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.908657"
+    "scraped_at": "2026-04-04T22:59:02.296133"
   },
   {
     "name": "Serve by Hai Sia Premium Salmon Whole Fillet - Frozen",
@@ -67,7 +67,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-premium-salmon-whole-fillet---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.908885"
+    "scraped_at": "2026-04-04T22:59:02.296327"
   },
   {
     "name": "Frozen Dory Sutchi Fillet (IQF)",
@@ -81,7 +81,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/frozen-dory-sutchi-fillet-iqf",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.909087"
+    "scraped_at": "2026-04-04T22:59:02.296521"
   },
   {
     "name": "Seafood Boy - Frozen Dory Sutchi Cube (IQF)",
@@ -95,7 +95,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seafood-boy---frozen-dory-sutchi-cube-iqf",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.909230"
+    "scraped_at": "2026-04-04T22:59:02.296714"
   },
   {
     "name": "Fisher's Catch Salmon Portion Chunks",
@@ -109,7 +109,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/fishers-catch-salmon-portion-chunks",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.909402"
+    "scraped_at": "2026-04-04T22:59:02.296906"
   },
   {
     "name": "Mermaid Sutchi Fillet Cube",
@@ -123,7 +123,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/mermaid-sutchi-fillet-cube-800g-13188826",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.909559"
+    "scraped_at": "2026-04-04T22:59:02.297093"
   },
   {
     "name": "Port65 Black Cod Portion - Frozen",
@@ -137,7 +137,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/port65-black-cod-portion---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.909701"
+    "scraped_at": "2026-04-04T22:59:02.297270"
   },
   {
     "name": "Ocean Fresh Delite Frozen Sutchi Fillet",
@@ -151,7 +151,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ocean-fresh-delite-frozen-sutchi-fillet-500g-13260289",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.909840"
+    "scraped_at": "2026-04-04T22:59:02.297445"
   },
   {
     "name": "Catch Seafood Wild Caught Saba Mackerel Fillet",
@@ -165,21 +165,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-saba-mackeral-fillet-raw-pack-of-3-frozen-3-x-180g-90007388",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.909979"
-  },
-  {
-    "name": "Snow Treasures Premium Atlantic Salmon",
-    "brand": "Snow Treasures",
-    "price_sgd": 29.95,
-    "original_price_sgd": "38.9",
-    "discount_sgd": "8.95",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-atlantic-salmon-1-kg-90095269",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.910177"
+    "scraped_at": "2026-04-04T22:59:02.297620"
   },
   {
     "name": "Serve Batang Slice Hotpot Steamboat - Frozen",
@@ -193,7 +179,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-batang-slice-frozen-200-g-90198876",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.910331"
+    "scraped_at": "2026-04-04T22:59:02.297797"
+  },
+  {
+    "name": "Snow Treasures Premium Atlantic Salmon",
+    "brand": "Snow Treasures",
+    "price_sgd": 29.95,
+    "original_price_sgd": "38.9",
+    "discount_sgd": "8.95",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-atlantic-salmon-1-kg-90095269",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:02.297972"
   },
   {
     "name": "Ocean Fresh Delite Frozen - Sutchi Cube",
@@ -207,7 +207,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ocean-fresh-delite-frozen-sutchi-cube-500g-13260287",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.910472"
+    "scraped_at": "2026-04-04T22:59:02.298148"
   },
   {
     "name": "Okeanoss Toman Slice",
@@ -221,7 +221,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/okeanoss-toman-slice-1-kg-90140198",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.910698"
+    "scraped_at": "2026-04-04T22:59:02.298323"
   },
   {
     "name": "Fish Bay Frozen Nile Fish White Fillet",
@@ -235,7 +235,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/fish-bay-nile-fish-white-fillet-450g-13067890",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.911195"
+    "scraped_at": "2026-04-04T22:59:02.298502"
   },
   {
     "name": "Gyoren Kami No Ebi Jumbo Frozen Prawn",
@@ -249,7 +249,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/gyoren-kami-no-ebi-god-like-jumbo-live---frozen-prawn-asc",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.911497"
+    "scraped_at": "2026-04-04T22:59:02.298678"
   },
   {
     "name": "Seafood Boy - Premium Frozen Salmon Fillet Bulk Pack",
@@ -263,21 +263,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seafood-boy---premium-frozen-salmon-fillet-bulk-pack",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.911661"
-  },
-  {
-    "name": "Seaco Frozen Fish Fillet - White Snapper",
-    "brand": "Seaco",
-    "price_sgd": 11.9,
-    "original_price_sgd": "11.9",
-    "discount_sgd": "0",
-    "unit": "500g",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/seaco-frozen-white-snapper-fillet-500g-13050989",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:00.911849"
+    "scraped_at": "2026-04-04T22:59:02.298861"
   },
   {
     "name": "Tsukiji Kanisho Snow Crab Platter (Half Shell) - Frozen",
@@ -291,7 +277,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/tsukiji-kanisho-snow-crab-platter-half-shell---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.456101"
+    "scraped_at": "2026-04-04T22:59:02.299039"
+  },
+  {
+    "name": "Seaco Frozen Fish Fillet - White Snapper",
+    "brand": "Seaco",
+    "price_sgd": 11.9,
+    "original_price_sgd": "11.9",
+    "discount_sgd": "0",
+    "unit": "500g",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/seaco-frozen-white-snapper-fillet-500g-13050989",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:03.629570"
   },
   {
     "name": "Seafood Boy Chilean Seabass Cod Steak - Frozen",
@@ -305,21 +305,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seafood-boy-chilean-seabass-cod-steak---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.456803"
-  },
-  {
-    "name": "Ocean Fresh Delite Frozen Cod Steak",
-    "brand": "Ocean Fresh Delite",
-    "price_sgd": 39.68,
-    "original_price_sgd": "39.68",
-    "discount_sgd": "0",
-    "unit": "500g",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/ocean-fresh-delite-cod-steak-500g-11263164",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.457181"
+    "scraped_at": "2026-04-04T22:59:03.630499"
   },
   {
     "name": "Catch Seafood Salmon Portion Pack of 9 - Frozen",
@@ -333,7 +319,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-portion-pack-of-9-frozen-150g-x-9-90007370",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.457544"
+    "scraped_at": "2026-04-04T22:59:03.630943"
+  },
+  {
+    "name": "Ocean Fresh Delite Frozen Cod Steak",
+    "brand": "Ocean Fresh Delite",
+    "price_sgd": 39.68,
+    "original_price_sgd": "39.68",
+    "discount_sgd": "0",
+    "unit": "500g",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/ocean-fresh-delite-cod-steak-500g-11263164",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:03.631303"
   },
   {
     "name": "Serve by Hai Sia Black Pomfret (Scaled & Gutted) - Frozen",
@@ -347,7 +347,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-black-pomfret-scaled-gutted-frozen-250-g-90198877",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.457902"
+    "scraped_at": "2026-04-04T22:59:03.631659"
   },
   {
     "name": "Fisher's Catch Fresh Salmon Belly - Frozen",
@@ -361,7 +361,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/fisher-s-catch-fresh-salmon-belly-1kg-frozen-1-kg-90179050",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.458259"
+    "scraped_at": "2026-04-04T22:59:03.632017"
   },
   {
     "name": "Catch Seafood Salmon Portion",
@@ -375,7 +375,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-portion-frozen-150g-x-6-90007364",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.458616"
+    "scraped_at": "2026-04-04T22:59:03.632392"
   },
   {
     "name": "Oriental Delight Saba Fillet",
@@ -389,21 +389,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/oriental-delight-saba-fillet-400-g-90120637",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.458970"
-  },
-  {
-    "name": "Catch Seafood Pacific Dory Cube - Frozen",
-    "brand": "Catch Seafood",
-    "price_sgd": 7.45,
-    "original_price_sgd": "7.9",
-    "discount_sgd": "0.45",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-dory-cube-1-kg-90012816",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.459332"
+    "scraped_at": "2026-04-04T22:59:03.632758"
   },
   {
     "name": "Seafood Boy Toman Slices IQF - Frozen",
@@ -417,35 +403,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seafood-boy-toman-slices-iqf---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.459686"
+    "scraped_at": "2026-04-04T22:59:03.633124"
   },
   {
-    "name": "Serve by Hai Sia Canton Fish Curd - Frozen",
-    "brand": "Serve by Hai Sia ",
-    "price_sgd": 4.640000000000001,
-    "original_price_sgd": "5.15",
-    "discount_sgd": "0.51",
-    "unit": "105 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-canton-fish-curd---frozen",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.460302"
-  },
-  {
-    "name": "Royal Delight Salmon Fish Bones",
-    "brand": "Royal Delight",
-    "price_sgd": 3.95,
-    "original_price_sgd": "5.9",
-    "discount_sgd": "1.95",
+    "name": "Catch Seafood Pacific Dory Cube - Frozen",
+    "brand": "Catch Seafood",
+    "price_sgd": 7.45,
+    "original_price_sgd": "7.9",
+    "discount_sgd": "0.45",
     "unit": "1 KG",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/royal-delight-salmon-fish-bones-1-kg-90052794",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-dory-cube-1-kg-90012816",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.460699"
+    "scraped_at": "2026-04-04T22:59:03.633445"
   },
   {
     "name": "Catch Seafood Barramundi Portion 120g",
@@ -459,21 +431,35 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-barramundi-portion-120g-120-g-90075390",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.461050"
+    "scraped_at": "2026-04-04T22:59:03.633766"
   },
   {
-    "name": "Twinfish Sutchi Dory Fillet Cube",
-    "brand": "Twinfish",
-    "price_sgd": 5.950000000000001,
-    "original_price_sgd": "9.3",
-    "discount_sgd": "3.35",
-    "unit": "800 G",
+    "name": "Serve by Hai Sia Canton Fish Curd - Frozen",
+    "brand": "Serve by Hai Sia ",
+    "price_sgd": 4.640000000000001,
+    "original_price_sgd": "5.15",
+    "discount_sgd": "0.51",
+    "unit": "105 G",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/twinfish-sutchi-dory-fillet-cube-800-g-90120640",
+    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-canton-fish-curd---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.461360"
+    "scraped_at": "2026-04-04T22:59:03.634228"
+  },
+  {
+    "name": "Royal Delight Salmon Fish Bones",
+    "brand": "Royal Delight",
+    "price_sgd": 3.95,
+    "original_price_sgd": "5.9",
+    "discount_sgd": "1.95",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/royal-delight-salmon-fish-bones-1-kg-90052794",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:03.634652"
   },
   {
     "name": "Snow Treasures Wild Caught Cod Fish Cubes",
@@ -487,35 +473,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-wild-caught-cod-fish-cubes-500-g-90129134",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.461657"
+    "scraped_at": "2026-04-04T22:59:03.635275"
   },
   {
-    "name": "Catch Seafood Salmon Portion",
-    "brand": "Catch Seafood",
-    "price_sgd": 9.99,
-    "original_price_sgd": "13.9",
-    "discount_sgd": "3.91",
-    "unit": "330 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-portion-330g-330-g-90163627",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.461954"
-  },
-  {
-    "name": "Twinfish Sutchi Dory Fillet",
+    "name": "Twinfish Sutchi Dory Fillet Cube",
     "brand": "Twinfish",
-    "price_sgd": 5.5,
-    "original_price_sgd": "7.97",
-    "discount_sgd": "2.47",
+    "price_sgd": 5.950000000000001,
+    "original_price_sgd": "9.3",
+    "discount_sgd": "3.35",
     "unit": "800 G",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/twinfish-sutchi-dory-fillet-800-g-90120639",
+    "product_url": "https://www.fairprice.com.sg/product/twinfish-sutchi-dory-fillet-cube-800-g-90120640",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.462247"
+    "scraped_at": "2026-04-04T22:59:03.635686"
   },
   {
     "name": "Snow Treasures Premium Atlantic Salmon",
@@ -529,7 +501,35 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-atlantic-salmon-500-g-90095263",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.462541"
+    "scraped_at": "2026-04-04T22:59:03.636065"
+  },
+  {
+    "name": "Catch Seafood Salmon Portion",
+    "brand": "Catch Seafood",
+    "price_sgd": 9.99,
+    "original_price_sgd": "13.9",
+    "discount_sgd": "3.91",
+    "unit": "330 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-portion-330g-330-g-90163627",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:03.636464"
+  },
+  {
+    "name": "Twinfish Sutchi Dory Fillet",
+    "brand": "Twinfish",
+    "price_sgd": 5.5,
+    "original_price_sgd": "7.97",
+    "discount_sgd": "2.47",
+    "unit": "800 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/twinfish-sutchi-dory-fillet-800-g-90120639",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:03.636891"
   },
   {
     "name": "Okeanoss Premium Salmon Portion",
@@ -543,7 +543,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/okeanoss-premium-salmon-portion-400g-13239166",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.462836"
+    "scraped_at": "2026-04-04T22:59:03.637291"
   },
   {
     "name": "Catch Seafood Haddock Cod Fillet - Skinless",
@@ -557,7 +557,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-haddock-cod-fillet-skinless-280-g-90176230",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:02.463130"
+    "scraped_at": "2026-04-04T22:59:03.637680"
   },
   {
     "name": "Tsukiji Kanisho Jumbo Snow Crab Claw - Frozen",
@@ -571,7 +571,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/tsukiji-kanisho-jumbo-snow-crab-claw---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.960730"
+    "scraped_at": "2026-04-04T22:59:05.133172"
   },
   {
     "name": "Seaco Frozen Fish Fillet - Grouper",
@@ -585,7 +585,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaco-frozen-fish-fillet---grouper-500g-13005783",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.961435"
+    "scraped_at": "2026-04-04T22:59:05.133469"
   },
   {
     "name": "Snow Treasures Wild Caught Cod Fish Steak",
@@ -599,7 +599,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-wild-caught-cod-fish-steak-1-kg-90095280",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.961884"
+    "scraped_at": "2026-04-04T22:59:05.133620"
   },
   {
     "name": "Catch Seafood Tuna Cube",
@@ -613,7 +613,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-tuna-cube-500-g-90113268",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.962273"
+    "scraped_at": "2026-04-04T22:59:05.133762"
   },
   {
     "name": "Catch Seafood Wild-Caught Alaskan Keta Salmon (Value Pack)",
@@ -627,7 +627,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-caught-alaskan-keta-salmon-value-pack",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.962756"
+    "scraped_at": "2026-04-04T22:59:05.133903"
   },
   {
     "name": "Ocean Fresh Delite Frozen Salmon Portion - Teriyaki",
@@ -641,7 +641,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ocean-fresh-delite-frozen-salmon-portion-teriyaki-500g-13106180",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.963185"
+    "scraped_at": "2026-04-04T22:59:05.134044"
   },
   {
     "name": "Punched Foods Frozen Tilapia Fillet",
@@ -655,7 +655,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/punched-foods-frozen-tilapia-fillet-1-kg-90138077",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.963763"
+    "scraped_at": "2026-04-04T22:59:05.134183"
   },
   {
     "name": "Seaco Frozen Fish Fillet - Snapper",
@@ -669,7 +669,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaco-frozen-fish-fillet-snapper-500g-13052409",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.964335"
+    "scraped_at": "2026-04-04T22:59:05.134321"
   },
   {
     "name": "Catch Seafood Mackeral Slice (Batang fish)",
@@ -683,7 +683,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-mackeral-slice-batang-fish-300-g-90111437",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.965198"
+    "scraped_at": "2026-04-04T22:59:05.134461"
   },
   {
     "name": "Catch Seafood Premium Salmon Portion (Frozen)",
@@ -697,7 +697,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-portion-frozen-150g-150-g-90007368",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.965576"
+    "scraped_at": "2026-04-04T22:59:05.134599"
   },
   {
     "name": "Emerald Seafood Frozen Sea Scallops",
@@ -711,7 +711,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/emerald-seafood-frozen-sea-scallops-400g-13016807",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.965930"
+    "scraped_at": "2026-04-04T22:59:05.134740"
   },
   {
     "name": "Serve by Hai Sia Barramundi Fillet - Frozen",
@@ -725,21 +725,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-barramundi-fillet-frozen-120-g-90198857",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.966287"
-  },
-  {
-    "name": "Serve by Hai Sia Toman Slices Hotpot Steamboat - Frozen",
-    "brand": "Serve by Hai Sia",
-    "price_sgd": 5.95,
-    "original_price_sgd": "5.95",
-    "discount_sgd": "0",
-    "unit": "200 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-toman-slices-frozen-200-g-90198861",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.966601"
+    "scraped_at": "2026-04-04T22:59:05.134878"
   },
   {
     "name": "The Better Fish Barramundi Frozen Fillet",
@@ -753,7 +739,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/13041256",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.966912"
+    "scraped_at": "2026-04-04T22:59:05.135015"
+  },
+  {
+    "name": "Serve by Hai Sia Toman Slices Hotpot Steamboat - Frozen",
+    "brand": "Serve by Hai Sia",
+    "price_sgd": 5.95,
+    "original_price_sgd": "5.95",
+    "discount_sgd": "0",
+    "unit": "200 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-toman-slices-frozen-200-g-90198861",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:05.135151"
   },
   {
     "name": "Catch Seafood Salmon Skinless Portion",
@@ -767,21 +767,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-skinless-portion-300-g-90151067",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.967224"
-  },
-  {
-    "name": "Blue Ocean Yellow Stripe Trevally/Kunning 21-25",
-    "brand": "Blue Ocean",
-    "price_sgd": 6.95,
-    "original_price_sgd": "9.9",
-    "discount_sgd": "2.95",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/blue-ocean-yellow-stripe-trevally-kunning-21-25-1-kg-90194364",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.967547"
+    "scraped_at": "2026-04-04T22:59:05.135289"
   },
   {
     "name": "Seaboss Saba Fillet 5PCS (Mackerel Fillet)",
@@ -795,7 +781,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaboss-saba-fillet-5pcs-mackerel-fillet-750-g-90140915",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.967859"
+    "scraped_at": "2026-04-04T22:59:05.135574"
+  },
+  {
+    "name": "Blue Ocean Yellow Stripe Trevally/Kunning 21-25",
+    "brand": "Blue Ocean",
+    "price_sgd": 6.95,
+    "original_price_sgd": "9.9",
+    "discount_sgd": "2.95",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/blue-ocean-yellow-stripe-trevally-kunning-21-25-1-kg-90194364",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:05.135726"
   },
   {
     "name": "Punched Foods Frozen Dory Fillet",
@@ -809,91 +809,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/punched-foods-frozen-dory-fillet",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.968292"
-  },
-  {
-    "name": "Catch Seafood ThreadFin Fish Portion (Ngor He / Ikan Kurau)",
-    "brand": "Catch Seafood",
-    "price_sgd": 5,
-    "original_price_sgd": "7.9",
-    "discount_sgd": "2.90",
-    "unit": "160 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-thread-fin-portion-ngor-he-ikan-kurau-160-g-90112716",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.968851"
-  },
-  {
-    "name": "Serve by Hai Sia Saba Mackerel Fillet - Frozen",
-    "brand": "Serve by Hai Sia",
-    "price_sgd": 8.55,
-    "original_price_sgd": "9.5",
-    "discount_sgd": "0.95",
-    "unit": "220 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-saba-mackerel-fillet-frozen-220-g-90198869",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:03.969226"
-  },
-  {
-    "name": "Catch Seafood Wild Black Cod Portion (Sable Fish/Gindara)",
-    "brand": "Catch Seafood",
-    "price_sgd": 15.5,
-    "original_price_sgd": "24",
-    "discount_sgd": "8.50",
-    "unit": "230 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-black-cod-portion-sable-fishgindara",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.462888"
-  },
-  {
-    "name": "Catch Seafood Cod Cube (Frozen)",
-    "brand": "Catch Seafood",
-    "price_sgd": 13.88,
-    "original_price_sgd": "15.3",
-    "discount_sgd": "1.42",
-    "unit": "200 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-cod-cube-frozen-200g-90011134",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.463152"
-  },
-  {
-    "name": "Serve by Hai Sia Norwegian Salmon Family Pack - Frozen",
-    "brand": "Serve by Hai Sia",
-    "price_sgd": 26.05,
-    "original_price_sgd": "28.94",
-    "discount_sgd": "2.89",
-    "unit": "600 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-norwegian-salmon-portion-family-pack-froze-600-g-90198872",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.463299"
-  },
-  {
-    "name": "Sarangani Bay Boneless Bangus Milkfish Belly",
-    "brand": "Sarangani Bay",
-    "price_sgd": 17,
-    "original_price_sgd": "17",
-    "discount_sgd": "0",
-    "unit": "450 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/sarangani-bay-boneless-bangus-milkfish-belly-450-g-90122513",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.463437"
+    "scraped_at": "2026-04-04T22:59:05.135872"
   },
   {
     "name": "Serve by Hai Sia Canton Fish Curd Family Pack - Frozen",
@@ -907,7 +823,91 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-canton-fish-curd-family-pack---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.463572"
+    "scraped_at": "2026-04-04T22:59:05.136013"
+  },
+  {
+    "name": "Catch Seafood ThreadFin Fish Portion (Ngor He / Ikan Kurau)",
+    "brand": "Catch Seafood",
+    "price_sgd": 5,
+    "original_price_sgd": "7.9",
+    "discount_sgd": "2.90",
+    "unit": "160 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-thread-fin-portion-ngor-he-ikan-kurau-160-g-90112716",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:05.136194"
+  },
+  {
+    "name": "Catch Seafood Wild Black Cod Portion (Sable Fish/Gindara)",
+    "brand": "Catch Seafood",
+    "price_sgd": 15.5,
+    "original_price_sgd": "24",
+    "discount_sgd": "8.50",
+    "unit": "230 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-black-cod-portion-sable-fishgindara",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:06.523588"
+  },
+  {
+    "name": "Serve by Hai Sia Saba Mackerel Fillet - Frozen",
+    "brand": "Serve by Hai Sia",
+    "price_sgd": 8.55,
+    "original_price_sgd": "9.5",
+    "discount_sgd": "0.95",
+    "unit": "220 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-saba-mackerel-fillet-frozen-220-g-90198869",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:06.524525"
+  },
+  {
+    "name": "Catch Seafood Cod Cube (Frozen)",
+    "brand": "Catch Seafood",
+    "price_sgd": 13.88,
+    "original_price_sgd": "15.3",
+    "discount_sgd": "1.42",
+    "unit": "200 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-cod-cube-frozen-200g-90011134",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:06.524983"
+  },
+  {
+    "name": "Serve by Hai Sia Norwegian Salmon Family Pack - Frozen",
+    "brand": "Serve by Hai Sia",
+    "price_sgd": 26.05,
+    "original_price_sgd": "28.94",
+    "discount_sgd": "2.89",
+    "unit": "600 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-norwegian-salmon-portion-family-pack-froze-600-g-90198872",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:06.525426"
+  },
+  {
+    "name": "Sarangani Bay Boneless Bangus Milkfish Belly",
+    "brand": "Sarangani Bay",
+    "price_sgd": 17,
+    "original_price_sgd": "17",
+    "discount_sgd": "0",
+    "unit": "450 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/sarangani-bay-boneless-bangus-milkfish-belly-450-g-90122513",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:06.525801"
   },
   {
     "name": "Catch Seafood Saba Teriyaki Marinade (Pack of 2)",
@@ -921,21 +921,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-saba-teriyaki-marinade-pack-of-2-180gx2-90007409",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.463706"
-  },
-  {
-    "name": "Ken Ken Tilapia Fillet - Frozen",
-    "brand": "Ken Ken",
-    "price_sgd": 11.2,
-    "original_price_sgd": "11.2",
-    "discount_sgd": "0",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/ken-ken-tilapia-fillet-frozen-1-kg-90160631",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.463839"
+    "scraped_at": "2026-04-04T22:59:06.526180"
   },
   {
     "name": "Snow Treasures Premium Halibut Steak",
@@ -949,7 +935,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-halibut-steak-1-kg-90095276",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.463971"
+    "scraped_at": "2026-04-04T22:59:06.526549"
+  },
+  {
+    "name": "Ken Ken Tilapia Fillet - Frozen",
+    "brand": "Ken Ken",
+    "price_sgd": 11.2,
+    "original_price_sgd": "11.2",
+    "discount_sgd": "0",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/ken-ken-tilapia-fillet-frozen-1-kg-90160631",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:06.526916"
   },
   {
     "name": "Pan Royal Frozen Atlantic Salmon Fillet",
@@ -963,7 +963,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/pan-royal-frozen-atlantic-salmon-fillet-500-g-90080855",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.464105"
+    "scraped_at": "2026-04-04T22:59:06.527277"
   },
   {
     "name": "Blue Oceans Yellow Tail Scad Fish Selar (8-10)",
@@ -977,7 +977,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/mktplace-1-kg-90197891",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.464238"
+    "scraped_at": "2026-04-04T22:59:06.527613"
   },
   {
     "name": "Seafood Boy Salmon Sashimi Slice - Frozen",
@@ -991,21 +991,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seafood-boy-salmon-sashimi-slice-ready-to-eat---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.464372"
-  },
-  {
-    "name": "Serve by Hai Sia Barramundi Portion Family Pack - Frozen",
-    "brand": "Serve by Hai Sia",
-    "price_sgd": 18.2,
-    "original_price_sgd": "20.45",
-    "discount_sgd": "2.25",
-    "unit": "600 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-barramundi-portion-family-pack-frozen-600-g-90198878",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.464507"
+    "scraped_at": "2026-04-04T22:59:06.527945"
   },
   {
     "name": "Punched Foods Alaska Pollock Fish Fillet",
@@ -1019,7 +1005,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/punched-foods-alaska-pollock-fish-fillet",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.464639"
+    "scraped_at": "2026-04-04T22:59:06.528490"
+  },
+  {
+    "name": "Serve by Hai Sia Barramundi Portion Family Pack - Frozen",
+    "brand": "Serve by Hai Sia",
+    "price_sgd": 18.2,
+    "original_price_sgd": "20.45",
+    "discount_sgd": "2.25",
+    "unit": "600 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-barramundi-portion-family-pack-frozen-600-g-90198878",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:06.528858"
   },
   {
     "name": "Port65 Chilean Bass Cod Cubes (Baby-friendly) - Frozen",
@@ -1033,7 +1033,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/port65-chilean-bass-cod-cubes-baby-friendly---frozen-1",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.464772"
+    "scraped_at": "2026-04-04T22:59:06.529376"
   },
   {
     "name": "Serve Red Grouper Slice Hotpot Steamboat - Frozen",
@@ -1047,7 +1047,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/red-grouper-slice---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.464903"
+    "scraped_at": "2026-04-04T22:59:06.530018"
   },
   {
     "name": "Snow Treasures Premium Barramundi Whole (Seabass)",
@@ -1061,7 +1061,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-barramundi-whole-seabass-400-g-90144784",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.465036"
+    "scraped_at": "2026-04-04T22:59:06.530412"
   },
   {
     "name": "Port65 Threadfin Cubes (Baby-friendly) - Frozen",
@@ -1075,7 +1075,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/port65-threadfin-cubes-baby-friendly---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.465264"
+    "scraped_at": "2026-04-04T22:59:06.530786"
   },
   {
     "name": "Sarangani Bay Boneless Milkfish - Unseasoned",
@@ -1089,7 +1089,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/sarangani-bay-boneless-milkfish-unseasoned-320-g-90136962",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.465566"
+    "scraped_at": "2026-04-04T22:59:06.531159"
   },
   {
     "name": "Port65 Salmon Cubes (Baby-Friendly) - Frozen",
@@ -1103,21 +1103,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/port65-salmon-cubes-baby-friendly---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.465709"
-  },
-  {
-    "name": "Sarangani Bay Boneless Milkfish Smoked",
-    "brand": "Sarangani Bay",
-    "price_sgd": 14,
-    "original_price_sgd": "14",
-    "discount_sgd": "0",
-    "unit": "440 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/sarangani-bay-boneless-milkfish-smoked-440-g-90122512",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:05.465845"
+    "scraped_at": "2026-04-04T22:59:06.531531"
   },
   {
     "name": "Catch Seafood Threadfin Slice(Ngor He)",
@@ -1131,7 +1117,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-threadfin-slice-ngor-he-300-g-90111738",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.948798"
+    "scraped_at": "2026-04-04T22:59:06.531894"
+  },
+  {
+    "name": "Sarangani Bay Boneless Milkfish Smoked",
+    "brand": "Sarangani Bay",
+    "price_sgd": 14,
+    "original_price_sgd": "14",
+    "discount_sgd": "0",
+    "unit": "440 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/sarangani-bay-boneless-milkfish-smoked-440-g-90122512",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:07.842790"
   },
   {
     "name": "Ocean Crown Pasteurized Crab Meat Jumbo Lump - Frozen",
@@ -1145,7 +1145,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ocean-crown-pasteurized-crab-meat-jumbo-lump---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.949050"
+    "scraped_at": "2026-04-04T22:59:07.843086"
   },
   {
     "name": "Catch Seafood Black Cod Steak Gindara",
@@ -1159,21 +1159,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-black-cod-steak-gindara",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.949200"
-  },
-  {
-    "name": "Catch Seafood Pacific Dory Fillet",
-    "brand": "Catch Seafood",
-    "price_sgd": 5.5,
-    "original_price_sgd": "9.9",
-    "discount_sgd": "4.40",
-    "unit": "700 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-pacific-dory-fillet",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.949337"
+    "scraped_at": "2026-04-04T22:59:07.843274"
   },
   {
     "name": "Ken Ken Sutchi Fillet - Frozen",
@@ -1187,7 +1173,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-sutchi-fillet-frozen-1-kg-90160624",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.949469"
+    "scraped_at": "2026-04-04T22:59:07.843452"
+  },
+  {
+    "name": "Catch Seafood Pacific Dory Fillet",
+    "brand": "Catch Seafood",
+    "price_sgd": 5.5,
+    "original_price_sgd": "9.9",
+    "discount_sgd": "4.40",
+    "unit": "700 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-pacific-dory-fillet",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:07.843628"
   },
   {
     "name": "Ken Ken Pangasius Steak (6-7pcs) - Frozen",
@@ -1201,7 +1201,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-pangasius-steak-6-7pcs-frozen-1-kg-90160680",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.949598"
+    "scraped_at": "2026-04-04T22:59:07.843804"
   },
   {
     "name": "Catch Seafood Pollock Fish Fillet - Skinless",
@@ -1215,7 +1215,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-pollack-fillet-skinless",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.949733"
+    "scraped_at": "2026-04-04T22:59:07.843978"
   },
   {
     "name": "Catch Seafood Unagi Jumbo",
@@ -1229,7 +1229,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-unagi-jumbo-330g-90024025",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.949894"
+    "scraped_at": "2026-04-04T22:59:07.844152"
   },
   {
     "name": "Fisher's Catch Salmon Cube (Rainbow Trout)",
@@ -1243,21 +1243,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/fishers-catch-salmon-cube-rainbow-trout",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.950031"
-  },
-  {
-    "name": "Catch Seafood Catch Seafood Dory Fillet - Large",
-    "brand": "Catch Seafood",
-    "price_sgd": 3.99,
-    "original_price_sgd": "4.5",
-    "discount_sgd": "0.51",
-    "unit": "340 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-catch-seafood-dory-fillet-large-340-g-90012820",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.950164"
+    "scraped_at": "2026-04-04T22:59:07.844326"
   },
   {
     "name": "Mt Cook Alpine King Salmon Portion - Frozen",
@@ -1271,21 +1257,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/mt-cook-alpine-king-salmon-portion-150g-frozen-150-g-90198881",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.950296"
-  },
-  {
-    "name": "Snow Treasures Wild Caught Cod Fish Bones",
-    "brand": "Snow Treasures",
-    "price_sgd": 10.2,
-    "original_price_sgd": "14",
-    "discount_sgd": "3.80",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-wild-caught-cod-fish-bones-1-kg-90098737",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.950429"
+    "scraped_at": "2026-04-04T22:59:07.844504"
   },
   {
     "name": "Catch Seafood Alaskan Salmon Wild Caught",
@@ -1299,7 +1271,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-alaskan-salmon-wild-caught-150-g-90011135",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.950557"
+    "scraped_at": "2026-04-04T22:59:07.844680"
+  },
+  {
+    "name": "Catch Seafood Catch Seafood Dory Fillet - Large",
+    "brand": "Catch Seafood",
+    "price_sgd": 3.99,
+    "original_price_sgd": "4.5",
+    "discount_sgd": "0.51",
+    "unit": "340 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-catch-seafood-dory-fillet-large-340-g-90012820",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:07.844854"
   },
   {
     "name": "CB Patin Fish Slice",
@@ -1313,49 +1299,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/cb-patin-fish-slice-1-kg-90029039",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.950690"
-  },
-  {
-    "name": "Snow Treasures Wild Caught Cod Fish Fillet",
-    "brand": "Snow Treasures",
-    "price_sgd": 44,
-    "original_price_sgd": "48.5",
-    "discount_sgd": "4.50",
-    "unit": "500 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-wild-caught-cod-fish-fillet-500-g-90095186",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.950818"
-  },
-  {
-    "name": "Fisher's Catch Salmon Portion",
-    "brand": "Fisher's Catch",
-    "price_sgd": 17.95,
-    "original_price_sgd": "25.23",
-    "discount_sgd": "7.28",
-    "unit": "500 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/fisher-s-catch-salmon-portion-500-g-90120647",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.950946"
-  },
-  {
-    "name": "Catch Seafood Haddock Value Pack",
-    "brand": "Catch Seafood",
-    "price_sgd": 16.95,
-    "original_price_sgd": "19.9",
-    "discount_sgd": "2.95",
-    "unit": "700 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-haddock-value-pack",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.951083"
+    "scraped_at": "2026-04-04T22:59:07.845027"
   },
   {
     "name": "Serve by Hai Sia Norwegian Salmon Portion - Frozen",
@@ -1369,7 +1313,63 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-norwegian-salmon-portion-s-cut-frozen-200-g-90198871",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.951216"
+    "scraped_at": "2026-04-04T22:59:07.845202"
+  },
+  {
+    "name": "Snow Treasures Wild Caught Cod Fish Bones",
+    "brand": "Snow Treasures",
+    "price_sgd": 10.2,
+    "original_price_sgd": "14",
+    "discount_sgd": "3.80",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-wild-caught-cod-fish-bones-1-kg-90098737",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:07.845377"
+  },
+  {
+    "name": "Snow Treasures Wild Caught Cod Fish Fillet",
+    "brand": "Snow Treasures",
+    "price_sgd": 44,
+    "original_price_sgd": "48.5",
+    "discount_sgd": "4.50",
+    "unit": "500 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-wild-caught-cod-fish-fillet-500-g-90095186",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:07.845668"
+  },
+  {
+    "name": "Catch Seafood Haddock Value Pack",
+    "brand": "Catch Seafood",
+    "price_sgd": 16.95,
+    "original_price_sgd": "19.9",
+    "discount_sgd": "2.95",
+    "unit": "700 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-haddock-value-pack",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:07.847556"
+  },
+  {
+    "name": "Fisher's Catch Salmon Portion",
+    "brand": "Fisher's Catch",
+    "price_sgd": 17.95,
+    "original_price_sgd": "25.23",
+    "discount_sgd": "7.28",
+    "unit": "500 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/fisher-s-catch-salmon-portion-500-g-90120647",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:07.847739"
   },
   {
     "name": "Sarangani Bay Baby Milkfish Marinated",
@@ -1383,7 +1383,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/sarangani-bay-baby-milkfish-marinated-400-g-90136963",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.951351"
+    "scraped_at": "2026-04-04T22:59:07.847911"
   },
   {
     "name": "Catch Seafood Premium Mackerel Steak (Batang Steak)",
@@ -1397,7 +1397,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-premium-mackerel-steak-batang-steak",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:06.951482"
+    "scraped_at": "2026-04-04T22:59:07.848290"
   },
   {
     "name": "Ken Ken Golden Pomfret - Gilled & Gutted",
@@ -1411,7 +1411,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-golden-pomfret---gilled-and-gutted",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.262593"
+    "scraped_at": "2026-04-04T22:59:09.435565"
   },
   {
     "name": "The Fish Farmer Frozen Norwegian Salmon Head",
@@ -1425,49 +1425,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-frozen-norwegian-salmon-head-500-g-90111599",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.263611"
-  },
-  {
-    "name": "Catch Seafood Smoke Salmon 100g x 4 pack - Festive Promo",
-    "brand": "Catch Seafood",
-    "price_sgd": 27.8,
-    "original_price_sgd": "29.5",
-    "discount_sgd": "1.70",
-    "unit": "400 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-smoke-salmon-100g-x-4-pack-festive-promo-400-g-90112713",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.264047"
-  },
-  {
-    "name": "The Fish Farmer Milk Fish - Local Seawater Farmed",
-    "brand": "The Fish Farmer",
-    "price_sgd": 6,
-    "original_price_sgd": "6",
-    "discount_sgd": "0",
-    "unit": "500 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-milk-fish-local-seawater-farmed-500-g-90141903",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.264429"
-  },
-  {
-    "name": "Seaboss Shishamo Komochi (Japanese Smelt Fish)",
-    "brand": "SEABOSS",
-    "price_sgd": 4.5,
-    "original_price_sgd": "4.5",
-    "discount_sgd": "0",
-    "unit": "120 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/seaboss-shishamo-komochi-japanese-smelt-fish-120-g-90027990",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.264737"
+    "scraped_at": "2026-04-04T22:59:09.436564"
   },
   {
     "name": "Catch Seafood Salmon Fillet",
@@ -1481,63 +1439,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-atlantic-salmon-fillet-1-3-kg-90122048",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.265508"
+    "scraped_at": "2026-04-04T22:59:09.437085"
   },
   {
-    "name": "Serve by Hai Sia Sustainable Halibut Portion - Frozen",
-    "brand": "Serve by Hai Sia",
-    "price_sgd": 12.36,
-    "original_price_sgd": "12.61",
-    "discount_sgd": "0.25",
-    "unit": "240 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-sustainable-halibut-portion-frozen-240-g-90198867",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.265888"
-  },
-  {
-    "name": "Snow Treasures Kombu Miso Cod Cube",
-    "brand": "Snow Treasures",
-    "price_sgd": 19.25,
-    "original_price_sgd": "25",
-    "discount_sgd": "5.75",
-    "unit": "200 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-kombu-miso-cod-cube",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.266249"
-  },
-  {
-    "name": "Catch Seafood - Salmon Portion Family Cut (Frozen)",
+    "name": "Catch Seafood Smoke Salmon 100g x 4 pack - Festive Promo",
     "brand": "Catch Seafood",
-    "price_sgd": 9.9,
-    "original_price_sgd": "15.9",
-    "discount_sgd": "6.00",
-    "unit": "350 G",
+    "price_sgd": 27.8,
+    "original_price_sgd": "29.5",
+    "discount_sgd": "1.70",
+    "unit": "400 G",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-portion-family-cut-frozen-400g-90007357",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-smoke-salmon-100g-x-4-pack-festive-promo-400-g-90112713",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.266603"
-  },
-  {
-    "name": "Ken Ken Pangasius Fish Cube - Frozen",
-    "brand": "Ken Ken",
-    "price_sgd": 8.3,
-    "original_price_sgd": "8.3",
-    "discount_sgd": "0",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/ken-ken-pangasius-fish-cube-frozen-1-kg-90160676",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.266968"
+    "scraped_at": "2026-04-04T22:59:09.437598"
   },
   {
     "name": "Catch Seafood Smoke Salmon 100g (Frozen)",
@@ -1551,21 +1467,91 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-smoke-salmon-100g-frozen-100-g-90011133",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.267308"
+    "scraped_at": "2026-04-04T22:59:09.437991"
   },
   {
-    "name": "Port65 Sashimi-Grade Hokkaido Scallop (Baby-friendly) -Frozen",
-    "brand": "Port65",
-    "price_sgd": 20.8,
-    "original_price_sgd": "20.8",
+    "name": "The Fish Farmer Milk Fish - Local Seawater Farmed",
+    "brand": "The Fish Farmer",
+    "price_sgd": 6,
+    "original_price_sgd": "6",
     "discount_sgd": "0",
-    "unit": "170 G",
+    "unit": "500 G",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/port65-hokkaido-scallops-baby-friendly---frozen",
+    "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-milk-fish-local-seawater-farmed-500-g-90141903",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.267634"
+    "scraped_at": "2026-04-04T22:59:09.438355"
+  },
+  {
+    "name": "Seaboss Shishamo Komochi (Japanese Smelt Fish)",
+    "brand": "SEABOSS",
+    "price_sgd": 4.5,
+    "original_price_sgd": "4.5",
+    "discount_sgd": "0",
+    "unit": "120 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/seaboss-shishamo-komochi-japanese-smelt-fish-120-g-90027990",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:09.438715"
+  },
+  {
+    "name": "Serve by Hai Sia Sustainable Halibut Portion - Frozen",
+    "brand": "Serve by Hai Sia",
+    "price_sgd": 12.36,
+    "original_price_sgd": "12.61",
+    "discount_sgd": "0.25",
+    "unit": "240 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-sustainable-halibut-portion-frozen-240-g-90198867",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:09.439042"
+  },
+  {
+    "name": "Snow Treasures Kombu Miso Cod Cube",
+    "brand": "Snow Treasures",
+    "price_sgd": 19.25,
+    "original_price_sgd": "25",
+    "discount_sgd": "5.75",
+    "unit": "200 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-kombu-miso-cod-cube",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:09.439359"
+  },
+  {
+    "name": "Catch Seafood - Salmon Portion Family Cut (Frozen)",
+    "brand": "Catch Seafood",
+    "price_sgd": 9.9,
+    "original_price_sgd": "15.9",
+    "discount_sgd": "6.00",
+    "unit": "350 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-portion-family-cut-frozen-400g-90007357",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:09.439698"
+  },
+  {
+    "name": "Ken Ken Pangasius Fish Cube - Frozen",
+    "brand": "Ken Ken",
+    "price_sgd": 8.3,
+    "original_price_sgd": "8.3",
+    "discount_sgd": "0",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/ken-ken-pangasius-fish-cube-frozen-1-kg-90160676",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:09.440018"
   },
   {
     "name": "Catch Seafood Shishamo",
@@ -1579,7 +1565,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-shishamo-120-g-90131446",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.267967"
+    "scraped_at": "2026-04-04T22:59:09.440333"
+  },
+  {
+    "name": "Port65 Sashimi-Grade Hokkaido Scallop (Baby-friendly) -Frozen",
+    "brand": "Port65",
+    "price_sgd": 20.8,
+    "original_price_sgd": "20.8",
+    "discount_sgd": "0",
+    "unit": "170 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/port65-hokkaido-scallops-baby-friendly---frozen",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:09.440771"
   },
   {
     "name": "Catch Seafood Wild Atlantic Cod Loin",
@@ -1593,7 +1593,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-atlantic-cod-loin-300-g-90007374",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.268307"
+    "scraped_at": "2026-04-04T22:59:09.441372"
   },
   {
     "name": "Serve by Hai Sia Seafood Angoli Portion - Fresh",
@@ -1607,7 +1607,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-seafood-angoli-portion---fresh",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.268671"
+    "scraped_at": "2026-04-04T22:59:09.441772"
   },
   {
     "name": "Catch Seafood Wild Spanish Mackerel (Batang Steak)",
@@ -1621,7 +1621,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-spanish-mackerel-frozen-350-g-90011131",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.269303"
+    "scraped_at": "2026-04-04T22:59:09.442161"
   },
   {
     "name": "Everbest Vegan Seaweed Fish",
@@ -1635,7 +1635,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/everbest-vegan-seaweed-fish-400-g-90183362",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.269794"
+    "scraped_at": "2026-04-04T22:59:09.442531"
   },
   {
     "name": "The Fish Farmer Norwegian Mackerel / Saba Fillet",
@@ -1649,7 +1649,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-norwegian-mackerel-saba-fillet-700-g-90111600",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.270171"
+    "scraped_at": "2026-04-04T22:59:09.442897"
   },
   {
     "name": "Serve by Hai Sia Atlantic Salmon Portion - Frozen",
@@ -1663,7 +1663,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-atlantic-salmon-portion-frozen-150-g-90198863",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.270555"
+    "scraped_at": "2026-04-04T22:59:09.443263"
   },
   {
     "name": "Catch Seafood Salmon Angle Cut (Kirimi Cut)",
@@ -1677,7 +1677,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-angle-cut-kirimi-cut-300g-300-g-90182084",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:08.270919"
+    "scraped_at": "2026-04-04T22:59:09.443621"
   },
   {
     "name": "Punched Foods Frozen Tilapia Fillet",
@@ -1691,7 +1691,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/punched-foods-frozen-tilapia-fillet-250-g-90135203",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.823239"
+    "scraped_at": "2026-04-04T22:59:10.846541"
   },
   {
     "name": "Pan Royal Frozen Smoked Norwegian Salmon (Pre-sliced)",
@@ -1705,49 +1705,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/pan-royal-frozen-smoked-norwegian-salmon-pre-sliced-900-g-90190838",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.824043"
-  },
-  {
-    "name": "Catch Seafood Vannamei Prawn Meat with tail on",
-    "brand": "Catch Seafood",
-    "price_sgd": 7.989999999999999,
-    "original_price_sgd": "11.95",
-    "discount_sgd": "3.96",
-    "unit": "500 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-vannamei-prawn-meat-with-tail-on",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.824558"
-  },
-  {
-    "name": "Catch Seafood Salmon Tail Cut 150G",
-    "brand": "Catch Seafood",
-    "price_sgd": 4.800000000000001,
-    "original_price_sgd": "5.9",
-    "discount_sgd": "1.10",
-    "unit": "150 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-tail-cut-150g-150-g-90024022",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.824939"
-  },
-  {
-    "name": "Catch Seafood Hokkaido Flounder (Sole) Fish Whole",
-    "brand": "Catch Seafood",
-    "price_sgd": 3.85,
-    "original_price_sgd": "7.5",
-    "discount_sgd": "3.65",
-    "unit": "220 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-hokkaido-flounder-sole-fish-whole",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.825582"
+    "scraped_at": "2026-04-04T22:59:10.846883"
   },
   {
     "name": "Pan Royal Frozen USA Black Cod Fish Fillet",
@@ -1761,49 +1719,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/pan-royal-frozen-usa-black-cod-fish-fillet-500-g-90193814",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.826066"
-  },
-  {
-    "name": "Snow Treasures Premium Hamachi Collar",
-    "brand": "Snow Treasures",
-    "price_sgd": 16.94,
-    "original_price_sgd": "22",
-    "discount_sgd": "5.06",
-    "unit": "300 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-hamachi-collar-300-g-90144779",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.826451"
-  },
-  {
-    "name": "Catch Seafood Wild Alaskan Sockeye Salmon Portion",
-    "brand": "Catch Seafood",
-    "price_sgd": 11.45,
-    "original_price_sgd": "22.9",
-    "discount_sgd": "11.45",
-    "unit": "170 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-alaskan-sockeye-salmon-portion-170-g-90194394",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.826980"
-  },
-  {
-    "name": "Pan Royal Frozen Pacific Dory Fillet (untreated)",
-    "brand": "Pan Royal",
-    "price_sgd": 10,
-    "original_price_sgd": "10",
-    "discount_sgd": "0",
-    "unit": "4 S",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/pan-royal-frozen-pacific-dory-fillet-untreated-4-pc-90080654",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.827473"
+    "scraped_at": "2026-04-04T22:59:10.847058"
   },
   {
     "name": "Fisher's Catch Cod Fish Bones",
@@ -1817,35 +1733,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/fisher-s-catch-cod-fish-bones-1-kg-90052793",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.827940"
+    "scraped_at": "2026-04-04T22:59:10.847221"
   },
   {
-    "name": "Ken Ken Skin On Seabass Fillet - Frozen",
-    "brand": "Ken Ken",
-    "price_sgd": 9.3,
-    "original_price_sgd": "9.3",
-    "discount_sgd": "0",
-    "unit": "300 G",
+    "name": "Catch Seafood Vannamei Prawn Meat with tail on",
+    "brand": "Catch Seafood",
+    "price_sgd": 7.989999999999999,
+    "original_price_sgd": "11.95",
+    "discount_sgd": "3.96",
+    "unit": "500 G",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/ken-ken-skin-on-seabass-fillet-frozen-300-g-90160665",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-vannamei-prawn-meat-with-tail-on",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.828356"
-  },
-  {
-    "name": "Ken Ken Kuning Fish - Frozen",
-    "brand": "Ken Ken",
-    "price_sgd": 8.9,
-    "original_price_sgd": "8.9",
-    "discount_sgd": "0",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/ken-ken-kuning-fish-frozen-1-kg-90160681",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.828848"
+    "scraped_at": "2026-04-04T22:59:10.847378"
   },
   {
     "name": "Catch Seafood Crunchy Breaded Ebi Prawn",
@@ -1859,7 +1761,35 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-crab-roll-jumbo-lump-seah-chow-300-g-90151632",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.829339"
+    "scraped_at": "2026-04-04T22:59:10.847538"
+  },
+  {
+    "name": "Catch Seafood Salmon Tail Cut 150G",
+    "brand": "Catch Seafood",
+    "price_sgd": 4.800000000000001,
+    "original_price_sgd": "5.9",
+    "discount_sgd": "1.10",
+    "unit": "150 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-tail-cut-150g-150-g-90024022",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:10.847715"
+  },
+  {
+    "name": "Catch Seafood Hokkaido Flounder (Sole) Fish Whole",
+    "brand": "Catch Seafood",
+    "price_sgd": 3.85,
+    "original_price_sgd": "7.5",
+    "discount_sgd": "3.65",
+    "unit": "220 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-hokkaido-flounder-sole-fish-whole",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:10.847876"
   },
   {
     "name": "Catch Seafood Wild Snapper Skinless Portion",
@@ -1873,7 +1803,77 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-red-snapper-skinless-250-g-90146360",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.829731"
+    "scraped_at": "2026-04-04T22:59:10.848031"
+  },
+  {
+    "name": "Snow Treasures Premium Hamachi Collar",
+    "brand": "Snow Treasures",
+    "price_sgd": 16.94,
+    "original_price_sgd": "22",
+    "discount_sgd": "5.06",
+    "unit": "300 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-hamachi-collar-300-g-90144779",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:10.848187"
+  },
+  {
+    "name": "Catch Seafood Wild Alaskan Sockeye Salmon Portion",
+    "brand": "Catch Seafood",
+    "price_sgd": 11.45,
+    "original_price_sgd": "22.9",
+    "discount_sgd": "11.45",
+    "unit": "170 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-alaskan-sockeye-salmon-portion-170-g-90194394",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:10.848345"
+  },
+  {
+    "name": "Pan Royal Frozen Pacific Dory Fillet (untreated)",
+    "brand": "Pan Royal",
+    "price_sgd": 10,
+    "original_price_sgd": "10",
+    "discount_sgd": "0",
+    "unit": "4 S",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/pan-royal-frozen-pacific-dory-fillet-untreated-4-pc-90080654",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:10.848499"
+  },
+  {
+    "name": "Ken Ken Skin On Seabass Fillet - Frozen",
+    "brand": "Ken Ken",
+    "price_sgd": 9.3,
+    "original_price_sgd": "9.3",
+    "discount_sgd": "0",
+    "unit": "300 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/ken-ken-skin-on-seabass-fillet-frozen-300-g-90160665",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:10.848653"
+  },
+  {
+    "name": "Ken Ken Kuning Fish - Frozen",
+    "brand": "Ken Ken",
+    "price_sgd": 8.9,
+    "original_price_sgd": "8.9",
+    "discount_sgd": "0",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/ken-ken-kuning-fish-frozen-1-kg-90160681",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:10.848811"
   },
   {
     "name": "Port65 Chilean Bass Cod Cubes (Baby-friendly) - Frozen",
@@ -1887,49 +1887,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/port65-chilean-bass-cod-cubes-baby-friendly---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.830093"
-  },
-  {
-    "name": "Sarangani Bay Boneless Milkfish Marinated",
-    "brand": "Sarangani Bay",
-    "price_sgd": 14,
-    "original_price_sgd": "14",
-    "discount_sgd": "0",
-    "unit": "440 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/sarangani-bay-boneless-milkfish-marinated-440-g-90122514",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.830611"
-  },
-  {
-    "name": "The Fish Farmer Sashimi Grade Frozen Tuna Saku",
-    "brand": "The Fish Farmer",
-    "price_sgd": 13.5,
-    "original_price_sgd": "13.5",
-    "discount_sgd": "0",
-    "unit": "200 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-sashimi-grade-frozen-tuna-saku-200-g-90111604",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.830972"
-  },
-  {
-    "name": "Pan Royal Frozen Toman Slice",
-    "brand": "Pan Royal",
-    "price_sgd": 7,
-    "original_price_sgd": "7",
-    "discount_sgd": "0",
-    "unit": "500 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/pan-royal-frozen-toman-slice-500-g-90080653",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.831285"
+    "scraped_at": "2026-04-04T22:59:10.848966"
   },
   {
     "name": "Churo Unagi (Roasted Eel)",
@@ -1943,91 +1901,49 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/churo-unagi-roasted-eel-380-g-90176403",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.831586"
+    "scraped_at": "2026-04-04T22:59:10.849120"
   },
   {
-    "name": "CB Premium Unagi Kabayaki",
-    "brand": "CB",
-    "price_sgd": 13.5,
-    "original_price_sgd": "13.5",
+    "name": "Sarangani Bay Boneless Milkfish Marinated",
+    "brand": "Sarangani Bay",
+    "price_sgd": 14,
+    "original_price_sgd": "14",
     "discount_sgd": "0",
-    "unit": "220 G",
+    "unit": "440 G",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/cb-premium-unagi-kabayaki-220-g-90035167",
+    "product_url": "https://www.fairprice.com.sg/product/sarangani-bay-boneless-milkfish-marinated-440-g-90122514",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:09.831883"
+    "scraped_at": "2026-04-04T22:59:10.849274"
   },
   {
-    "name": "Churo Salmon Belly",
-    "brand": "Churo",
-    "price_sgd": 9.92,
-    "original_price_sgd": "12.4",
-    "discount_sgd": "2.48",
+    "name": "The Fish Farmer Sashimi Grade Frozen Tuna Saku",
+    "brand": "The Fish Farmer",
+    "price_sgd": 13.5,
+    "original_price_sgd": "13.5",
+    "discount_sgd": "0",
     "unit": "200 G",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/churo-salmon-belly-1-x-200g-90022747",
+    "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-sashimi-grade-frozen-tuna-saku-200-g-90111604",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.353255"
+    "scraped_at": "2026-04-04T22:59:10.849465"
   },
   {
-    "name": "Catch Seafood Tilapia Fillet",
-    "brand": "Catch Seafood",
-    "price_sgd": 8.99,
-    "original_price_sgd": "9.5",
-    "discount_sgd": "0.51",
+    "name": "Pan Royal Frozen Toman Slice",
+    "brand": "Pan Royal",
+    "price_sgd": 7,
+    "original_price_sgd": "7",
+    "discount_sgd": "0",
     "unit": "500 G",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-tilapia-fillet-500-g-90007407",
+    "product_url": "https://www.fairprice.com.sg/product/pan-royal-frozen-toman-slice-500-g-90080653",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.353571"
-  },
-  {
-    "name": "Snow Treasures Wild Caught Cod Fish Fillet",
-    "brand": "Snow Treasures",
-    "price_sgd": 82,
-    "original_price_sgd": "97",
-    "discount_sgd": "15.00",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-wild-caught-cod-fish-fillet-1-kg-90098736",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.353760"
-  },
-  {
-    "name": "The Fish Farmer Salmon Portion Fillet Skin-On",
-    "brand": "The Fish Farmer",
-    "price_sgd": 28,
-    "original_price_sgd": "28",
-    "discount_sgd": "0",
-    "unit": "600 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-salmon-portion-fillet-skin-on-600-g-90122312",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.353951"
-  },
-  {
-    "name": "Serve by Hai Sia NZ King Salmon Portion - Frozen",
-    "brand": "Serve by Hai Sia",
-    "price_sgd": 19.46,
-    "original_price_sgd": "21.62",
-    "discount_sgd": "2.16",
-    "unit": "200 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-nz-king-salmon-portion-frozen-200-g-90198864",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.354128"
+    "scraped_at": "2026-04-04T22:59:10.849619"
   },
   {
     "name": "Serve by Hai Sia Chilean Seabass Cod Steak and Tail - Frozen",
@@ -2041,7 +1957,91 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-chilean-seabass-steak-and-tail-frozen-200-g-90198875",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.354305"
+    "scraped_at": "2026-04-04T22:59:10.849773"
+  },
+  {
+    "name": "Serve by Hai Sia Chilean Seabass Cod Steak and Tail - Frozen",
+    "brand": "Serve by Hai Sia",
+    "price_sgd": 16.35,
+    "original_price_sgd": "16.35",
+    "discount_sgd": "0",
+    "unit": "200 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-chilean-seabass-steak-and-tail-frozen-200-g-90198875",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:12.149461"
+  },
+  {
+    "name": "Churo Salmon Belly",
+    "brand": "Churo",
+    "price_sgd": 9.92,
+    "original_price_sgd": "12.4",
+    "discount_sgd": "2.48",
+    "unit": "200 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/churo-salmon-belly-1-x-200g-90022747",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:12.150723"
+  },
+  {
+    "name": "Catch Seafood Tilapia Fillet",
+    "brand": "Catch Seafood",
+    "price_sgd": 8.99,
+    "original_price_sgd": "9.5",
+    "discount_sgd": "0.51",
+    "unit": "500 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-tilapia-fillet-500-g-90007407",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:12.151323"
+  },
+  {
+    "name": "Snow Treasures Wild Caught Cod Fish Fillet",
+    "brand": "Snow Treasures",
+    "price_sgd": 82,
+    "original_price_sgd": "97",
+    "discount_sgd": "15.00",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-wild-caught-cod-fish-fillet-1-kg-90098736",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:12.151733"
+  },
+  {
+    "name": "The Fish Farmer Salmon Portion Fillet Skin-On",
+    "brand": "The Fish Farmer",
+    "price_sgd": 28,
+    "original_price_sgd": "28",
+    "discount_sgd": "0",
+    "unit": "600 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-salmon-portion-fillet-skin-on-600-g-90122312",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:12.152100"
+  },
+  {
+    "name": "Serve by Hai Sia NZ King Salmon Portion - Frozen",
+    "brand": "Serve by Hai Sia",
+    "price_sgd": 19.46,
+    "original_price_sgd": "21.62",
+    "discount_sgd": "2.16",
+    "unit": "200 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-nz-king-salmon-portion-frozen-200-g-90198864",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:12.152463"
   },
   {
     "name": "Seaco Red Snapper Fillet",
@@ -2055,7 +2055,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaco-red-snapper-fillet-500-g-90140514",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.354486"
+    "scraped_at": "2026-04-04T22:59:12.152827"
   },
   {
     "name": "Catch Seafood Tuna Steak Small portion (Frozen)",
@@ -2069,7 +2069,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-tuna-steak-small-portion-frozen-150g-90007362",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.354662"
+    "scraped_at": "2026-04-04T22:59:12.153191"
   },
   {
     "name": "Catch Seafood Smoke Salmon Gravlax Family Pack",
@@ -2083,7 +2083,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-smoke-salmon-gravlax-family-pack-4-x-100g-90130652",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.354838"
+    "scraped_at": "2026-04-04T22:59:12.153552"
   },
   {
     "name": "Churo Sutchi Fish Fillet (Frozen)",
@@ -2097,7 +2097,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/churo-sutchi-fish-fillet-800-g-90051083",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.355015"
+    "scraped_at": "2026-04-04T22:59:12.154085"
   },
   {
     "name": "Ken Ken Golden Pomfret - Gilled & Gutted",
@@ -2111,7 +2111,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-golden-pomfret---gilled-and-gutted-1",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.355191"
+    "scraped_at": "2026-04-04T22:59:12.154468"
   },
   {
     "name": "Catch Seafood Red Snapper Portion 150g (Frozen)",
@@ -2125,7 +2125,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-red-snapper-portion-150g-frozen-150g-90011132",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.355367"
+    "scraped_at": "2026-04-04T22:59:12.154841"
   },
   {
     "name": "Snow Treasures Premium Alaskan Black Cod Fillet",
@@ -2139,7 +2139,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-alaskan-black-cod-fillet-400-g-90098738",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.355542"
+    "scraped_at": "2026-04-04T22:59:12.155207"
   },
   {
     "name": "Blue Oceans Boontong Fish (Whole Clean 8-10)",
@@ -2153,7 +2153,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/mktplace-1-kg-90197888",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.355716"
+    "scraped_at": "2026-04-04T22:59:12.155575"
   },
   {
     "name": "Catch Seafood Wild Caught Mahi Mahi Portion",
@@ -2167,7 +2167,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-caught-mahi-mahi-portion",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.355892"
+    "scraped_at": "2026-04-04T22:59:12.155944"
   },
   {
     "name": "Catch Seafood Halibut Fillet",
@@ -2181,7 +2181,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-halibut-fillet-400-g-90007369",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.356090"
+    "scraped_at": "2026-04-04T22:59:12.156316"
   },
   {
     "name": "Punched Foods Frozen Cod Fish Steak",
@@ -2195,7 +2195,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/punched-foods-frozen-cod-fish-steak-250-g-90135204",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.356293"
+    "scraped_at": "2026-04-04T22:59:12.156674"
   },
   {
     "name": "Pan Royal Frozen Halibut Fillet",
@@ -2209,91 +2209,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/pan-royal-frozen-halibut-fillet-500-g-90193812",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.356471"
-  },
-  {
-    "name": "Catch Seafood Wild Caught Flounder Portion Value Pack",
-    "brand": "Catch Seafood",
-    "price_sgd": 9.9,
-    "original_price_sgd": "11.9",
-    "discount_sgd": "2.00",
-    "unit": "500 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-caught-flounder-portion-value-pack",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.356649"
-  },
-  {
-    "name": "Punched Foods Frozen Dory Fillet Cubes",
-    "brand": "Punched Foods",
-    "price_sgd": 8.8,
-    "original_price_sgd": "8.8",
-    "discount_sgd": "0",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/punched-foods-frozen-dory-fillet-cubes",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:11.356826"
-  },
-  {
-    "name": "The Fish Farmer Sashimi Grade Frozen Swordfish Steak",
-    "brand": "The Fish Farmer",
-    "price_sgd": 8.5,
-    "original_price_sgd": "8.5",
-    "discount_sgd": "0",
-    "unit": "140 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-sashimi-grade-frozen-swordfish-steak-140-g-90111603",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.505531"
-  },
-  {
-    "name": "Catch Seafood Seabass Barramundi Fillet",
-    "brand": "Catch Seafood",
-    "price_sgd": 3.85,
-    "original_price_sgd": "9.8",
-    "discount_sgd": "5.95",
-    "unit": "150 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-seabass-barramundi-fillet",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.506127"
-  },
-  {
-    "name": "Catch Seafood Hokaiddo Scallops",
-    "brand": "Catch Seafood",
-    "price_sgd": 23.9,
-    "original_price_sgd": "49.8",
-    "discount_sgd": "25.90",
-    "unit": "500 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-hokaiddo-scallops",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.506442"
-  },
-  {
-    "name": "Snow Treasures Premium White Bait 1 Block (10-12cm)",
-    "brand": "Snow Treasures",
-    "price_sgd": 20.79,
-    "original_price_sgd": "27",
-    "discount_sgd": "6.21",
-    "unit": "1 KG",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-white-bait-1-block-10-12cm-1",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.506739"
+    "scraped_at": "2026-04-04T22:59:12.157034"
   },
   {
     "name": "Catch Seafood Wild Black Cod Cube (Sable Fish/Gindara)",
@@ -2307,35 +2223,21 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-black-cod-cube-sable-fishgindara",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.507033"
+    "scraped_at": "2026-04-04T22:59:12.157392"
   },
   {
-    "name": "The Better Fish Barramundi Tuscan Herb Butter",
-    "brand": "THE BETTER FISH",
-    "price_sgd": 16.5,
-    "original_price_sgd": "16.5",
-    "discount_sgd": "0",
-    "unit": "340 G",
-    "main_category": "Frozen Seafood",
-    "subcategory": "Frozen Fish",
-    "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/the-better-fish-barramundi-tuscan-herb-butter-340-g-90158120",
-    "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.507325"
-  },
-  {
-    "name": "Catch Seafood Soon Hock Fish Whole",
+    "name": "Catch Seafood Wild Caught Flounder Portion Value Pack",
     "brand": "Catch Seafood",
-    "price_sgd": 13.99,
-    "original_price_sgd": "19.9",
-    "discount_sgd": "5.91",
-    "unit": "350 G",
+    "price_sgd": 9.9,
+    "original_price_sgd": "11.9",
+    "discount_sgd": "2.00",
+    "unit": "500 G",
     "main_category": "Frozen Seafood",
     "subcategory": "Frozen Fish",
     "category_slug": "frozen-seafood",
-    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-soon-hock-fish-whole-350-g-90035540",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-caught-flounder-portion-value-pack",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.507637"
+    "scraped_at": "2026-04-04T22:59:12.157750"
   },
   {
     "name": "Catch Seafood Wild Caught Pollock Fillet Value Pack",
@@ -2349,7 +2251,105 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-caught-pollock-fillet-value-pack",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.507932"
+    "scraped_at": "2026-04-04T22:59:13.472718"
+  },
+  {
+    "name": "Punched Foods Frozen Dory Fillet Cubes",
+    "brand": "Punched Foods",
+    "price_sgd": 8.8,
+    "original_price_sgd": "8.8",
+    "discount_sgd": "0",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/punched-foods-frozen-dory-fillet-cubes",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:13.473031"
+  },
+  {
+    "name": "The Fish Farmer Sashimi Grade Frozen Swordfish Steak",
+    "brand": "The Fish Farmer",
+    "price_sgd": 8.5,
+    "original_price_sgd": "8.5",
+    "discount_sgd": "0",
+    "unit": "140 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-sashimi-grade-frozen-swordfish-steak-140-g-90111603",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:13.473219"
+  },
+  {
+    "name": "Catch Seafood Seabass Barramundi Fillet",
+    "brand": "Catch Seafood",
+    "price_sgd": 3.85,
+    "original_price_sgd": "9.8",
+    "discount_sgd": "5.95",
+    "unit": "150 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-seabass-barramundi-fillet",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:13.473410"
+  },
+  {
+    "name": "Catch Seafood Hokaiddo Scallops",
+    "brand": "Catch Seafood",
+    "price_sgd": 23.9,
+    "original_price_sgd": "49.8",
+    "discount_sgd": "25.90",
+    "unit": "500 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-hokaiddo-scallops",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:13.473719"
+  },
+  {
+    "name": "Snow Treasures Premium White Bait 1 Block (10-12cm)",
+    "brand": "Snow Treasures",
+    "price_sgd": 20.79,
+    "original_price_sgd": "27",
+    "discount_sgd": "6.21",
+    "unit": "1 KG",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-white-bait-1-block-10-12cm-1",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:13.473889"
+  },
+  {
+    "name": "The Better Fish Barramundi Tuscan Herb Butter",
+    "brand": "THE BETTER FISH",
+    "price_sgd": 16.5,
+    "original_price_sgd": "16.5",
+    "discount_sgd": "0",
+    "unit": "340 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/the-better-fish-barramundi-tuscan-herb-butter-340-g-90158120",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:13.474056"
+  },
+  {
+    "name": "Catch Seafood Soon Hock Fish Whole",
+    "brand": "Catch Seafood",
+    "price_sgd": 13.99,
+    "original_price_sgd": "19.9",
+    "discount_sgd": "5.91",
+    "unit": "350 G",
+    "main_category": "Frozen Seafood",
+    "subcategory": "Frozen Fish",
+    "category_slug": "frozen-seafood",
+    "product_url": "https://www.fairprice.com.sg/product/catch-seafood-soon-hock-fish-whole-350-g-90035540",
+    "store": "fairprice",
+    "scraped_at": "2026-04-04T22:59:13.474222"
   },
   {
     "name": "Mr Joy's Salmon Fish Imitation",
@@ -2363,7 +2363,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/mr-joys-salmon-fish-imitation",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.508245"
+    "scraped_at": "2026-04-04T22:59:13.474388"
   },
   {
     "name": "Fresh Frozen Threadfin Head",
@@ -2377,7 +2377,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/fresh-frozen-threadfin-head",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.508558"
+    "scraped_at": "2026-04-04T22:59:13.474554"
   },
   {
     "name": "Copper River Seafood Alaska Wild Sockeye Salmon",
@@ -2391,7 +2391,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/copper-river-seafood-alaska-wild-sockeye-salmon-340-g-90111294",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.508870"
+    "scraped_at": "2026-04-04T22:59:13.474814"
   },
   {
     "name": "The Meat Club King Salmon Fillet - NZ  - Frozen",
@@ -2405,7 +2405,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-meat-club-king-salmon-fillet-nz-frozen-150-g-90046732",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.509166"
+    "scraped_at": "2026-04-04T22:59:13.474982"
   },
   {
     "name": "Catch Seafood Crab Cake Maryland",
@@ -2419,7 +2419,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-crab-cake-maryland-6pcs",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.509493"
+    "scraped_at": "2026-04-04T22:59:13.475148"
   },
   {
     "name": "Punched Foods Frozen Barramundi/Asian Seabass Fillet (skin on",
@@ -2433,7 +2433,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/punched-foods-frozen-barramundi-asian-seabass-fillet-skin-on-400-g-90140199",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.509787"
+    "scraped_at": "2026-04-04T22:59:13.475317"
   },
   {
     "name": "Catch Seafood Unagi (Frozen)",
@@ -2447,7 +2447,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-unagi-frozen-190g-90012842",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.510086"
+    "scraped_at": "2026-04-04T22:59:13.475494"
   },
   {
     "name": "Snow Treasures Premium Salmon Fillet",
@@ -2461,7 +2461,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-salmon-fillet-180-g-90095270",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.510376"
+    "scraped_at": "2026-04-04T22:59:13.475660"
   },
   {
     "name": "Ming Xin Pure Vegetarian Sliced Fish",
@@ -2475,7 +2475,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ming-xin-pure-vegetarian-sliced-fish",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.510666"
+    "scraped_at": "2026-04-04T22:59:13.475829"
   },
   {
     "name": "Kirei Frozen Shishamo Fish",
@@ -2489,7 +2489,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-frozen-shishamo-fish-8-pr-90129230",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.510978"
+    "scraped_at": "2026-04-04T22:59:13.475994"
   },
   {
     "name": "Catch Seafood Flounder Portion Skinless",
@@ -2503,7 +2503,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-flounder-portion-skinless-150-g-90080594",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.511288"
+    "scraped_at": "2026-04-04T22:59:13.476159"
   },
   {
     "name": "Catch Seafood Atlantic Salmon Portion",
@@ -2517,7 +2517,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-atlantic-salmon-portion-1",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:13.511577"
+    "scraped_at": "2026-04-04T22:59:13.476324"
   },
   {
     "name": "Catch Seafood Large Cooked Prawn",
@@ -2531,7 +2531,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-cooked-crayfish-frozen-1kg-90007416",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:14.996201"
+    "scraped_at": "2026-04-04T22:59:14.792878"
   },
   {
     "name": "The Fish Farmer Frozen Seabass Barramundi Cleaned Gutted",
@@ -2545,7 +2545,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-frozen-seabass-barramundi-cleaned-and-gutte-1-kg-90121706",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:14.997419"
+    "scraped_at": "2026-04-04T22:59:14.793362"
   },
   {
     "name": "Catch Seafood Bay Scallop Family Pack",
@@ -2559,7 +2559,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-bay-scallop-family-pack",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:14.999388"
+    "scraped_at": "2026-04-04T22:59:14.793638"
   },
   {
     "name": "Catch Seafood New Zealand King Salmon Portion (Frozen)",
@@ -2573,7 +2573,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-new-zealand-king-salmon-portion-frozen-150-g-90107070",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:14.999845"
+    "scraped_at": "2026-04-04T22:59:14.793904"
   },
   {
     "name": "Serve by Hai Sia Norwegian Salmon Portion - Frozen",
@@ -2587,7 +2587,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-norwegian-salmon-portion-frozen-240-g-90198865",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.000268"
+    "scraped_at": "2026-04-04T22:59:14.794164"
   },
   {
     "name": "The Fish Farmer Grey Mullet - Local Seawater Farmed",
@@ -2601,7 +2601,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-grey-mullet-local-seawater-farmed-500-g-90141902",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.000684"
+    "scraped_at": "2026-04-04T22:59:14.794423"
   },
   {
     "name": "Catch Seafood Swordfish Steak (Frozen)",
@@ -2615,7 +2615,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-swordfish-steak-frozen-120g-90007401",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.001092"
+    "scraped_at": "2026-04-04T22:59:14.794773"
   },
   {
     "name": "Catch Seafood Scallop Hokkaido (Sashimi Grade) S 1kg",
@@ -2629,7 +2629,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-scallop-hokkaido-sashimi-grade-s-1kg",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.001699"
+    "scraped_at": "2026-04-04T22:59:14.795017"
   },
   {
     "name": "Catch Seafood Wild Black Cod Fillet (Sable Fish/Gindara)",
@@ -2643,7 +2643,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-black-cod-fillet-sable-fishgindara",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.002224"
+    "scraped_at": "2026-04-04T22:59:14.795243"
   },
   {
     "name": "Catch Seafood New Zealand Salmon Portion 3pcs (Akaroa)",
@@ -2657,7 +2657,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-new-zealand-salmon-portion-3pcs-akaroa-450-g-90161208",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.002688"
+    "scraped_at": "2026-04-04T22:59:14.795469"
   },
   {
     "name": "Snow Treasures Soon Hock Whole (Marble Goby) (M)",
@@ -2671,7 +2671,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-soon-hock-whole-marble-goby-m",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.003038"
+    "scraped_at": "2026-04-04T22:59:14.795692"
   },
   {
     "name": "SEABOSS Wild-Caught Black Cod Fillet Gindara (Sablefish)",
@@ -2685,7 +2685,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaboss-wild-caught-black-cod-fillet-gindara-sablefish-150-g-90191979",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.003364"
+    "scraped_at": "2026-04-04T22:59:14.795986"
   },
   {
     "name": "Catch Seafood Yellow Fin Tuna Steak Medium Portion (Frozen)",
@@ -2699,7 +2699,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-yellow-fin-tuna-steak-medium-portion-frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.003706"
+    "scraped_at": "2026-04-04T22:59:14.796304"
   },
   {
     "name": "Ken Ken Whole Seabass Fish (Gilled Gutted Scaled ) - Frozen",
@@ -2713,7 +2713,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-whole-seabass-fish-gilled-gutted-scaled-frozen-500-g-90160662",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.004049"
+    "scraped_at": "2026-04-04T22:59:14.796526"
   },
   {
     "name": "Seaco Frozen Rabbit Fish",
@@ -2727,7 +2727,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaco-frozen-rabbit-fish-800g-13228609",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.004710"
+    "scraped_at": "2026-04-04T22:59:14.796744"
   },
   {
     "name": "Everbest Vegetarian (EB) Fish Slice",
@@ -2741,7 +2741,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/everbest-vegetarian-eb-fish-slice-1000-g-90183365",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.005044"
+    "scraped_at": "2026-04-04T22:59:14.796961"
   },
   {
     "name": "Churo Salmon Wings",
@@ -2755,7 +2755,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/churo-salmon-wings-1-x-250g-90022748",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.005391"
+    "scraped_at": "2026-04-04T22:59:14.797184"
   },
   {
     "name": "Frozen Seabass Butterfly",
@@ -2769,7 +2769,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/frozen-seabass-butterfly",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.005812"
+    "scraped_at": "2026-04-04T22:59:14.797402"
   },
   {
     "name": "Churo Salmon Sliced",
@@ -2783,7 +2783,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/churo-salmon-sliced-1-x-200g-90022750",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.006349"
+    "scraped_at": "2026-04-04T22:59:14.799556"
   },
   {
     "name": "Twinfish Rolled Ribbonfish Fillet",
@@ -2797,7 +2797,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/twinfish-rolled-ribbonfish-fillet",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:15.006730"
+    "scraped_at": "2026-04-04T22:59:14.799804"
   },
   {
     "name": "Catch Seafood Premium Smoked Salmon Preslice",
@@ -2811,7 +2811,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-premium-smoked-salmon-preslice",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.476374"
+    "scraped_at": "2026-04-04T22:59:16.122155"
   },
   {
     "name": "The Meat Club Wild Caught Snapper - NZ - Frozen",
@@ -2825,7 +2825,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-meat-club-wild-caught-snapper-nz-frozen-250-g-90064417",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.476700"
+    "scraped_at": "2026-04-04T22:59:16.122722"
   },
   {
     "name": "Catch Seafood Tuna Steak Big portion (Frozen)",
@@ -2839,7 +2839,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-tuna-steak-big-portion-frozen-450g-90007381",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.477202"
+    "scraped_at": "2026-04-04T22:59:16.123099"
   },
   {
     "name": "Snow Treasures Soon Hock Whole (Marble Goby) (S)",
@@ -2853,7 +2853,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-soon-hock-whole-marble-goby-s",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.477420"
+    "scraped_at": "2026-04-04T22:59:16.123467"
   },
   {
     "name": "The Fish Farmer Red Snapper Fillet",
@@ -2867,7 +2867,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-red-snapper-fillet-local-seawater-farmed-320-g-90141899",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.477575"
+    "scraped_at": "2026-04-04T22:59:16.123832"
   },
   {
     "name": "The Fish Farmer 7Star SeaPerch Fillet - Local Seawater Farmed",
@@ -2881,7 +2881,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-7star-seaperch-fillet-local-seawater-farmed-320-g-90141904",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.477720"
+    "scraped_at": "2026-04-04T22:59:16.124207"
   },
   {
     "name": "Seaboss Large Unagi Kabayaki Fillet",
@@ -2895,7 +2895,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaboss-large-unagi-kabayaki-fillet-1-pc-90027992",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.477857"
+    "scraped_at": "2026-04-04T22:59:16.124571"
   },
   {
     "name": "Ming Xin Vegetarian Bai Dai Yu",
@@ -2909,7 +2909,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ming-xin-vegetarian-bai-dai-yu",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.478188"
+    "scraped_at": "2026-04-04T22:59:16.124943"
   },
   {
     "name": "Kirei Japanese Karei Fish With Yuzu Miso",
@@ -2923,7 +2923,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-japanese-karei-fish-with-yuzu-miso-frozen-140g-90016476",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.478354"
+    "scraped_at": "2026-04-04T22:59:16.125300"
   },
   {
     "name": "Catch Seafood Tiger Prawn Meat with tail on",
@@ -2937,7 +2937,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-tiger-prawn-meat-with-tail-on",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.478487"
+    "scraped_at": "2026-04-04T22:59:16.125672"
   },
   {
     "name": "Ken Ken Breaded Fish Fillet - Frozen",
@@ -2951,7 +2951,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-breaded-fish-fillet-frozen-600-g-90160682",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.481852"
+    "scraped_at": "2026-04-04T22:59:16.126060"
   },
   {
     "name": "Catch Seafood Salmon Cube",
@@ -2965,7 +2965,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-cube-1",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.482063"
+    "scraped_at": "2026-04-04T22:59:16.126425"
   },
   {
     "name": "Kirei Komochi Premium Shishamo",
@@ -2979,7 +2979,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-komochi-premium-shishamo-larger-6l-5-pieces-67-5-g-90158129",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.482345"
+    "scraped_at": "2026-04-04T22:59:16.126781"
   },
   {
     "name": "Yi Dah Xing Veg. Frag Fish Slice",
@@ -2993,7 +2993,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/yi-dah-xing-veg-frag-fish-slice-500-g-90023416",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.482487"
+    "scraped_at": "2026-04-04T22:59:16.127139"
   },
   {
     "name": "Frozen Salmon Trout Portion Cut",
@@ -3007,7 +3007,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/frozen-salmon-trout-portion-cut-1",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.482626"
+    "scraped_at": "2026-04-04T22:59:16.127497"
   },
   {
     "name": "Whole Perfect Vegan Tuna",
@@ -3021,7 +3021,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/whole-perfect-vegan-tuna-200-g-90023404",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.482767"
+    "scraped_at": "2026-04-04T22:59:16.127868"
   },
   {
     "name": "Catch Seafood Dory Slice",
@@ -3035,7 +3035,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-dory-slice-300-g-90111436",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.482921"
+    "scraped_at": "2026-04-04T22:59:16.128234"
   },
   {
     "name": "CB Frozen Wild Catch Cod Fish Steak Cut (1pc)",
@@ -3049,7 +3049,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/cb-frozen-wild-catch-cod-fish-steak-cut-1pc-200-g-90148633",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.483159"
+    "scraped_at": "2026-04-04T22:59:16.128602"
   },
   {
     "name": "Ken Ken Golden Pomfret - Gilled & Gutted",
@@ -3063,7 +3063,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-golden-pomfret---gilled-and-gutted-2",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.483302"
+    "scraped_at": "2026-04-04T22:59:16.128970"
   },
   {
     "name": "Catch Seafood Cod Portion Loin Wild Caught Chilean (Frozen)",
@@ -3077,7 +3077,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-cod-portion-loin-wild-caught-chilean-frozen-230g-90007367",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:16.483436"
+    "scraped_at": "2026-04-04T22:59:16.129336"
   },
   {
     "name": "The Meat Club Wild Caught Tarakihi (Sea Bream) - NZ - Frozen",
@@ -3091,7 +3091,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-meat-club-wild-caught-tarakihi-sea-bream-nz-frozen-250-g-90064418",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.634248"
+    "scraped_at": "2026-04-04T22:59:17.490503"
   },
   {
     "name": "Catch Seafood Oyster Breaded Extra Large",
@@ -3105,7 +3105,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-oyster-breaded-extra-large",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.634681"
+    "scraped_at": "2026-04-04T22:59:17.490771"
   },
   {
     "name": "Kirei Japanese Ma-Aji Hiraki Fish",
@@ -3119,7 +3119,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-japanese-ma-aji-hiraki-fish-frozen-100g-90013966",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.634952"
+    "scraped_at": "2026-04-04T22:59:17.490927"
   },
   {
     "name": "The Fish Farmer Grey Mullet Fillet - Local Seawater Farmed",
@@ -3133,7 +3133,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-grey-mullet-fillet-local-seawater-farmed-280-g-90141900",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.635209"
+    "scraped_at": "2026-04-04T22:59:17.491070"
   },
   {
     "name": "Vegetarian World Vegan Saury Fish",
@@ -3147,7 +3147,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/vegetarian-world-vegan-saury-fish-1000-g-90091074",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.635464"
+    "scraped_at": "2026-04-04T22:59:17.491209"
   },
   {
     "name": "SEABOSS Salmon Portion Fillet",
@@ -3161,7 +3161,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaboss-salmon-portion-fillet-180-g-90191981",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.635697"
+    "scraped_at": "2026-04-04T22:59:17.491351"
   },
   {
     "name": "Catch Seafood Halibut Portion Cut - Frozen",
@@ -3175,7 +3175,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-halibut-portion-cut---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.635912"
+    "scraped_at": "2026-04-04T22:59:17.491491"
   },
   {
     "name": "Seaco Sutchi Fillet",
@@ -3189,7 +3189,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaco-sutchi-fillet-800-g-90140954",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.636128"
+    "scraped_at": "2026-04-04T22:59:17.491646"
   },
   {
     "name": "Kirei Komochi Premium Shishamo - Standard",
@@ -3203,7 +3203,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-komochi-premium-shishamo-standard-2-5l-12-pieces-162-g-90158142",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.636346"
+    "scraped_at": "2026-04-04T22:59:17.491786"
   },
   {
     "name": "Kirei Komochi Shishamo Capelin Fish with Roe",
@@ -3217,7 +3217,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-komochi-shishamo-bigger-4l-10-pcs-capelin-fish-with-roe-135-g-90158158",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.636559"
+    "scraped_at": "2026-04-04T22:59:17.491927"
   },
   {
     "name": "Kirei Deep Fry Chirimen",
@@ -3231,7 +3231,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-deep-fry-chirimen-40-g-90017792",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.636772"
+    "scraped_at": "2026-04-04T22:59:17.492068"
   },
   {
     "name": "Whole Perfect Vegan No1 House Fish",
@@ -3245,7 +3245,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/whole-perfect-vegan-no1-house-fish-260-g-90023403",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.636998"
+    "scraped_at": "2026-04-04T22:59:17.492206"
   },
   {
     "name": "Snow Treasures Premium Salmon Roe (Ikura)",
@@ -3259,7 +3259,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-premium-salmon-roe-ikura-500-g-90095268",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.637304"
+    "scraped_at": "2026-04-04T22:59:17.492342"
   },
   {
     "name": "Fisher's Catch Cod Portion Skinless",
@@ -3273,7 +3273,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/fishers-catch-cod-portion-skinless",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.637523"
+    "scraped_at": "2026-04-04T22:59:17.492478"
   },
   {
     "name": "Catch Seafood Wild Atlantic Cod Value Pack",
@@ -3287,7 +3287,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-wild-atlantic-cod-fillet",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.637742"
+    "scraped_at": "2026-04-04T22:59:17.492613"
   },
   {
     "name": "Catch Seafood Trout Fillet",
@@ -3301,7 +3301,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-trout-fillet-1-5-kg-90122049",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.637969"
+    "scraped_at": "2026-04-04T22:59:17.492749"
   },
   {
     "name": "Ahimsa OATS CODFISH (8PCS)",
@@ -3315,7 +3315,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ahimsa-oats-codfish-8pcs-8-g-90183364",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.638191"
+    "scraped_at": "2026-04-04T22:59:17.492885"
   },
   {
     "name": "The Meat Club Wild Caught Gurnard - NZ - Frozen",
@@ -3329,7 +3329,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-meat-club-wild-caught-gurnard-nz-frozen-250-g-90064416",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.638406"
+    "scraped_at": "2026-04-04T22:59:17.493024"
   },
   {
     "name": "Pan Royal Cooked Black Tiger Prawn",
@@ -3343,7 +3343,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/pan-royal-cooked-black-tiger-prawn",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.638622"
+    "scraped_at": "2026-04-04T22:59:17.493165"
   },
   {
     "name": "SEABOSS Wild-caught Silver Cod Fish Fillet",
@@ -3357,7 +3357,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaboss-wild-caught-silver-cod-fish-fillet-200-g-90191980",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:18.638837"
+    "scraped_at": "2026-04-04T22:59:17.493303"
   },
   {
     "name": "Frozen Japan Imitation King Crab Seafood Leg Stick",
@@ -3371,7 +3371,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/frozen-japan-imitation-king-crab-seafood-leg-stick",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.179654"
+    "scraped_at": "2026-04-04T22:59:18.875132"
   },
   {
     "name": "Kirei Frozen Kabayaki Unagi",
@@ -3385,7 +3385,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-frozen-kabayaki-unagi-1-pc-250-g-90098167",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.182468"
+    "scraped_at": "2026-04-04T22:59:18.875361"
   },
   {
     "name": "Kirei Hokkaido Ma-Hokke Hiraki Fish",
@@ -3399,7 +3399,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-hokkaido-ma-hokke-hiraki-fish-frozen-250g-90013965",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.183084"
+    "scraped_at": "2026-04-04T22:59:18.875510"
   },
   {
     "name": "The Fish Farmer Barramundi Asian Seabass Fillet",
@@ -3413,7 +3413,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/the-fish-farmer-barramundi-fillet-local-seawater-farmed-320-g-90141898",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.183495"
+    "scraped_at": "2026-04-04T22:59:18.875642"
   },
   {
     "name": "Daiginjo Zuke No Moto Frozen Selection Fish Type Marination",
@@ -3427,7 +3427,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/daiginjo-zuke-no-moto-frozen-selection-fish-type-marination",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.183853"
+    "scraped_at": "2026-04-04T22:59:18.875781"
   },
   {
     "name": "Koyo Suisan Sashimi Iwashi Hokkaido Sardine fillet Skin-on",
@@ -3441,7 +3441,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/koyo-suisan-sashimi-iwashi-hokkaido-sardine-fillet-skin-on-200-g-90140713",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.184210"
+    "scraped_at": "2026-04-04T22:59:18.875909"
   },
   {
     "name": "Kirei Japanese Sawara Fish With Saikyo Miso",
@@ -3455,7 +3455,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-japanese-sawara-fish-with-saikyo-miso-frozen-70g-90016475",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.184607"
+    "scraped_at": "2026-04-04T22:59:18.876040"
   },
   {
     "name": "Fresh Frozen Flower Grouper Butterfly",
@@ -3469,7 +3469,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/fresh-frozen-flower-grouper-butterfly",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.185053"
+    "scraped_at": "2026-04-04T22:59:18.876171"
   },
   {
     "name": "Catch Seafood Premium Scottish Salmon Portion Loch Duart",
@@ -3483,7 +3483,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-premium-scottish-salmon-portion-loch-duart",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.185408"
+    "scraped_at": "2026-04-04T22:59:18.876300"
   },
   {
     "name": "Serve by Hai Sia Trout Portion - Frozen",
@@ -3497,7 +3497,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-trout-portion-frozen-200-g-90198860",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.185735"
+    "scraped_at": "2026-04-04T22:59:18.876445"
   },
   {
     "name": "Churo Salmon Steak (Portion)",
@@ -3511,7 +3511,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/churo-salmon-steak-portion-1-x-240g-90022749",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.186064"
+    "scraped_at": "2026-04-04T22:59:18.876584"
   },
   {
     "name": "Tasty Food Affair Atlantic Salmon Portion Cut",
@@ -3525,7 +3525,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/tasty-food-affair-atlantic-salmon-portion-cut-180-g-90076858",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.186392"
+    "scraped_at": "2026-04-04T22:59:18.876714"
   },
   {
     "name": "Catch Seafood Atlantic Salmon Portion",
@@ -3539,7 +3539,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-atlantic-salmon-portion",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.186747"
+    "scraped_at": "2026-04-04T22:59:18.876844"
   },
   {
     "name": "Kirei Japan Chirimen",
@@ -3553,7 +3553,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-japan-chirimen-26-g-90017793",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.187291"
+    "scraped_at": "2026-04-04T22:59:18.876971"
   },
   {
     "name": "Ken Ken Sutchi Fillet - Frozen",
@@ -3567,7 +3567,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-sutchi-fillet-frozen-575-g-90160616",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.187685"
+    "scraped_at": "2026-04-04T22:59:18.877100"
   },
   {
     "name": "Kirei Ume Plum Chirimen",
@@ -3581,7 +3581,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/kirei-ume-plum-chirimen-55-g-90017798",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.188010"
+    "scraped_at": "2026-04-04T22:59:18.877231"
   },
   {
     "name": "Catch Seafood Salmon Garlic Chili",
@@ -3595,7 +3595,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-salmon-garlic-chili-100-g-90146356",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.188317"
+    "scraped_at": "2026-04-04T22:59:18.877357"
   },
   {
     "name": "Whole Perfect VEGETARIAN SALTED FISH / Vegan",
@@ -3609,7 +3609,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/whole-perfect-vegetarian-salted-fish-vegan-150-g-90037152",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.188640"
+    "scraped_at": "2026-04-04T22:59:18.877484"
   },
   {
     "name": "CB Fish Vege Roll (20pcs)",
@@ -3623,7 +3623,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/cb-fish-vege-roll-20pcs-200-g-90011404",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.188942"
+    "scraped_at": "2026-04-04T22:59:18.877610"
   },
   {
     "name": "Seafood Boy Frozen Norwegian Salmon Belly",
@@ -3637,7 +3637,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seafood-boy-frozen-norwegian-salmon-belly",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:20.189324"
+    "scraped_at": "2026-04-04T22:59:18.877737"
   },
   {
     "name": "Batang Spanish Mackerel Steak - Frozen",
@@ -3651,7 +3651,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/batang--spanish-mackerel-steak-2kg---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.647558"
+    "scraped_at": "2026-04-04T22:59:20.194107"
   },
   {
     "name": "Seaco Frozen Fish Fillet - Premium Halibut",
@@ -3665,7 +3665,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaco-premium-halibut-fillet-320g-13013999",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.647819"
+    "scraped_at": "2026-04-04T22:59:20.194973"
   },
   {
     "name": "Seaco Frozen Saba Fillet",
@@ -3679,7 +3679,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/seaco-frozen-saba-fillet-400g-13258473",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.647977"
+    "scraped_at": "2026-04-04T22:59:20.195442"
   },
   {
     "name": "Catch Seafood Barramundi Fillet Large",
@@ -3693,7 +3693,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-barramundi-fillet-large",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.648127"
+    "scraped_at": "2026-04-04T22:59:20.195878"
   },
   {
     "name": "Aw's Market Premium Cod Fish Fillet",
@@ -3707,7 +3707,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/aw-s-market-premium-cod-fish-fillet-150-g-90143953",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.648256"
+    "scraped_at": "2026-04-04T22:59:20.196313"
   },
   {
     "name": "Toba White Fish Fillet",
@@ -3721,7 +3721,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/toba-white-fish-fillet-340-g-90047892",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.648385"
+    "scraped_at": "2026-04-04T22:59:20.196680"
   },
   {
     "name": "Aw's Market Premium Cod Fish Steak",
@@ -3735,7 +3735,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/aw-s-market-premium-cod-fish-steak-250-g-90143952",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.648513"
+    "scraped_at": "2026-04-04T22:59:20.197038"
   },
   {
     "name": "Snow Treasures Kombu Miso Black Cod",
@@ -3749,7 +3749,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-kombu-miso-black-cod",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.648642"
+    "scraped_at": "2026-04-04T22:59:20.197399"
   },
   {
     "name": "Ken Ken Pangasius Fish Slice - Frozen",
@@ -3763,7 +3763,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-pangasius-fish-slice-frozen-1-kg-90160667",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.648800"
+    "scraped_at": "2026-04-04T22:59:20.197751"
   },
   {
     "name": "Ken Ken Seabass Fish Jaw - Frozen",
@@ -3777,7 +3777,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/ken-ken-seabass-fish-jaw-frozen-1-kg-90160663",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.648945"
+    "scraped_at": "2026-04-04T22:59:20.198110"
   },
   {
     "name": "Mermaid Norwegian Smoked Salmon Slice",
@@ -3791,7 +3791,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/mermaid-norwegian-smoked-salmon-slice-900-g-90111615",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.649087"
+    "scraped_at": "2026-04-04T22:59:20.198447"
   },
   {
     "name": "Catch Seafood Barramundi Portion 3pcs (Frozen)",
@@ -3805,7 +3805,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/catch-seafood-barramundi-portion-3pcs-frozen-180g-x-3-90007363",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.649215"
+    "scraped_at": "2026-04-04T22:59:20.198775"
   },
   {
     "name": "Serve by Hai Sia Canton Oden - Frozen",
@@ -3819,7 +3819,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/serve-by-hai-sia-canton-oden---frozen",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.649364"
+    "scraped_at": "2026-04-04T22:59:20.199086"
   },
   {
     "name": "Snow Treasures Kombu Miso Salmon",
@@ -3833,7 +3833,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/snow-treasures-kombu-miso-salmon",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.649495"
+    "scraped_at": "2026-04-04T22:59:20.199399"
   },
   {
     "name": "CB Patin Rose Roll",
@@ -3847,7 +3847,7 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/cb-patin-rose-roll-1000-g-90024659",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.649629"
+    "scraped_at": "2026-04-04T22:59:20.199727"
   },
   {
     "name": "CB IQF Dory Cube",
@@ -3861,6 +3861,6 @@
     "category_slug": "frozen-seafood",
     "product_url": "https://www.fairprice.com.sg/product/cb-iqf-dory-cube-1-kg-90012241",
     "store": "fairprice",
-    "scraped_at": "2026-04-04T18:44:21.649761"
+    "scraped_at": "2026-04-04T22:59:20.200045"
   }
 ]
