@@ -9,3 +9,6 @@ venv/
 dataset/raw/
 dataset/processed/
 data/debug/
+data/matching/
+data/price_comparison_preview/
+pipeline/matching_design.md
