@@ -15,7 +15,7 @@ RAW_DATA_PATH = REPO_ROOT / "data" / "raw" / "redmart"
 
 @dag(
     dag_id="redmart_scraper",
-    schedule="30 14 * * *",  # runs every day at 2:30pm
+    schedule="30 6 * * *",  # runs every day at 2:30pm SGT (6:30am UTC)
     start_date=datetime(2026, 4, 2),
     catchup=False,
     default_args={

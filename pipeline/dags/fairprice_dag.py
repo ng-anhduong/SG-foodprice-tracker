@@ -56,7 +56,7 @@ RAW_DATA_PATH = os.path.expanduser("~/Documents/GitHub/SG-foodprice-tracker/data
 @dag(
     dag_id="fairprice_scraper",
     description="Scrapes FairPrice product prices daily and saves raw JSON",
-    schedule="0 14 * * *",   # runs every day at 2pm
+    schedule="0 6 * * *",   # runs every day at 2pm SGT (6am UTC)
     start_date=datetime(2026, 4, 1),
     catchup=False,           # don't backfill missed runs
     tags=["fairprice", "scraping"],
