@@ -618,7 +618,11 @@ def build_canonical_key(
     return f"{slugify(category)}-{brand_part}-{digest}"
 
 
-def build_groups(parsed_products: list[ParsedProduct], strong_pairs: list[dict[str, Any]]):
+def build_groups(
+    parsed_products: list[ParsedProduct],
+    strong_pairs: list[dict[str, Any]],
+    category: str,
+):
     uf = UnionFind()
     for pair in strong_pairs:
         uf.union(pair["product_id_a"], pair["product_id_b"])
@@ -643,7 +647,7 @@ def build_groups(parsed_products: list[ParsedProduct], strong_pairs: list[dict[s
         )
         variant_tokens = sorted({v for i in group_items for v in i.variant_tokens})
         canonical_key = build_canonical_key(
-            DEFAULT_CATEGORY,
+            category,
             canonical_brand,
             canonical_name,
             size_total,
@@ -661,7 +665,7 @@ def build_groups(parsed_products: list[ParsedProduct], strong_pairs: list[dict[s
                 "canonical_key": canonical_key,
                 "canonical_name": canonical_name,
                 "brand": canonical_brand,
-                "unified_category": DEFAULT_CATEGORY,
+                "unified_category": category,
                 "size_total_value": size_total,
                 "size_base_unit": size_unit,
                 "size_display": size_display,
@@ -955,7 +959,7 @@ def run(category: str = DEFAULT_CATEGORY) -> dict[str, Any]:
     strong_pairs_raw = [row for row in pair_matches if row["match_status"] == "strong_match"]
     strong_pairs = filter_reciprocal_strong_pairs(pair_matches)
     review_pairs = [row for row in pair_matches if row["match_status"] == "review"]
-    canonical_products, canonical_members = build_groups(products, strong_pairs)
+    canonical_products, canonical_members = build_groups(products, strong_pairs, category)
 
     latest_dates_slug = "-".join(
         f"{store}_{date_str}" for store, date_str in sorted(store_dates.items())

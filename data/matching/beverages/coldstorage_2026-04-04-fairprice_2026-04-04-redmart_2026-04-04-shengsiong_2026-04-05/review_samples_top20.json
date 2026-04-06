@@ -1,0 +1,1547 @@
+{
+  "strong_matches": [
+    {
+      "product_id_a": 85144,
+      "product_id_b": 110961,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Anlene Gold Concentrate UHT Milk - Chocolate",
+      "name_b": "Anlene Gold Concentrate UHT Milk - Chocolate",
+      "brand_a": "anlene",
+      "brand_b": "anlene",
+      "size_a": "4 x 125ml",
+      "size_b": "4 x 125ml",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 1.0,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 85296,
+      "product_id_b": 110566,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Anlene Gold Concentrate UHT Milk - Vanilla",
+      "name_b": "Anlene Gold Concentrate UHT Milk - Vanilla",
+      "brand_a": "anlene",
+      "brand_b": "anlene",
+      "size_a": "4 x 125ml",
+      "size_b": "4 x 125ml",
+      "variant_a": [
+        "vanilla"
+      ],
+      "variant_b": [
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 1.0,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 85376,
+      "product_id_b": 110107,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Pokka Lychee Oolong Tea",
+      "name_b": "Pokka Lychee Oolong Tea",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "lychee",
+        "oolong"
+      ],
+      "variant_b": [
+        "lychee",
+        "oolong"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 1.0,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 98402,
+      "product_id_b": 95834,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Marigold 100% Orange Juice 1L",
+      "name_b": "Marigold 100% Orange Juice 1L",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "1l",
+      "size_b": "1l",
+      "variant_a": [
+        "orange"
+      ],
+      "variant_b": [
+        "orange"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 85045,
+      "product_id_b": 110344,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Nescafe Gold Original",
+      "name_b": "Nescafe Gold Original",
+      "brand_a": "nescafe",
+      "brand_b": "nescafe",
+      "size_a": "200g",
+      "size_b": "200g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 85437,
+      "product_id_b": 110359,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Nescafe Instant White Coffee - Original",
+      "name_b": "Nescafe White Coffee Original",
+      "brand_a": "nescafe",
+      "brand_b": "nescafe",
+      "size_a": "14 x 30g",
+      "size_b": "14 x 30g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 85400,
+      "product_id_b": 110625,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Oatside Oat Milk - Coffee",
+      "name_b": "OATSIDE Oat Milk - Coffee",
+      "brand_a": "oatside",
+      "brand_b": "oatside",
+      "size_a": "1l",
+      "size_b": "1l",
+      "variant_a": [
+        "oat"
+      ],
+      "variant_b": [
+        "oat"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 85680,
+      "product_id_b": 110942,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Suntory Boss Coffee Black No Sugar",
+      "name_b": "Suntory Boss Coffee Black No Sugar",
+      "brand_a": "suntory",
+      "brand_b": "suntory",
+      "size_a": "250ml",
+      "size_b": "250ml",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 85262,
+      "product_id_b": 110428,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Unisoy Instant Nutritious Black Soy Milk Powder",
+      "name_b": "Unisoy Nutritious Black Soy Milk Powder",
+      "brand_a": "unisoy",
+      "brand_b": "unisoy",
+      "size_a": "12 x 32g",
+      "size_b": "12 x 32g",
+      "variant_a": [
+        "soy"
+      ],
+      "variant_b": [
+        "soy"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 85363,
+      "product_id_b": 96002,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Marigold UHT Packet Milk - Strawberry",
+      "name_b": "Marigold UHT Strawberry Milk",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "1l",
+      "size_b": "1l",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9079,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.977,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.91; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 85257,
+      "product_id_b": 110608,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold UHT Packet Milk - Strawberry",
+      "name_b": "Marigold UHT Strawberry Milk",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "6 x 200ml",
+      "size_b": "6 x 200ml",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9079,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.977,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.91; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 85280,
+      "product_id_b": 110614,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold UHT Packet Milk - Chocolate",
+      "name_b": "Marigold UHT Chocolate Milk",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "24 x 200ml",
+      "size_b": "24 x 200ml",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9028,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9757,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 98354,
+      "product_id_b": 95893,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Fanta Orange 1.5L",
+      "name_b": "Fanta Orange Bottle Drink (1.5L)",
+      "brand_a": "fanta",
+      "brand_b": "fanta",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "orange"
+      ],
+      "variant_b": [
+        "orange"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.975,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.50"
+    },
+    {
+      "product_id_a": 85432,
+      "product_id_b": 110686,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Fanta Bottle Drink - Strawberry",
+      "name_b": "Fanta Strawberry",
+      "brand_a": "fanta",
+      "brand_b": "fanta",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.975,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.50"
+    },
+    {
+      "product_id_a": 84907,
+      "product_id_b": 110692,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Fanta Can Drink - Orange",
+      "name_b": "Fanta Orange",
+      "brand_a": "fanta",
+      "brand_b": "fanta",
+      "size_a": "12 x 320ml",
+      "size_b": "12 x 320ml",
+      "variant_a": [
+        "orange"
+      ],
+      "variant_b": [
+        "orange"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.975,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.50"
+    },
+    {
+      "product_id_a": 85670,
+      "product_id_b": 110199,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Packet Drink - Lychee (Less Sweet)",
+      "name_b": "Marigold Lychee Drink Less Sweet",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "6 x 250ml",
+      "size_b": "6 x 250ml",
+      "variant_a": [
+        "lychee"
+      ],
+      "variant_b": [
+        "lychee"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.975,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.50"
+    },
+    {
+      "product_id_a": 85189,
+      "product_id_b": 110515,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Packet Fruit Drink - Apple",
+      "name_b": "Marigold Fruit Drink - Apple",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "6 x 250ml",
+      "size_b": "6 x 250ml",
+      "variant_a": [
+        "apple"
+      ],
+      "variant_b": [
+        "apple"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.975,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.50"
+    },
+    {
+      "product_id_a": 85565,
+      "product_id_b": 110513,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Packet Fruit Drink - Grape",
+      "name_b": "Marigold Fruit Drink - Grape",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "6 x 250ml",
+      "size_b": "6 x 250ml",
+      "variant_a": [
+        "grape"
+      ],
+      "variant_b": [
+        "grape"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.975,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.50"
+    },
+    {
+      "product_id_a": 85330,
+      "product_id_b": 110517,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Packet Fruit Drink - Mango",
+      "name_b": "Marigold Fruit Drink - Mango",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "6 x 250ml",
+      "size_b": "6 x 250ml",
+      "variant_a": [
+        "mango"
+      ],
+      "variant_b": [
+        "mango"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.975,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.50"
+    },
+    {
+      "product_id_a": 85361,
+      "product_id_b": 110528,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Packet Fruit Drink - Orange",
+      "name_b": "Marigold Fruit Drink - Orange",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "6 x 250ml",
+      "size_b": "6 x 250ml",
+      "variant_a": [
+        "orange"
+      ],
+      "variant_b": [
+        "orange"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.975,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.50"
+    }
+  ],
+  "review_matches": [
+    {
+      "product_id_a": 98450,
+      "product_id_b": 85376,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Pokka Lychee Oolong Tea 1.5L",
+      "name_b": "Pokka Lychee Oolong Tea",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "lychee",
+        "oolong"
+      ],
+      "variant_b": [
+        "lychee",
+        "oolong"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8043,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9511,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 98450,
+      "product_id_b": 110107,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Pokka Lychee Oolong Tea 1.5L",
+      "name_b": "Pokka Lychee Oolong Tea",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "lychee",
+        "oolong"
+      ],
+      "variant_b": [
+        "lychee",
+        "oolong"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8043,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9511,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 98448,
+      "product_id_b": 96020,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Pokka Lemon Tea 1.5L",
+      "name_b": "Pokka Ice Lemon Tea 1.5L",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "lemon"
+      ],
+      "variant_b": [
+        "lemon"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.95,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 98438,
+      "product_id_b": 110906,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Pokka Honey Green Tea 1.5L",
+      "name_b": "Pokka Honey Green Tea",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "green tea"
+      ],
+      "variant_b": [
+        "green tea"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7852,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9463,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.79; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 85148,
+      "product_id_b": 110865,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Milo Chocolate Malt Milk UHT Packet Drink",
+      "name_b": "Milo UHT Chocolate Malt Packet Drink",
+      "brand_a": "milo",
+      "brand_b": "milo",
+      "size_a": "1l",
+      "size_b": "1l",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7841,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.946,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 95960,
+      "product_id_b": 110608,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Strawberry UHT Milk (6 X 200ML)",
+      "name_b": "Marigold UHT Strawberry Milk",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "6 x 200ml",
+      "size_b": "6 x 200ml",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7773,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9443,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 85038,
+      "product_id_b": 110760,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "OSK Japanese Green Tea Bags",
+      "name_b": "OSK Japanese Green Tea Teabag",
+      "brand_a": "osk",
+      "brand_b": "osk",
+      "size_a": "50 x 2g",
+      "size_b": "50 x 2g",
+      "variant_a": [
+        "green tea"
+      ],
+      "variant_b": [
+        "green tea"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7733,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9433,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.77; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 98365,
+      "product_id_b": 110059,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Fuze Tea Lychee Flavoured White Tea Drink 1.5L",
+      "name_b": "FUZE TEA Lychee And Rose Flavoured White Tea Drink",
+      "brand_a": "fuze",
+      "brand_b": "fuze",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "lychee"
+      ],
+      "variant_b": [
+        "lychee"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7719,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.943,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.77; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 95726,
+      "product_id_b": 110614,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Chocolate UHT Milk - Case (24 x 200ML)",
+      "name_b": "Marigold UHT Chocolate Milk",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "24 x 200ml",
+      "size_b": "24 x 200ml",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.769,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9423,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.77; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 95760,
+      "product_id_b": 110614,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Chocolate UHT Milk - Case (24 x 200ML)",
+      "name_b": "Marigold UHT Chocolate Milk",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "24 x 200ml",
+      "size_b": "24 x 200ml",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.769,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9423,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.77; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 98449,
+      "product_id_b": 110093,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Pokka Lemon Tea Less Sugar 1.5L",
+      "name_b": "Pokka Ice Lemon Tea Less Sugar",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "lemon",
+        "less sugar"
+      ],
+      "variant_b": [
+        "lemon",
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7663,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9416,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.77; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 85761,
+      "product_id_b": 110600,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "F & N Magnolia UHT Packet Milk - Strawberry",
+      "name_b": "Magnolia UHT Strawberry Milk",
+      "brand_a": "magnolia",
+      "brand_b": "magnolia",
+      "size_a": "6 x 200ml",
+      "size_b": "6 x 200ml",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7605,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9401,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.76; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 96020,
+      "product_id_b": 110092,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Pokka Ice Lemon Tea 1.5L",
+      "name_b": "Pokka Ice Lemon Tea",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "lemon"
+      ],
+      "variant_b": [
+        "lemon"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7594,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9399,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.76; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 85455,
+      "product_id_b": 110604,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "F & N Magnolia UHT Packet Milk - Chocolate",
+      "name_b": "Magnolia UHT Chocolate Milk",
+      "brand_a": "magnolia",
+      "brand_b": "magnolia",
+      "size_a": "6 x 200ml",
+      "size_b": "6 x 200ml",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7525,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9381,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.75; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 99021,
+      "product_id_b": 110907,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Pokka Lemon Tea Zero Sugar 1.5L",
+      "name_b": "Pokka Lemon Iced Tea Zero Sugar",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "lemon",
+        "zero"
+      ],
+      "variant_b": [
+        "lemon",
+        "zero"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.751,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9377,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.75; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 99022,
+      "product_id_b": 110901,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Pokka Peach Tea Zero Sugar 1.5L",
+      "name_b": "Pokka Peach Iced Tea Zero Sugar",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "1.5l",
+      "size_b": "1.5l",
+      "variant_a": [
+        "peach",
+        "zero"
+      ],
+      "variant_b": [
+        "peach",
+        "zero"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.751,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9377,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.75; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 98766,
+      "product_id_b": 110415,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Nescafe Gold 3 In 1 Original 20x24g",
+      "name_b": "Nescafe Gold 3 In 1 Original",
+      "brand_a": "nescafe",
+      "brand_b": "nescafe",
+      "size_a": "20 x 24g",
+      "size_b": "20 x 24g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8064,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9366,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 96104,
+      "product_id_b": 110230,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Pokka Kiyo Kyoho Grape Juice Less Sugar 6 X 250ML",
+      "name_b": "Pokka Kiyo Grape Juice Drink Less Sugar",
+      "brand_a": "pokka",
+      "brand_b": "pokka",
+      "size_a": "6 x 250ml",
+      "size_b": "6 x 250ml",
+      "variant_a": [
+        "grape",
+        "less sugar"
+      ],
+      "variant_b": [
+        "grape",
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7974,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9344,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 85556,
+      "product_id_b": 110760,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "OSK Japanese Green Tea Bags - Roasted",
+      "name_b": "OSK Japanese Green Tea Teabag",
+      "brand_a": "osk",
+      "brand_b": "osk",
+      "size_a": "50 x 2g",
+      "size_b": "50 x 2g",
+      "variant_a": [
+        "green tea"
+      ],
+      "variant_b": [
+        "green tea"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7326,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9331,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.73; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 85268,
+      "product_id_b": 110778,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Super 3 in 1 Instant Milk Tea - Original",
+      "name_b": "Super Instant Original Milk Tea",
+      "brand_a": "super",
+      "brand_b": "super",
+      "size_a": "25 x 15g",
+      "size_b": "25 x 15g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7299,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9325,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.73; variant=1.00; packaging=1.00"
+    }
+  ],
+  "canonical_products": [
+    {
+      "canonical_key": "beverages-farmhouse-7f8fa25c3b83",
+      "canonical_name": "Farmhouse UHT Low Fat Fresh Milk 1L",
+      "brand": "farmhouse",
+      "unified_category": "Beverages",
+      "size_total_value": 1000.0,
+      "size_base_unit": "ml",
+      "size_display": "1l",
+      "pack_count": 1,
+      "packaging": "carton",
+      "variant_tokens": [],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        85161,
+        95881,
+        110594
+      ],
+      "first_seen_at": "2026-04-04T18:35:25.026889",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-ufc-9122b75a861f",
+      "canonical_name": "Ufc Refresh Lychee With Himalayan Salt 500ml",
+      "brand": "ufc",
+      "unified_category": "Beverages",
+      "size_total_value": 500.0,
+      "size_base_unit": "ml",
+      "size_display": "500ml",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "lychee"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        85633,
+        98482,
+        110555
+      ],
+      "first_seen_at": "2026-04-04T18:36:01.652528",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-milo-770f09c9f073",
+      "canonical_name": "Milo Chocolate Malt Milk UHT Packet Drink 200ML X 24 - Case",
+      "brand": "milo",
+      "unified_category": "Beverages",
+      "size_total_value": 4800.0,
+      "size_base_unit": "ml",
+      "size_display": "24 x 200ml",
+      "pack_count": 24,
+      "packaging": "carton",
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        84793,
+        95919
+      ],
+      "first_seen_at": "2026-04-04T18:34:58.3322",
+      "last_seen_at": "2026-04-04T18:40:08.372231"
+    },
+    {
+      "canonical_key": "beverages-marigold-f6b689ed86cf",
+      "canonical_name": "Marigold Longan Red Dates (Less Sweet) Packet Drink - Case",
+      "brand": "marigold",
+      "unified_category": "Beverages",
+      "size_total_value": 6000.0,
+      "size_base_unit": "ml",
+      "size_display": "24 x 250ml",
+      "pack_count": 24,
+      "packaging": "packet",
+      "variant_tokens": [],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        84813,
+        95722,
+        95753
+      ],
+      "first_seen_at": "2026-04-04T18:34:59.791724",
+      "last_seen_at": "2026-04-04T18:39:46.610405"
+    },
+    {
+      "canonical_key": "beverages-marigold-998682d2c906",
+      "canonical_name": "Marigold Soya Bean (Less Sweet) Packet Drink - Case",
+      "brand": "marigold",
+      "unified_category": "Beverages",
+      "size_total_value": 6000.0,
+      "size_base_unit": "ml",
+      "size_display": "24 x 250ml",
+      "pack_count": 24,
+      "packaging": "packet",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        84822,
+        95810
+      ],
+      "first_seen_at": "2026-04-04T18:34:59.795194",
+      "last_seen_at": "2026-04-04T18:39:52.138267"
+    },
+    {
+      "canonical_key": "beverages-gerolsteiner-51feb459d3b5",
+      "canonical_name": "Gerolsteiner Sparkling Natural Mineral Bottle Water",
+      "brand": "gerolsteiner",
+      "unified_category": "Beverages",
+      "size_total_value": 9000.0,
+      "size_base_unit": "ml",
+      "size_display": "6 x 1.5l",
+      "pack_count": 6,
+      "packaging": "bottle",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        84876,
+        96043
+      ],
+      "first_seen_at": "2026-04-04T18:35:04.32472",
+      "last_seen_at": "2026-04-04T18:40:24.646975"
+    },
+    {
+      "canonical_key": "beverages-fanta-073fdf868dd6",
+      "canonical_name": "Fanta Can Drink - Orange",
+      "brand": "fanta",
+      "unified_category": "Beverages",
+      "size_total_value": 3840.0,
+      "size_base_unit": "ml",
+      "size_display": "12 x 320ml",
+      "pack_count": 12,
+      "packaging": "can",
+      "variant_tokens": [
+        "orange"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        84907,
+        110692
+      ],
+      "first_seen_at": "2026-04-04T18:35:05.825913",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-glaceau-ff1621945af4",
+      "canonical_name": "Glaceau XXX Vitamin Bottle Water - Triple Berry",
+      "brand": "glaceau",
+      "unified_category": "Beverages",
+      "size_total_value": 6000.0,
+      "size_base_unit": "ml",
+      "size_display": "12 x 500ml",
+      "pack_count": 12,
+      "packaging": "bottle",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        84923,
+        110793
+      ],
+      "first_seen_at": "2026-04-04T18:35:07.315593",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-glaceau-22162110e98f",
+      "canonical_name": "Glaceau Essential Vitamin Bottle Water - Orange",
+      "brand": "glaceau",
+      "unified_category": "Beverages",
+      "size_total_value": 6000.0,
+      "size_base_unit": "ml",
+      "size_display": "12 x 500ml",
+      "pack_count": 12,
+      "packaging": "bottle",
+      "variant_tokens": [
+        "orange"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        84951,
+        110797
+      ],
+      "first_seen_at": "2026-04-04T18:35:10.480058",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-nescafe-55078683cca5",
+      "canonical_name": "Nescafe 3 in 1 Instant Coffee - Original",
+      "brand": "nescafe",
+      "unified_category": "Beverages",
+      "size_total_value": 495.0,
+      "size_base_unit": "g",
+      "size_display": "30 x 16.5g",
+      "pack_count": 30,
+      "packaging": null,
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        85027,
+        110417
+      ],
+      "first_seen_at": "2026-04-04T18:35:14.895052",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-coke-de40839e60cf",
+      "canonical_name": "Coca-Cola Zero Sugar Bottle 1.5L",
+      "brand": "coke",
+      "unified_category": "Beverages",
+      "size_total_value": 1500.0,
+      "size_base_unit": "ml",
+      "size_display": "1.5l",
+      "pack_count": 1,
+      "packaging": "bottle",
+      "variant_tokens": [
+        "zero"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "fairprice"
+      ],
+      "source_product_ids": [
+        85039,
+        98336
+      ],
+      "first_seen_at": "2026-04-04T18:35:16.427636",
+      "last_seen_at": "2026-04-04T19:01:09.198038"
+    },
+    {
+      "canonical_key": "beverages-nescafe-aa8ceb4de1e0",
+      "canonical_name": "Nescafe Gold Original",
+      "brand": "nescafe",
+      "unified_category": "Beverages",
+      "size_total_value": 200.0,
+      "size_base_unit": "g",
+      "size_display": "200g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        85045,
+        110344
+      ],
+      "first_seen_at": "2026-04-04T18:35:16.429416",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-marigold-e614076da29c",
+      "canonical_name": "Marigold Evaporated Creamer",
+      "brand": "marigold",
+      "unified_category": "Beverages",
+      "size_total_value": 385.0,
+      "size_base_unit": "g",
+      "size_display": "385g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        85060,
+        95712,
+        95779
+      ],
+      "first_seen_at": "2026-04-04T18:35:17.902669",
+      "last_seen_at": "2026-04-04T18:39:46.813301"
+    },
+    {
+      "canonical_key": "beverages-coke-4c5a24c9079f",
+      "canonical_name": "Coca-Cola Original Taste-Less Sugar 1.5L",
+      "brand": "coke",
+      "unified_category": "Beverages",
+      "size_total_value": 1500.0,
+      "size_base_unit": "ml",
+      "size_display": "1.5l",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "classic",
+        "less sugar"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "fairprice"
+      ],
+      "source_product_ids": [
+        85071,
+        99016
+      ],
+      "first_seen_at": "2026-04-04T18:35:19.311847",
+      "last_seen_at": "2026-04-04T19:01:09.198038"
+    },
+    {
+      "canonical_key": "beverages-ribena-645f464ea558",
+      "canonical_name": "Ribena Blackcurrant Fruit Packet Drink - Less Sweet",
+      "brand": "ribena",
+      "unified_category": "Beverages",
+      "size_total_value": 1200.0,
+      "size_base_unit": "ml",
+      "size_display": "6 x 200ml",
+      "pack_count": 6,
+      "packaging": "packet",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        85072,
+        110958
+      ],
+      "first_seen_at": "2026-04-04T18:35:19.312286",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-farmhouse-6708150ed7ea",
+      "canonical_name": "Farmhouse UHT Milk - Fresh",
+      "brand": "farmhouse",
+      "unified_category": "Beverages",
+      "size_total_value": 12000.0,
+      "size_base_unit": "ml",
+      "size_display": "12 x 1l",
+      "pack_count": 12,
+      "packaging": "carton",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        85077,
+        110593
+      ],
+      "first_seen_at": "2026-04-04T18:35:19.314353",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-100plus-d3e1879f7a8a",
+      "canonical_name": "100Plus Isotonic Drink Original 1.5L",
+      "brand": "100plus",
+      "unified_category": "Beverages",
+      "size_total_value": 1500.0,
+      "size_base_unit": "ml",
+      "size_display": "1.5l",
+      "pack_count": 1,
+      "packaging": "bottle",
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "fairprice"
+      ],
+      "source_product_ids": [
+        85089,
+        98316
+      ],
+      "first_seen_at": "2026-04-04T18:35:20.701755",
+      "last_seen_at": "2026-04-04T19:01:09.198038"
+    },
+    {
+      "canonical_key": "beverages-marigold-b65d87f28ee9",
+      "canonical_name": "Marigold UHT Packet Milk - Low Fat",
+      "brand": "marigold",
+      "unified_category": "Beverages",
+      "size_total_value": 1000.0,
+      "size_base_unit": "ml",
+      "size_display": "1l",
+      "pack_count": 1,
+      "packaging": "carton",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        85093,
+        110607
+      ],
+      "first_seen_at": "2026-04-04T18:35:20.703852",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-vitasoy-6e047b737f0e",
+      "canonical_name": "Vitasoy Soya Bean Packet Drink",
+      "brand": "vitasoy",
+      "unified_category": "Beverages",
+      "size_total_value": 500.0,
+      "size_base_unit": "ml",
+      "size_display": "4 x 125ml",
+      "pack_count": 4,
+      "packaging": "packet",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        85103,
+        110256
+      ],
+      "first_seen_at": "2026-04-04T18:35:20.707884",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    },
+    {
+      "canonical_key": "beverages-marigold-a58f3f0d63bd",
+      "canonical_name": "Marigold UHT Packet Milk - Full Cream",
+      "brand": "marigold",
+      "unified_category": "Beverages",
+      "size_total_value": 12000.0,
+      "size_base_unit": "ml",
+      "size_display": "12 x 1l",
+      "pack_count": 12,
+      "packaging": "carton",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        85121,
+        110612
+      ],
+      "first_seen_at": "2026-04-04T18:35:22.101014",
+      "last_seen_at": "2026-04-05T15:33:04.970085"
+    }
+  ]
+}

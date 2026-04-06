@@ -1,5 +1,16 @@
 -- Derived price comparison views for canonical matched products.
 -- Run this in Supabase SQL Editor after canonical matching tables are populated.
+-- These are useful for development and ad hoc querying, but heavier than the
+-- downstream cached tables built by pipeline/build_price_comparison_tables.py.
+
+create index if not exists idx_products_category_store_scraped
+    on public.products(unified_category, store, scraped_at);
+
+create index if not exists idx_products_scraped_store
+    on public.products(scraped_at, store);
+
+create index if not exists idx_canonical_members_canonical_store
+    on public.canonical_product_members(canonical_product_id, store);
 
 create or replace view public.canonical_product_price_observations as
 with base as (

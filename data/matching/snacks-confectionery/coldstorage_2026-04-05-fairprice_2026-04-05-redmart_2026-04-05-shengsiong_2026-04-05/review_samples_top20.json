@@ -1,0 +1,1575 @@
+{
+  "strong_matches": [
+    {
+      "product_id_a": 119576,
+      "product_id_b": 116309,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Lindt Excellence 78% Dark Chocolate 100g",
+      "name_b": "Lindt Excellence 70% Dark Chocolate 100g",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 120230,
+      "product_id_b": 116483,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Zaini Tsum Tsum Chocolate Eggs 60G",
+      "name_b": "Zaini Tsum Tsum Chocolate Eggs 60G",
+      "brand_a": "zaini",
+      "brand_b": "zaini",
+      "size_a": "60g",
+      "size_b": "60g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 108806,
+      "product_id_b": 116287,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Mamame Tempeh Chips - Original",
+      "name_b": "Mamame Tempeh Chips - Original",
+      "brand_a": "mamame",
+      "brand_b": "mamame",
+      "size_a": "50g",
+      "size_b": "50g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 102553,
+      "product_id_b": 113799,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Cadbury Old Gold Dark Chocolate - 70% Cocoa",
+      "name_b": "Cadbury Old Gold Dark Chocolate - 70% Cocoa",
+      "brand_a": "cadbury",
+      "brand_b": "cadbury",
+      "size_a": "180g",
+      "size_b": "180g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 102650,
+      "product_id_b": 113812,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Cadbury Old Gold Dark Chocolate - Roast Almond",
+      "name_b": "Cadbury Old Gold Dark Chocolate Roast Almond",
+      "brand_a": "cadbury",
+      "brand_b": "cadbury",
+      "size_a": "180g",
+      "size_b": "180g",
+      "variant_a": [
+        "almond",
+        "choc"
+      ],
+      "variant_b": [
+        "almond",
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 102527,
+      "product_id_b": 113820,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Ferrero Rocher Chocolate - T16",
+      "name_b": "Ferrero Rocher Chocolate T16",
+      "brand_a": "ferrero",
+      "brand_b": "ferrero",
+      "size_a": "200g",
+      "size_b": "200g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 102536,
+      "product_id_b": 113822,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Ferrero Rocher Chocolate - T24",
+      "name_b": "Ferrero Rocher Chocolate T24",
+      "brand_a": "ferrero",
+      "brand_b": "ferrero",
+      "size_a": "300g",
+      "size_b": "300g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 102623,
+      "product_id_b": 113818,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Ferrero Rocher Chocolate - T30",
+      "name_b": "Ferrero Rocher Chocolate T30",
+      "brand_a": "ferrero",
+      "brand_b": "ferrero",
+      "size_a": "375g",
+      "size_b": "375g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116113,
+      "product_id_b": 113265,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Calbee Original Prawn Crackers",
+      "name_b": "Calbee Original Prawn Crackers",
+      "brand_a": "calbee",
+      "brand_b": "calbee",
+      "size_a": "90g",
+      "size_b": "90g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116203,
+      "product_id_b": 113674,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Mitsuya Tasty Biscuit Stick",
+      "name_b": "Mitsuya Tasty Biscuit Stick",
+      "brand_a": "mitsuya",
+      "brand_b": "mitsuya",
+      "size_a": "40g",
+      "size_b": "40g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 0.7,
+      "packaging_score": 1.0,
+      "match_score": 0.97,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=0.70; packaging=1.00"
+    },
+    {
+      "product_id_a": 102690,
+      "product_id_b": 113806,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Cadbury Dairy Milk Chocolate Roll - Milk",
+      "name_b": "Cadbury Dairy Milk Chocolate Roll",
+      "brand_a": "cadbury",
+      "brand_b": "cadbury",
+      "size_a": "55g",
+      "size_b": "55g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9273,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9668,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.93; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119726,
+      "product_id_b": 113648,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Meiji Lucky Stick Chocolate, 120g",
+      "name_b": "Meiji Lucky Stick Chocolate",
+      "brand_a": "meiji",
+      "brand_b": "meiji",
+      "size_a": "120g",
+      "size_b": "120g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8649,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9662,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.86; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 119592,
+      "product_id_b": 116244,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Lindt Lindor Assorted Chocolate Cornet 200g",
+      "name_b": "Lindt Lindor Cornet Chocolate Assorted 200g",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "200g",
+      "size_b": "200g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9243,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9661,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.92; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116133,
+      "product_id_b": 113441,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Max Oceans Crispy Chicken Skin Original 30G",
+      "name_b": "MAX OCEANS Crispy Chicken Skin Original",
+      "brand_a": "max",
+      "brand_b": "max",
+      "size_a": "30g",
+      "size_b": "30g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9234,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9659,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.92; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 108828,
+      "product_id_b": 113929,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Naspac Pudding with Nata De Coco - Mango",
+      "name_b": "Naspac Mango Pudding With Nata De Coco",
+      "brand_a": "naspac",
+      "brand_b": "naspac",
+      "size_a": "380g",
+      "size_b": "380g",
+      "variant_a": [
+        "mango"
+      ],
+      "variant_b": [
+        "mango"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9192,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9648,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.92; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 120154,
+      "product_id_b": 113898,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Van Houten Semi-Sweet Almond Pouch 80g",
+      "name_b": "Van Houten Semi Sweet Almond Pouch",
+      "brand_a": "van",
+      "brand_b": "van",
+      "size_a": "80g",
+      "size_b": "80g",
+      "variant_a": [
+        "almond"
+      ],
+      "variant_b": [
+        "almond"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9167,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9642,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.92; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 102601,
+      "product_id_b": 113804,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Cadbury Old Gold Dark Chocolate Bar - Old Jamaica Rum 'N' Raisin",
+      "name_b": "Cadbury Old Gold Dark Chocolate Jamaica Rum N Raisin",
+      "brand_a": "cadbury",
+      "brand_b": "cadbury",
+      "size_a": "180g",
+      "size_b": "180g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9111,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9628,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.91; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119238,
+      "product_id_b": 116341,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Calbee Original Prawn Cracker Canister 80g",
+      "name_b": "Calbee Prawn Cracker Canister Original 80G",
+      "brand_a": "calbee",
+      "brand_b": "calbee",
+      "size_a": "80g",
+      "size_b": "80g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.91,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9625,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.91; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 108657,
+      "product_id_b": 116147,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Mission Tortilla Chips - Original",
+      "name_b": "Mission Tortilla Original Chips",
+      "brand_a": "mission",
+      "brand_b": "mission",
+      "size_a": "170g",
+      "size_b": "170g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9087,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9622,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.91; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119445,
+      "product_id_b": 109576,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Hi-Chew Chewy Candy - Grape & Peach & Lychee 100g",
+      "name_b": "Hi-Chew Chewy Candy - Grape and Peach and Lychee",
+      "brand_a": "hi chew",
+      "brand_b": "hi chew",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "grape",
+        "lychee",
+        "peach"
+      ],
+      "variant_b": [
+        "grape",
+        "lychee",
+        "peach"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9051,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9613,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.91; variant=1.00; packaging=0.70"
+    }
+  ],
+  "review_matches": [
+    {
+      "product_id_a": 119727,
+      "product_id_b": 113657,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Meiji Lucky Stick Strawberry 45g",
+      "name_b": "Meiji Lucky Stick Strawberry Biscuit",
+      "brand_a": "meiji",
+      "brand_b": "meiji",
+      "size_a": "45g",
+      "size_b": "45g",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7771,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9443,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 119725,
+      "product_id_b": 113659,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Meiji Lucky Stick Chocolate 45g",
+      "name_b": "Meiji Lucky Stick Chocolate Biscuit",
+      "brand_a": "meiji",
+      "brand_b": "meiji",
+      "size_a": "45g",
+      "size_b": "45g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7719,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.943,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.77; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 119577,
+      "product_id_b": 116312,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Lindt Excellence 85% Cocoa Dark Chocolate 100g",
+      "name_b": "Lindt Excellence 85% Dark Chocolate Bar 100g",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.819,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9398,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.82; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 102617,
+      "product_id_b": 116323,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Lindt Excellence Chocolate Bar - Intense Orange (Dark)",
+      "name_b": "Lindt Excellence Orange Intense Dark Chocolate bar 100G",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "choc",
+        "orange"
+      ],
+      "variant_b": [
+        "choc",
+        "orange"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8155,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9389,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.82; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 102556,
+      "product_id_b": 113879,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Meiji Chocolate - Macadamia",
+      "name_b": "Meiji Macadamia Chocolate",
+      "brand_a": "meiji",
+      "brand_b": "meiji",
+      "size_a": "64g",
+      "size_b": "64g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8158,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9389,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.82; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119578,
+      "product_id_b": 116312,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Lindt Excellence Bar Creamy Chocolate, 100g",
+      "name_b": "Lindt Excellence 85% Dark Chocolate Bar 100g",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8119,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.938,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119582,
+      "product_id_b": 116303,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Lindt Excellence Dark Supreme 90% Cocoa, 100g",
+      "name_b": "Lindt Excellence 90% Cocoa Dark Supreme Chocolate Bar 100G",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8063,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9366,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119587,
+      "product_id_b": 102733,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Lindt Extra Creamy Hazelnut Chocolate 80g",
+      "name_b": "Lindt Chocolate - Extra Creamy Hazelnut",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "80g",
+      "size_b": "80g",
+      "variant_a": [
+        "choc",
+        "hazelnut"
+      ],
+      "variant_b": [
+        "choc",
+        "hazelnut"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8055,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9364,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 102568,
+      "product_id_b": 113655,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Meiji Chocorooms - Strawberry",
+      "name_b": "Meiji Chocorooms Strawberry Biscuit",
+      "brand_a": "meiji",
+      "brand_b": "meiji",
+      "size_a": "19g",
+      "size_b": "19g",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8053,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9363,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116354,
+      "product_id_b": 113717,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Fruit Plus Apple Flavour Chewy Candy",
+      "name_b": "Fruit Plus Apple Chewy Candy",
+      "brand_a": "fruit",
+      "brand_b": "fruit",
+      "size_a": "120g",
+      "size_b": "120g",
+      "variant_a": [
+        "apple"
+      ],
+      "variant_b": [
+        "apple"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7976,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9344,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119535,
+      "product_id_b": 102583,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Kinder Chocolate T8, 100g",
+      "name_b": "Kinder Chocolate T8",
+      "brand_a": "kinder",
+      "brand_b": "kinder",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7954,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9339,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119583,
+      "product_id_b": 102617,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Lindt Excellence Intense Orange Dark Chocolate 100g",
+      "name_b": "Lindt Excellence Chocolate Bar - Intense Orange (Dark)",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "choc",
+        "orange"
+      ],
+      "variant_b": [
+        "choc",
+        "orange"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7934,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9334,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.79; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116406,
+      "product_id_b": 113735,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "HI-CHEW Grape And Green Apple Chewy Candy Mix Bag 100G",
+      "name_b": "Hi-Chew Grape & Green Apple Mix Bag",
+      "brand_a": "hi",
+      "brand_b": "hi",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "apple",
+        "grape"
+      ],
+      "variant_b": [
+        "apple",
+        "grape"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7279,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.932,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.73; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 119586,
+      "product_id_b": 102638,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Lindt Extra Creamy Dark Chocolate 80g",
+      "name_b": "Lindt Chocolate - Extra Creamy Dark",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "80g",
+      "size_b": "80g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7841,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.931,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119588,
+      "product_id_b": 102709,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Lindt Extra Creamy Milk Chocolate 80g",
+      "name_b": "Lindt Chocolate - Extra Creamy Milk",
+      "brand_a": "lindt",
+      "brand_b": "lindt",
+      "size_a": "80g",
+      "size_b": "80g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7841,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.931,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 118994,
+      "product_id_b": 108657,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Mission Tortilla Chip Original 170g",
+      "name_b": "Mission Tortilla Chips - Original",
+      "brand_a": "mission",
+      "brand_b": "mission",
+      "size_a": "170g",
+      "size_b": "170g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.784,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.931,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119432,
+      "product_id_b": 113836,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Hershey Milk Chocolate Snack Sized 12 x 153g",
+      "name_b": "Hershey's Creamy Milk Chocolate Snack Sized",
+      "brand_a": "hershey",
+      "brand_b": "hershey",
+      "size_a": "153g",
+      "size_b": "153g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7833,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9308,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119436,
+      "product_id_b": 102625,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Hershey'S Kisses Creamy Milk Chocolate 146g",
+      "name_b": "Hershey's Kisses Chocolate - Creamy Milk",
+      "brand_a": "hershey s",
+      "brand_b": "hershey s",
+      "size_a": "146g",
+      "size_b": "146g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7797,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9299,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119220,
+      "product_id_b": 102656,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Cadbury Old Gold 70% Cocoa Dark Chocolate 180g",
+      "name_b": "Cadbury Old Gold Dark Chocolate",
+      "brand_a": "cadbury",
+      "brand_b": "cadbury",
+      "size_a": "180g",
+      "size_b": "180g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7789,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9297,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 119444,
+      "product_id_b": 109554,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Hi-Chew Chewy Candy - Grape & Apple 100g",
+      "name_b": "Hi-Chew Chewy Candy - Grape and Green Apple",
+      "brand_a": "hi chew",
+      "brand_b": "hi chew",
+      "size_a": "100g",
+      "size_b": "100g",
+      "variant_a": [
+        "apple",
+        "grape"
+      ],
+      "variant_b": [
+        "apple",
+        "grape"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7789,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9297,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    }
+  ],
+  "canonical_products": [
+    {
+      "canonical_key": "snacks-confectionery-calbee-9cf9f26fdd68",
+      "canonical_name": "Calbee Prawn Crackers Original 90g",
+      "brand": "calbee",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 90.0,
+      "size_base_unit": "g",
+      "size_display": "90g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 4,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        108570,
+        113265,
+        116113,
+        119241
+      ],
+      "first_seen_at": "2026-04-05T15:05:06.874222",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-cadbury-845e0182ac69",
+      "canonical_name": "Cadbury Old Gold 70% Cocoa Dark Chocolate 180g",
+      "brand": "cadbury",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 180.0,
+      "size_base_unit": "g",
+      "size_display": "180g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        102553,
+        113799,
+        119220
+      ],
+      "first_seen_at": "2026-04-05T15:05:06.874222",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-calbee-27b3edcb8d12",
+      "canonical_name": "Calbee Big Bag Hot And Spicy Potato Chips Snack",
+      "brand": "calbee",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 180.0,
+      "size_base_unit": "g",
+      "size_display": "180g",
+      "pack_count": 1,
+      "packaging": "tea_bag",
+      "variant_tokens": [],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        108603,
+        113274,
+        116142
+      ],
+      "first_seen_at": "2026-04-05T15:07:28.720022",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-mission-d9ef30badb34",
+      "canonical_name": "Mission Tortilla Chips - Original",
+      "brand": "mission",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 170.0,
+      "size_base_unit": "g",
+      "size_display": "170g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        108657,
+        113354,
+        116147
+      ],
+      "first_seen_at": "2026-04-05T15:07:28.754982",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-calbee-97239f7232af",
+      "canonical_name": "Calbee Original Prawn Cracker Canister 80g",
+      "brand": "calbee",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 80.0,
+      "size_base_unit": "g",
+      "size_display": "80g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        108682,
+        116341,
+        119238
+      ],
+      "first_seen_at": "2026-04-05T15:05:06.874222",
+      "last_seen_at": "2026-04-05T15:08:34.634788"
+    },
+    {
+      "canonical_key": "snacks-confectionery-camel-bf79f0fe878b",
+      "canonical_name": "Camel Tapioca Ikan Bilis - Chilli",
+      "brand": "camel",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 120.0,
+      "size_base_unit": "g",
+      "size_display": "120g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        108768,
+        113491,
+        116494
+      ],
+      "first_seen_at": "2026-04-05T15:08:16.974958",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-ferrero-2f7bf7cdb6a8",
+      "canonical_name": "Ferrero Rocher Chocolate - T16",
+      "brand": "ferrero",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 200.0,
+      "size_base_unit": "g",
+      "size_display": "200g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        102527,
+        102551,
+        113820
+      ],
+      "first_seen_at": "2026-04-05T15:12:52.003586",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-ferrero-3b9c5c72246d",
+      "canonical_name": "Ferrero Rocher Chocolate - T24",
+      "brand": "ferrero",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 300.0,
+      "size_base_unit": "g",
+      "size_display": "300g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        102536,
+        102600,
+        113822
+      ],
+      "first_seen_at": "2026-04-05T15:12:52.008301",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-lindt-6663add7c717",
+      "canonical_name": "Lindt Excellence 85% Dark Chocolate Bar 100g",
+      "brand": "lindt",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 100.0,
+      "size_base_unit": "g",
+      "size_display": "100g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        102576,
+        116312
+      ],
+      "first_seen_at": "2026-04-05T15:07:50.310238",
+      "last_seen_at": "2026-04-05T15:12:54.84329"
+    },
+    {
+      "canonical_key": "snacks-confectionery-cadbury-6c86c52a851a",
+      "canonical_name": "Cadbury Old Gold Dark Chocolate Bar - Old Jamaica Rum 'N' Raisin",
+      "brand": "cadbury",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 180.0,
+      "size_base_unit": "g",
+      "size_display": "180g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        102601,
+        113804
+      ],
+      "first_seen_at": "2026-04-05T15:12:56.349312",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-cadbury-b2ecb131a141",
+      "canonical_name": "Cadbury Twirl Chocolate Bar",
+      "brand": "cadbury",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 39.0,
+      "size_base_unit": "g",
+      "size_display": "39g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        102606,
+        113810
+      ],
+      "first_seen_at": "2026-04-05T15:12:56.351162",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-lindt-a3bbb0547bed",
+      "canonical_name": "Lindt Excellence Dark Chocolate Bar - 99%",
+      "brand": "lindt",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 50.0,
+      "size_base_unit": "g",
+      "size_display": "50g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "fairprice"
+      ],
+      "source_product_ids": [
+        102609,
+        119574
+      ],
+      "first_seen_at": "2026-04-05T15:05:06.874222",
+      "last_seen_at": "2026-04-05T15:12:57.711158"
+    },
+    {
+      "canonical_key": "snacks-confectionery-ferrero-b5f36d7b7805",
+      "canonical_name": "Ferrero Rocher Chocolate - T30",
+      "brand": "ferrero",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 375.0,
+      "size_base_unit": "g",
+      "size_display": "375g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        102623,
+        113818
+      ],
+      "first_seen_at": "2026-04-05T15:12:57.712959",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-cadbury-5e90150e3a69",
+      "canonical_name": "Cadbury Old Gold Dark Chocolate - Roast Almond",
+      "brand": "cadbury",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 180.0,
+      "size_base_unit": "g",
+      "size_display": "180g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "almond",
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        102650,
+        113812
+      ],
+      "first_seen_at": "2026-04-05T15:13:00.687468",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-cadbury-669a110943e7",
+      "canonical_name": "Cadbury Dairy Milk Dream Chocolate",
+      "brand": "cadbury",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 50.0,
+      "size_base_unit": "g",
+      "size_display": "50g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        102663,
+        113805
+      ],
+      "first_seen_at": "2026-04-05T15:13:00.689173",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-beryl-s-7388b1379512",
+      "canonical_name": "Beryl's Jar Almond Coated With Dark Chocolate",
+      "brand": "beryl s",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 400.0,
+      "size_base_unit": "g",
+      "size_display": "400g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "almond",
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "fairprice"
+      ],
+      "source_product_ids": [
+        102674,
+        119174
+      ],
+      "first_seen_at": "2026-04-05T15:05:06.874222",
+      "last_seen_at": "2026-04-05T15:13:02.265025"
+    },
+    {
+      "canonical_key": "snacks-confectionery-cadbury-f7a8c06d90df",
+      "canonical_name": "Cadbury Dairy Milk Chocolate Roll - Milk",
+      "brand": "cadbury",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 55.0,
+      "size_base_unit": "g",
+      "size_display": "55g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        102690,
+        113806
+      ],
+      "first_seen_at": "2026-04-05T15:13:03.764654",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-beryl-s-31eb7fc6ac2f",
+      "canonical_name": "Beryl'S Assorted Almond Chocolate, 370g",
+      "brand": "beryl s",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 370.0,
+      "size_base_unit": "g",
+      "size_display": "370g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "almond",
+        "choc"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "fairprice"
+      ],
+      "source_product_ids": [
+        102748,
+        119175
+      ],
+      "first_seen_at": "2026-04-05T15:05:06.874222",
+      "last_seen_at": "2026-04-05T15:13:08.660218"
+    },
+    {
+      "canonical_key": "snacks-confectionery-calbee-25f50f8431a6",
+      "canonical_name": "Calbee Crispy Potato Chips - Original",
+      "brand": "calbee",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 72.0,
+      "size_base_unit": "g",
+      "size_display": "72g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        108583,
+        113270
+      ],
+      "first_seen_at": "2026-04-05T15:08:27.516759",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    },
+    {
+      "canonical_key": "snacks-confectionery-ruffles-6ae65688c104",
+      "canonical_name": "Ruffles Potato Chips - Original",
+      "brand": "ruffles",
+      "unified_category": "Snacks & Confectionery",
+      "size_total_value": 170.0,
+      "size_base_unit": "g",
+      "size_display": "170g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        108586,
+        113382
+      ],
+      "first_seen_at": "2026-04-05T15:08:27.518047",
+      "last_seen_at": "2026-04-05T15:37:00.406125"
+    }
+  ]
+}

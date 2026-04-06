@@ -1,0 +1,23 @@
+{
+  "run_key": "beverages-coldstorage_2026-04-04-fairprice_2026-04-04-redmart_2026-04-04-shengsiong_2026-04-05",
+  "category": "Beverages",
+  "store_dates": {
+    "fairprice": "2026-04-04",
+    "coldstorage": "2026-04-04",
+    "redmart": "2026-04-04",
+    "shengsiong": "2026-04-05"
+  },
+  "input_products": 2805,
+  "strong_match_pairs_raw": 77,
+  "strong_match_pairs": 75,
+  "review_pairs": 294,
+  "canonical_groups": 2689,
+  "cross_store_groups": 73,
+  "generated_at": "2026-04-06T01:50:19.747320",
+  "supabase_sync": {
+    "synced": true,
+    "canonical_products_upserted": 2689,
+    "canonical_members_upserted": 2805,
+    "match_candidates_upserted": 369
+  }
+}

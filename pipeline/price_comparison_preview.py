@@ -36,8 +36,13 @@ def save_json(path: Path, payload):
 
 def main(category: str = DEFAULT_CATEGORY):
     client = get_client()
+    table_name = (
+        "canonical_product_daily_recommendations"
+        if table_exists(client, "canonical_product_daily_recommendations")
+        else "canonical_product_daily_summary"
+    )
     rows = (
-        client.table("canonical_product_daily_summary")
+        client.table(table_name)
         .select("*")
         .eq("unified_category", category)
         .gte("stores_seen_for_day", 2)
@@ -49,7 +54,15 @@ def main(category: str = DEFAULT_CATEGORY):
 
     out = DEFAULT_OUTPUT / f"{slugify(category)}_top50.json"
     save_json(out, rows or [])
-    print(f"Saved {len(rows or [])} rows to {out}")
+    print(f"Saved {len(rows or [])} rows from {table_name} to {out}")
+
+
+def table_exists(client, table_name: str) -> bool:
+    try:
+        client.table(table_name).select("*").limit(1).execute()
+        return True
+    except Exception:
+        return False
 
 
 if __name__ == "__main__":

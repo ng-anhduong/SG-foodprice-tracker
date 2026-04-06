@@ -1,0 +1,23 @@
+{
+  "run_key": "snacks-confectionery-coldstorage_2026-04-05-fairprice_2026-04-05-redmart_2026-04-05-shengsiong_2026-04-05",
+  "category": "Snacks & Confectionery",
+  "store_dates": {
+    "fairprice": "2026-04-05",
+    "coldstorage": "2026-04-05",
+    "redmart": "2026-04-05",
+    "shengsiong": "2026-04-05"
+  },
+  "input_products": 4727,
+  "strong_match_pairs_raw": 95,
+  "strong_match_pairs": 87,
+  "review_pairs": 525,
+  "canonical_groups": 4629,
+  "cross_store_groups": 76,
+  "generated_at": "2026-04-06T15:49:23.999053",
+  "supabase_sync": {
+    "synced": true,
+    "canonical_products_upserted": 4629,
+    "canonical_members_upserted": 4727,
+    "match_candidates_upserted": 612
+  }
+}

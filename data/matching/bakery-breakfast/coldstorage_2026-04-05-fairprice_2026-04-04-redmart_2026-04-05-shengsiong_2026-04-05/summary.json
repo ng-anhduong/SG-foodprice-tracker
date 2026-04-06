@@ -1,0 +1,23 @@
+{
+  "run_key": "bakery-breakfast-coldstorage_2026-04-05-fairprice_2026-04-04-redmart_2026-04-05-shengsiong_2026-04-05",
+  "category": "Bakery & Breakfast",
+  "store_dates": {
+    "fairprice": "2026-04-04",
+    "coldstorage": "2026-04-05",
+    "redmart": "2026-04-05",
+    "shengsiong": "2026-04-05"
+  },
+  "input_products": 2377,
+  "strong_match_pairs_raw": 51,
+  "strong_match_pairs": 51,
+  "review_pairs": 208,
+  "canonical_groups": 2329,
+  "cross_store_groups": 42,
+  "generated_at": "2026-04-06T15:54:28.950946",
+  "supabase_sync": {
+    "synced": true,
+    "canonical_products_upserted": 2329,
+    "canonical_members_upserted": 2377,
+    "match_candidates_upserted": 259
+  }
+}
