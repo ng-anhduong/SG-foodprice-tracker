@@ -238,10 +238,41 @@ def latest_date_per_store(rows: list[dict]) -> dict[str, str]:
 
 # ── CORE MATCHING ─────────────────────────────────────────────────────────────
 
+WEIGHT_TOLERANCE = 0.20  # ±20% — products within this range are considered same size
+
+
+def find_most_common_weight(products: list[dict]) -> Optional[float]:
+    """
+    Find the most common weight (in grams) across all products for a cut.
+    Groups weights within ±20% tolerance into clusters, returns the
+    centroid of the largest cluster.
+    """
+    weights = [p["weight_g"] for p in products]
+    if not weights:
+        return None
+
+    # Count how many products fall within ±20% of each weight
+    best_weight = None
+    best_count = 0
+
+    for candidate in weights:
+        lower = candidate * (1 - WEIGHT_TOLERANCE)
+        upper = candidate * (1 + WEIGHT_TOLERANCE)
+        count = sum(1 for w in weights if lower <= w <= upper)
+        if count > best_count:
+            best_count = count
+            # Use median of cluster as representative weight
+            cluster = [w for w in weights if lower <= w <= upper]
+            best_weight = sorted(cluster)[len(cluster) // 2]
+
+    return best_weight
+
+
 def build_commodity_comparisons(rows: list[dict]) -> list[dict]:
     """
-    Groups products by (cut, fresh/frozen) and computes unit price per 100g.
-    Returns one comparison row per cut per day with per-store price breakdown.
+    Groups products by (cut, fresh/frozen), finds the most common pack size,
+    then compares actual prices at that pack size across stores.
+    Also includes a per-100g fallback for display purposes.
     """
     latest_per_store = latest_date_per_store(rows)
 
@@ -268,13 +299,11 @@ def build_commodity_comparisons(rows: list[dict]) -> list[dict]:
         if cut is None:
             continue
 
-        # Try weight from unit field first, then name
         weight_g = extract_weight_g(unit) or extract_weight_g(name)
         if weight_g is None or weight_g <= 0:
             continue
 
         frozen_flag = "frozen" if is_frozen(name) else "fresh/chilled"
-        unit_price_per_100g = round((price / weight_g) * 100, 4)
 
         groups[(cut, frozen_flag)].append({
             "product_id": row.get("id"),
@@ -282,28 +311,38 @@ def build_commodity_comparisons(rows: list[dict]) -> list[dict]:
             "store": row.get("store"),
             "price_sgd": price,
             "weight_g": weight_g,
-            "unit_price_per_100g": unit_price_per_100g,
             "product_url": row.get("product_url"),
             "scraped_date": latest_per_store.get(row.get("store", ""), ""),
         })
 
-    # Build comparison rows — only keep groups where 2+ stores are present
     comparisons = []
     refreshed_at = datetime.now().isoformat()
 
     for (cut, frozen_flag), products in groups.items():
-        stores_present = {p["store"] for p in products}
+
+        # Find most common weight across all stores
+        common_weight_g = find_most_common_weight(products)
+        if common_weight_g is None:
+            continue
+
+        # Filter to products within ±20% of the most common weight
+        lower = common_weight_g * (1 - WEIGHT_TOLERANCE)
+        upper = common_weight_g * (1 + WEIGHT_TOLERANCE)
+        matched = [p for p in products if lower <= p["weight_g"] <= upper]
+
+        # Must have 2+ stores after filtering
+        stores_present = {p["store"] for p in matched}
         if len(stores_present) < 2:
             continue
 
-        # Per store: pick the product with the lowest unit price
+        # Per store: pick the cheapest product at this weight
         by_store: dict[str, dict] = {}
-        for p in products:
+        for p in matched:
             store = p["store"]
-            if store not in by_store or p["unit_price_per_100g"] < by_store[store]["unit_price_per_100g"]:
+            if store not in by_store or p["price_sgd"] < by_store[store]["price_sgd"]:
                 by_store[store] = p
 
-        store_list = sorted(by_store.values(), key=lambda x: x["unit_price_per_100g"])
+        store_list = sorted(by_store.values(), key=lambda x: x["price_sgd"])
         cheapest = store_list[0]
         priciest = store_list[-1]
 
@@ -313,7 +352,7 @@ def build_commodity_comparisons(rows: list[dict]) -> list[dict]:
                 "product_name": s["name"],
                 "price_sgd": s["price_sgd"],
                 "weight_g": s["weight_g"],
-                "unit_price_per_100g": s["unit_price_per_100g"],
+                "unit_price_per_100g": round((s["price_sgd"] / s["weight_g"]) * 100, 4),
                 "product_url": s["product_url"],
                 "is_cheapest": s["store"] == cheapest["store"],
             }
@@ -326,21 +365,20 @@ def build_commodity_comparisons(rows: list[dict]) -> list[dict]:
             "cut": cut,
             "frozen_flag": frozen_flag,
             "unified_category": category,
+            "common_weight_g": common_weight_g,     # the pack size being compared
             "stores_seen": len(stores_present),
             "cheapest_store": cheapest["store"],
-            "cheapest_unit_price_per_100g": cheapest["unit_price_per_100g"],
+            "cheapest_price_sgd": cheapest["price_sgd"],
             "cheapest_product_name": cheapest["name"],
             "priciest_store": priciest["store"],
-            "priciest_unit_price_per_100g": priciest["unit_price_per_100g"],
-            "price_spread_per_100g": round(
-                priciest["unit_price_per_100g"] - cheapest["unit_price_per_100g"], 4
-            ),
+            "priciest_price_sgd": priciest["price_sgd"],
+            "price_spread_sgd": round(priciest["price_sgd"] - cheapest["price_sgd"], 4),
             "store_prices": store_prices,
             "scraped_date": cheapest["scraped_date"],
             "refreshed_at": refreshed_at,
         })
 
-    comparisons.sort(key=lambda x: -x["price_spread_per_100g"])
+    comparisons.sort(key=lambda x: -x["price_spread_sgd"])
     return comparisons
 
 

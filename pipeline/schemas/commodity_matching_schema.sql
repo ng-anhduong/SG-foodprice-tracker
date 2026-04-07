@@ -6,14 +6,15 @@ create table if not exists public.commodity_price_comparisons (
     cut text not null,
     frozen_flag text not null,                  -- 'fresh/chilled' or 'frozen'
     unified_category text not null,             -- 'Meat & Seafood' or 'Fruits & Vegetables'
+    common_weight_g numeric,                    -- most common pack size used for comparison
     stores_seen integer not null,
     cheapest_store text not null,
-    cheapest_unit_price_per_100g numeric not null,
+    cheapest_price_sgd numeric not null,        -- actual price at common_weight_g
     cheapest_product_name text,
     priciest_store text not null,
-    priciest_unit_price_per_100g numeric not null,
-    price_spread_per_100g numeric not null,
-    store_prices jsonb not null default '{}'::jsonb,
+    priciest_price_sgd numeric not null,        -- actual price at common_weight_g
+    price_spread_sgd numeric not null,          -- actual $ difference at same pack size
+    store_prices jsonb not null default '{}'::jsonb,  -- includes unit_price_per_100g per store for reference
     scraped_date date not null,
     refreshed_at timestamptz not null default now(),
     unique (cut, frozen_flag, scraped_date)

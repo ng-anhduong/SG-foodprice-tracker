@@ -40,7 +40,7 @@ RAW_DATA_PATH = os.path.expanduser("~/Documents/GitHub/SG-foodprice-tracker/data
 @dag(
     dag_id="shengsiong_scraper",
     description="Scrapes Sheng Siong product prices daily and saves raw JSON",
-    schedule="30 7 * * *",   # runs every day at 3:30pm SGT (7:30am UTC)
+    schedule="20 6 * * *",   # runs every day at 2:20pm SGT (6:20am UTC)
     start_date=datetime(2026, 4, 1),
     catchup=False,
     tags=["shengsiong", "scraping"],
