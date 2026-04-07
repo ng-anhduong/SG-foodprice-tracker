@@ -72,7 +72,7 @@ def build_rows(category: Optional[str] = None):
         supabase, "canonical_product_daily_recommendations"
     ):
         raise RuntimeError(
-            "Derived price tables do not exist yet. Run pipeline/price_comparison_tables_schema.sql first."
+            "Derived price tables do not exist yet. Run pipeline/schemas/price_comparison_tables_schema.sql first."
         )
 
     canonical_products = fetch_all_rows(

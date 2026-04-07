@@ -8,4 +8,6 @@ venv/
 .ipynb_checkpoints/
 dataset/processed/
 data/debug/
-pipeline/matching_design.md
+pipeline/docs/matching_design.md
+pipeline/docs/meat_produce_matching_design.md
+pipeline/docs/

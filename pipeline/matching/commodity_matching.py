@@ -1,4 +1,4 @@
-# pipeline/commodity_matching.py
+# pipeline/matching/commodity_matching.py
 #
 # Algorithm 2: Commodity / Cut-based matching for Meat & Seafood and Fruits & Vegetables.
 #
@@ -9,9 +9,9 @@
 #   - Flags fresh vs frozen products separately
 #
 # Usage:
-#   python3 pipeline/commodity_matching.py                  # runs both categories
-#   python3 pipeline/commodity_matching.py "Meat & Seafood"
-#   python3 pipeline/commodity_matching.py "Fruits & Vegetables"
+#   python3 pipeline/matching/commodity_matching.py                  # runs both categories
+#   python3 pipeline/matching/commodity_matching.py "Meat & Seafood"
+#   python3 pipeline/matching/commodity_matching.py "Fruits & Vegetables"
 
 import json
 import os

@@ -1,5 +1,5 @@
 -- Commodity price comparison table for Meat & Seafood and Fruits & Vegetables.
--- Run this once in the Supabase SQL Editor before running commodity_matching.py.
+-- Run this once in the Supabase SQL Editor before running pipeline/matching/commodity_matching.py.
 
 create table if not exists public.commodity_price_comparisons (
     id bigint generated always as identity primary key,

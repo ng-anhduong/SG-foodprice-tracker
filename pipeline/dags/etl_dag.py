@@ -71,7 +71,7 @@ def etl_pipeline():
     @task()
     def run_transform():
         from datetime import datetime as dt
-        from pipeline.transform import run as transform
+        from pipeline.etl.transform import run as transform
         date_str = dt.now().strftime("%Y-%m-%d")
         print(f"Transforming data for {date_str}")
         transform(date_str)
@@ -81,7 +81,7 @@ def etl_pipeline():
     @task()
     def run_load():
         from datetime import datetime as dt
-        from pipeline.load import load_date
+        from pipeline.etl.load import load_date
         date_str = dt.now().strftime("%Y-%m-%d")
         print(f"Loading data for {date_str}")
         load_date(date_str)

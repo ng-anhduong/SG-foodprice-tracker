@@ -1,4 +1,4 @@
-# pipeline/vegetable_produce_matching.py
+# pipeline/matching/vegetable_produce_matching.py
 #
 # Algorithm 1 adapted specifically for Fruits & Vegetables.
 #
@@ -12,7 +12,7 @@
 #   3. Variety/qualifier (Fuji, organic, baby, mini) — bonus
 #
 # Usage:
-#   python3 pipeline/vegetable_produce_matching.py
+#   python3 pipeline/matching/vegetable_produce_matching.py
 
 import hashlib
 import json

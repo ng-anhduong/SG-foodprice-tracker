@@ -1,6 +1,6 @@
-# pipeline/meat_produce_matching.py
+# pipeline/matching/meat_produce_matching.py
 #
-# Algorithm 1 adapted for Meat & Seafood and Fruits & Vegetables.
+# Algorithm 1 adapted for Meat & Seafood.
 # Same engine as matching.py but with domain-specific tuning:
 #   - STOPWORDS: meat/produce terms instead of beverage terms
 #   - VARIANT_GROUPS: cut/state variants instead of flavour variants
@@ -12,8 +12,7 @@
 # For fresh unbranded cuts, use commodity_matching.py instead.
 #
 # Usage:
-#   python3 pipeline/meat_produce_matching.py "Meat & Seafood"
-#   python3 pipeline/meat_produce_matching.py "Fruits & Vegetables"
+#   python3 pipeline/matching/meat_produce_matching.py "Meat & Seafood"
 
 import hashlib
 import json
@@ -33,7 +32,7 @@ from supabase import create_client
 load_dotenv(".env")
 
 STORE_ORDER = ["fairprice", "coldstorage", "redmart", "shengsiong"]
-SUPPORTED_CATEGORIES = ["Meat & Seafood", "Fruits & Vegetables"]
+SUPPORTED_CATEGORIES = ["Meat & Seafood"]
 DEFAULT_OUTPUT_BASE = Path("data") / "matching"
 FETCH_PAGE_SIZE = 1000
 
@@ -935,7 +934,7 @@ def run(category: str) -> dict[str, Any]:
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 pipeline/meat_produce_matching.py <category>")
+        print("Usage: python3 pipeline/matching/meat_produce_matching.py <category>")
         print(f"  Categories: {SUPPORTED_CATEGORIES}")
         sys.exit(1)
     run(sys.argv[1])

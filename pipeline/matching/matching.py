@@ -17,6 +17,13 @@ load_dotenv(".env")
 
 STORE_ORDER = ["fairprice", "coldstorage", "redmart", "shengsiong"]
 DEFAULT_CATEGORY = "Beverages"
+SUPPORTED_CATEGORIES = [
+    "Beverages",
+    "Dairy",
+    "Staples",
+    "Snacks & Confectionery",
+    "Bakery & Breakfast",
+]
 DEFAULT_OUTPUT_BASE = Path("data") / "matching"
 FETCH_PAGE_SIZE = 1000
 
@@ -935,6 +942,13 @@ def sync_results_to_supabase(
 
 
 def run(category: str = DEFAULT_CATEGORY) -> dict[str, Any]:
+    if category not in SUPPORTED_CATEGORIES:
+        raise ValueError(
+            f"matching.py only supports packaged-goods categories: {SUPPORTED_CATEGORIES}. "
+            "Use vegetable_produce_matching.py for Fruits & Vegetables and "
+            "meat_produce_matching.py for Meat & Seafood."
+        )
+
     supabase = get_client()
 
     print("=" * 70)

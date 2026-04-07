@@ -1,11 +1,11 @@
-# pipeline/load.py
+# pipeline/etl/load.py
 #
 # Loads processed JSON files into Supabase PostgreSQL via the REST API.
 # Reads from data/processed/<store>/<date>/ and inserts into the products table.
 #
 # Usage:
-#   python3 pipeline/load.py 2026-04-03   # specific date
-#   python3 pipeline/load.py              # defaults to today
+#   python3 pipeline/etl/load.py 2026-04-03   # specific date
+#   python3 pipeline/etl/load.py              # defaults to today
 
 import json
 import os

@@ -1,5 +1,5 @@
 -- Matching tables for stable cross-store product identities.
--- Run this in Supabase SQL Editor before enabling DB sync from pipeline/matching.py.
+-- Run this in Supabase SQL Editor before enabling DB sync from pipeline/matching/matching.py.
 
 create table if not exists public.canonical_products (
     id bigint generated always as identity primary key,

@@ -1,5 +1,5 @@
 -- Cached derived tables for dashboards and recommender features.
--- Run this in Supabase SQL Editor before using pipeline/build_price_comparison_tables.py.
+-- Run this in Supabase SQL Editor before using pipeline/pricing/build_price_comparison_tables.py.
 
 create table if not exists public.canonical_product_daily_prices (
     id bigint generated always as identity primary key,

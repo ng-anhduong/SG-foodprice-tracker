@@ -1,4 +1,4 @@
-# pipeline/transform.py
+# pipeline/etl/transform.py
 #
 # Cleans raw scraped JSON files from all stores and writes
 # processed output to data/processed/<store>/<date>/
