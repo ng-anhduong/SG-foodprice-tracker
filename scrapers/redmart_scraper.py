@@ -1,98 +1,102 @@
 # scrapers/redmart_scraper.py
 
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-
 import json
 import os
 import time
 from datetime import datetime
 
-# ── CONFIG ────────────────────────────────────────────────────────────────────
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+
 
 CATEGORIES = [
     {
         "url": "https://redmart.lazada.sg/beverages/?m=redmart",
         "raw_category": "Beverages",
         "standardized_category": "Drinks",
-        "category_slug": "drinks"
+        "category_slug": "drinks",
     },
     {
         "url": "https://redmart.lazada.sg/shop-dairy-chilled-&-eggs/?m=redmart",
         "raw_category": "Dairy, Chilled & Eggs",
         "standardized_category": "Dairy",
-        "category_slug": "dairy-chilled-eggs"
+        "category_slug": "dairy-chilled-eggs",
     },
     {
         "url": "https://redmart.lazada.sg/shop-Groceries-FoodStaplesCookingEssentials/?m=redmart",
         "raw_category": "Food Staples & Cooking Essentials",
         "standardized_category": "Staples",
-        "category_slug": "rice-noodles-cooking-ingredients"
+        "category_slug": "rice-noodles-cooking-ingredients",
     },
     {
         "url": "https://redmart.lazada.sg/shop-groceries-fresh-produce-fresh-fruit/?m=redmart",
         "raw_category": "Fresh Produce",
         "standardized_category": "Fresh Fruit",
-        "category_slug": "fruits"
+        "category_slug": "fruits",
     },
     {
         "url": "https://redmart.lazada.sg/shop-groceries-fresh-produce-fresh-vegetables/?m=redmart",
         "raw_category": "Fresh Produce",
         "standardized_category": "Fresh Vegetables",
-        "category_slug": "vegetables"
+        "category_slug": "vegetables",
     },
     {
         "url": "https://redmart.lazada.sg/shop-groceries-meat-seafood-fresh-meat/?m=redmart",
         "raw_category": "Meat & Seafood",
         "standardized_category": "Fresh Meat",
-        "category_slug": "meat"
+        "category_slug": "meat",
     },
     {
         "url": "https://redmart.lazada.sg/shop-groceries-meat-seafood-fresh-seafood/?m=redmart",
         "raw_category": "Meat & Seafood",
         "standardized_category": "Fresh Seafood",
-        "category_slug": "seafood"
+        "category_slug": "seafood",
     },
     {
         "url": "https://redmart.lazada.sg/shop-groceries-frozen/?m=redmart",
         "raw_category": "Frozen",
         "standardized_category": "Frozen",
-        "category_slug": "frozen"
+        "category_slug": "frozen",
     },
     {
         "url": "https://redmart.lazada.sg/shop-snacks-&-confectionery/?&m=redmart",
         "raw_category": "Snack & Confectionery",
         "standardized_category": "Snack & Confectionery",
-        "category_slug": "snack-and-confectionery"
+        "category_slug": "snack-and-confectionery",
     },
     {
         "url": "https://redmart.lazada.sg/shop-bakery-&-breakfast/?m=redmart",
         "raw_category": "Bakery & Breakfast",
         "standardized_category": "Bakery & Breakfast",
-        "category_slug": "bakery-breakfast"
+        "category_slug": "bakery-breakfast",
     },
     {
         "url": "https://redmart.lazada.sg/shop-cooking-sauces-condiments-&-dressings/?m=redmart",
         "raw_category": "Cooking Sauces, Condiments & Dressings",
         "standardized_category": "Cooking Sauces",
-        "category_slug": "condiments-and-sauces"
-    }
-
+        "category_slug": "condiments-and-sauces",
+    },
 ]
 
-# ── EXTRACT FIELDS ────────────────────────────────────────────────────────────
+CATEGORY_FILTER = {
+    slug.strip()
+    for slug in os.getenv("REDMART_CATEGORY", "").split(",")
+    if slug.strip()
+}
 
-def extract_product_fields(prodLink, category_link):
-    listing_text = prodLink.text.strip()
-    href = prodLink.get_attribute("href")
+MAX_PRODUCTS_PER_CATEGORY = 410  # ~4500 total across 11 categories
+
+
+def extract_product_fields(prod_link, category_link):
+    listing_text = prod_link.text.strip()
+    href = prod_link.get_attribute("href")
     split_text = listing_text.split("\n")
     rows = []
 
     for row in split_text:
         if row.strip():
-            clean_text = row.strip()
-            rows.append(clean_text)
+            rows.append(row.strip())
 
     price_sgd = None
     original_price_sgd = None
@@ -100,10 +104,8 @@ def extract_product_fields(prodLink, category_link):
     unit = None
     product_name = None
 
-    # Extract price (selling + original price)
     price_list = []
 
-    #if there is $, add to price list
     for row in rows:
         if "$" in row and "/" not in row:
             clean_row = row.replace("$", "").strip()
@@ -115,39 +117,33 @@ def extract_product_fields(prodLink, category_link):
                 continue
 
     clean_prices = []
-    #remove $ from all prices
     for price in price_list:
         price_without_sign = price.replace("$", "")
         clean_prices.append(float(price_without_sign))
 
-    #check if price list is empty
     if len(clean_prices) < 1:
         return None
-    
+
     price_sgd = clean_prices[0]
 
     if len(clean_prices) > 1:
         original_price_sgd = clean_prices[1]
         discount_sgd = round(original_price_sgd - price_sgd, 2)
-    else:
-        original_price_sgd = None
-        discount_sgd = None
 
-    # Extract unit in 500 g / 2 L / 10×60 g / 946 ml
     for row in rows:
         cleaned = row.strip().lower()
         if (
-            (cleaned.endswith(" g") 
+            (cleaned.endswith(" g")
              or cleaned.endswith(" kg")
              or cleaned.endswith(" ml")
              or cleaned.endswith(" l")
+             or "x" in cleaned
              or "×" in cleaned)
             and len(cleaned.split()) <= 4
         ):
             unit = row
             break
 
-    # Extract product name
     not_name = ["save", "off", "buy", "any", "spend", "multiple promo", "sold"]
 
     for row in rows:
@@ -192,7 +188,6 @@ def extract_product_fields(prodLink, category_link):
         "scraped_at": datetime.now().isoformat(),
     }
 
-# ── SCRAPE CATEGORY ───────────────────────────────────────────────────────────
 
 def scrape_category(driver, category_link):
     products = []
@@ -200,11 +195,9 @@ def scrape_category(driver, category_link):
 
     print(f"\nScraping: {category_link['category_slug']}")
 
-    #Open web
     driver.get(category_link["url"])
     time.sleep(8)
 
-    #Scrape from each page
     while True:
         current_url = driver.current_url
 
@@ -215,17 +208,21 @@ def scrape_category(driver, category_link):
             break
 
         for link in product_links:
+            if len(products) >= MAX_PRODUCTS_PER_CATEGORY:
+                break
             item = extract_product_fields(link, category_link)
-
             if item is None:
                 continue
-
             products.append(item)
+
+        if len(products) >= MAX_PRODUCTS_PER_CATEGORY:
+            print(f"    Reached cap of {MAX_PRODUCTS_PER_CATEGORY} products")
+            break
 
         try:
             next_button = driver.find_element(
                 By.CSS_SELECTOR,
-                'li.ant-pagination-next button, li.ant-pagination-next a'
+                "li.ant-pagination-next button, li.ant-pagination-next a",
             )
 
             parent_li = next_button.find_element(By.XPATH, "./ancestor::li[1]")
@@ -247,7 +244,6 @@ def scrape_category(driver, category_link):
 
     return products
 
-# ── SAVE RAW ──────────────────────────────────────────────────────────────────
 
 def save_raw(products: list[dict], category_slug: str):
     date_str = datetime.now().strftime("%Y-%m-%d")
@@ -259,9 +255,8 @@ def save_raw(products: list[dict], category_slug: str):
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(products, f, indent=2, ensure_ascii=False)
 
-    print(f"    Saved → {filepath}")
+    print(f"    Saved -> {filepath}")
 
-# ── MAIN ──────────────────────────────────────────────────────────────────────
 
 def run():
     print("=" * 60)
@@ -272,12 +267,22 @@ def run():
     summary = {}
 
     chrome_options = Options()
-    chrome_options.add_argument("--start-maximized")
+    chrome_options.add_argument("--headless=new")
+    chrome_options.add_argument("--window-size=1600,1200")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
 
     driver = webdriver.Chrome(options=chrome_options)
 
     try:
-        for each_category in CATEGORIES:
+        categories = [
+            each_category
+            for each_category in CATEGORIES
+            if not CATEGORY_FILTER or each_category["category_slug"] in CATEGORY_FILTER
+        ]
+
+        for each_category in categories:
             products = scrape_category(driver, each_category)
 
             category_slug = each_category["category_slug"]
@@ -288,7 +293,7 @@ def run():
                 total += count
                 summary[category_slug] = count
             else:
-                print("No products found — skipping save")
+                print("No products found - skipping save")
                 summary[category_slug] = 0
 
             time.sleep(2)
@@ -301,6 +306,7 @@ def run():
     print("=" * 60)
 
     return summary
+
 
 if __name__ == "__main__":
     run()

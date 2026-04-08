@@ -1,0 +1,1474 @@
+{
+  "strong_matches": [
+    {
+      "product_id_a": 114607,
+      "product_id_b": 111227,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "GOLDEN LIGHT Pandan Kaya",
+      "name_b": "Golden Light Pandan Kaya",
+      "brand_a": "golden",
+      "brand_b": "golden",
+      "size_a": "425g",
+      "size_b": "425g",
+      "variant_a": [
+        "less sugar"
+      ],
+      "variant_b": [
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 114722,
+      "product_id_b": 111089,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Sunshine Australian Oat Soft Grain Wholemeal Bread",
+      "name_b": "Sunshine Australian Oat Soft Grain Wholemeal Bread",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "400g",
+      "size_b": "400g",
+      "variant_a": [
+        "oat"
+      ],
+      "variant_b": [
+        "oat"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117383,
+      "product_id_b": 114722,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Sunshine Australian Oat Soft Grain Wholemeal Bread 400g",
+      "name_b": "Sunshine Australian Oat Soft Grain Wholemeal Bread",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "400g",
+      "size_b": "400g",
+      "variant_a": [
+        "oat"
+      ],
+      "variant_b": [
+        "oat"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9255,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9664,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.93; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117383,
+      "product_id_b": 111089,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Sunshine Australian Oat Soft Grain Wholemeal Bread 400g",
+      "name_b": "Sunshine Australian Oat Soft Grain Wholemeal Bread",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "400g",
+      "size_b": "400g",
+      "variant_a": [
+        "oat"
+      ],
+      "variant_b": [
+        "oat"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9255,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9664,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.93; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 114702,
+      "product_id_b": 111288,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Fong Yit XO Kaya less sugar Spread",
+      "name_b": "Fong Yit XO Premium Kaya Spread - Less Sugar",
+      "brand_a": "fong",
+      "brand_b": "fong",
+      "size_a": "270g",
+      "size_b": "270g",
+      "variant_a": [
+        "less sugar"
+      ],
+      "variant_b": [
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9155,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9639,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.92; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 114378,
+      "product_id_b": 111080,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Sunshine Australian Oat Soft Grain Wholemeal (Jumbo) Bread",
+      "name_b": "Sunshine Australian Oat Soft Grain Wholemeal Bread - Jumbo Pack",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "550g",
+      "size_b": "550g",
+      "variant_a": [
+        "oat"
+      ],
+      "variant_b": [
+        "oat"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9553,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.9638,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.96; variant=1.00; packaging=0.50"
+    },
+    {
+      "product_id_a": 117463,
+      "product_id_b": 114416,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Blue Frog Keto Almond Butter & Vanilla Bean 300g",
+      "name_b": "Blue Frog Keto Almond Butter And Vanilla Bean Granola 300G",
+      "brand_a": "blue",
+      "brand_b": "blue",
+      "size_a": "300g",
+      "size_b": "300g",
+      "variant_a": [
+        "almond",
+        "vanilla"
+      ],
+      "variant_b": [
+        "almond",
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9039,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.961,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117464,
+      "product_id_b": 114708,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Blue Frog Protein Mango Macadamia & Coconut 300g",
+      "name_b": "Blue Frog Protein Mango Macadamia And Coconut Granola 300G",
+      "brand_a": "blue",
+      "brand_b": "blue",
+      "size_a": "300g",
+      "size_b": "300g",
+      "variant_a": [
+        "mango"
+      ],
+      "variant_b": [
+        "mango"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9003,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9601,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117382,
+      "product_id_b": 114378,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Sunshine Australian Oat Soft Grain Wholemeal Bread (Jumbo) 550g",
+      "name_b": "Sunshine Australian Oat Soft Grain Wholemeal (Jumbo) Bread",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "550g",
+      "size_b": "550g",
+      "variant_a": [
+        "oat"
+      ],
+      "variant_b": [
+        "oat"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8992,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9598,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116941,
+      "product_id_b": 114689,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Living Forest Granola Hazelnut & Almond, 325g",
+      "name_b": "Living Forest Granola Hazelnut And Almond",
+      "brand_a": "living",
+      "brand_b": "living",
+      "size_a": "325g",
+      "size_b": "325g",
+      "variant_a": [
+        "almond",
+        "hazelnut"
+      ],
+      "variant_b": [
+        "almond",
+        "hazelnut"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8985,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9596,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116919,
+      "product_id_b": 114510,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Blue Frog Macadamia Almond & Manuka Honey 350g",
+      "name_b": "Blue Frog Macadamia Almond And Manuka Honey Granola 350G",
+      "brand_a": "blue",
+      "brand_b": "blue",
+      "size_a": "350g",
+      "size_b": "350g",
+      "variant_a": [
+        "almond"
+      ],
+      "variant_b": [
+        "almond"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.897,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9593,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116940,
+      "product_id_b": 114534,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Living Forest Granola Dark Chocolate, 325g",
+      "name_b": "Living Forest Granola Dark Chocolate",
+      "brand_a": "living",
+      "brand_b": "living",
+      "size_a": "325g",
+      "size_b": "325g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8965,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9591,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116918,
+      "product_id_b": 114432,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Blue Frog Keto Almond Peanut & Raspberry 300g",
+      "name_b": "Blue Frog Keto Almond Peanut And Raspberry Granola 300G",
+      "brand_a": "blue",
+      "brand_b": "blue",
+      "size_a": "300g",
+      "size_b": "300g",
+      "variant_a": [
+        "almond"
+      ],
+      "variant_b": [
+        "almond"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8952,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9588,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117382,
+      "product_id_b": 111080,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Sunshine Australian Oat Soft Grain Wholemeal Bread (Jumbo) 550g",
+      "name_b": "Sunshine Australian Oat Soft Grain Wholemeal Bread - Jumbo Pack",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "550g",
+      "size_b": "550g",
+      "variant_a": [
+        "oat"
+      ],
+      "variant_b": [
+        "oat"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9346,
+      "variant_score": 1.0,
+      "packaging_score": 0.5,
+      "match_score": 0.9586,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.93; variant=1.00; packaging=0.50"
+    },
+    {
+      "product_id_a": 117413,
+      "product_id_b": 114678,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Tasti Nut Bars - Chocolate Almond 210g",
+      "name_b": "Tasti Nut Bars - Chocolate Almond",
+      "brand_a": "tasti",
+      "brand_b": "tasti",
+      "size_a": "210g",
+      "size_b": "210g",
+      "variant_a": [
+        "almond",
+        "choc"
+      ],
+      "variant_b": [
+        "almond",
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8873,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9568,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.89; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 116958,
+      "product_id_b": 111181,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Post Great Grains Cereal Cranberry Almond Crunch, 396g",
+      "name_b": "Post Great Grains Cranberry Almond Crunch Cereal",
+      "brand_a": "post",
+      "brand_b": "post",
+      "size_a": "396g",
+      "size_b": "396g",
+      "variant_a": [
+        "almond"
+      ],
+      "variant_b": [
+        "almond"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8813,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9553,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.88; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117178,
+      "product_id_b": 114478,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Lune De Miel Acacia Honey 500g",
+      "name_b": "Lune De Miel Acacia Honey 500G",
+      "brand_a": "lune",
+      "brand_b": "lune",
+      "size_a": "500g",
+      "size_b": "500g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.955,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 117336,
+      "product_id_b": 114614,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Skippy Peanut Butter Chunky 1Kg",
+      "name_b": "Skippy Peanut Butter Chunky 1KG",
+      "brand_a": "skippy",
+      "brand_b": "skippy",
+      "size_a": "1kg",
+      "size_b": "1kg",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.955,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 82199,
+      "product_id_b": 114391,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Gardenia Enriched White Bread",
+      "name_b": "Gardenia Enriched White Bread",
+      "brand_a": "gardenia",
+      "brand_b": "gardenia",
+      "size_a": "400g",
+      "size_b": "400g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.955,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 82484,
+      "product_id_b": 114673,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Quickbury Organic Sunflower Seed Bread",
+      "name_b": "Quickbury Organic Sunflower Seed Bread",
+      "brand_a": "quickbury",
+      "brand_b": "quickbury",
+      "size_a": "500g",
+      "size_b": "500g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.955,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=0.70; packaging=0.70"
+    }
+  ],
+  "review_matches": [
+    {
+      "product_id_a": 116955,
+      "product_id_b": 82219,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Mission Wraps - Original, 8 x 360g",
+      "name_b": "Mission Wraps - Original ",
+      "brand_a": "mission",
+      "brand_b": "mission",
+      "size_a": "360g",
+      "size_b": "360g",
+      "variant_a": [
+        "classic"
+      ],
+      "variant_b": [
+        "classic"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8121,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.938,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117399,
+      "product_id_b": 111098,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Sunshine Strawberry Wholemeal Cream Bun 65g",
+      "name_b": "Sunshine Enriched Strawberry Wholemeal Cream Bun",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "65g",
+      "size_b": "65g",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7909,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9327,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.79; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117098,
+      "product_id_b": 82226,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Gardenia Chocolate Royale Loaf 340g",
+      "name_b": "Gardenia Loaf - Chocolate Royale",
+      "brand_a": "gardenia",
+      "brand_b": "gardenia",
+      "size_a": "340g",
+      "size_b": "340g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7904,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9326,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.79; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117342,
+      "product_id_b": 111249,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Skippy Peanut Butter Creamy No Sugar/Salt Added 280G",
+      "name_b": "Skippy Creamy Peanut Butter No Sugar Added",
+      "brand_a": "skippy",
+      "brand_b": "skippy",
+      "size_a": "280g",
+      "size_b": "280g",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7887,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9322,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.79; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117086,
+      "product_id_b": 114702,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Fong Yit XO Kaya Less Sugar 270g",
+      "name_b": "Fong Yit XO Kaya less sugar Spread",
+      "brand_a": "fong",
+      "brand_b": "fong",
+      "size_a": "270g",
+      "size_b": "270g",
+      "variant_a": [
+        "less sugar"
+      ],
+      "variant_b": [
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7839,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.931,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117098,
+      "product_id_b": 114571,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Gardenia Chocolate Royale Loaf 340g",
+      "name_b": "Gardenia Chocolate Royale Loaf Bread",
+      "brand_a": "gardenia",
+      "brand_b": "gardenia",
+      "size_a": "340g",
+      "size_b": "340g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7842,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.931,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117400,
+      "product_id_b": 111097,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Sunshine Vanilla Wholemeal Cream Bun 65g",
+      "name_b": "Sunshine Enriched Vanilla Wholemeal Cream Bun",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "65g",
+      "size_b": "65g",
+      "variant_a": [
+        "vanilla"
+      ],
+      "variant_b": [
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7781,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9295,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 82226,
+      "product_id_b": 114571,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Gardenia Loaf - Chocolate Royale",
+      "name_b": "Gardenia Chocolate Royale Loaf Bread",
+      "brand_a": "gardenia",
+      "brand_b": "gardenia",
+      "size_a": "340g",
+      "size_b": "340g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7771,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9293,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.78; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 114343,
+      "product_id_b": 111092,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Sunshine 100 percent Whole Grains Ultra Fine Wholemeal Bread",
+      "name_b": "Sunshine 100% Whole Grains Ultra Fine Wholemeal Bread",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "400g",
+      "size_b": "400g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.897,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.9293,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 117090,
+      "product_id_b": 114661,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Forty Thieves Peanut Butter Crunchy, 500g",
+      "name_b": "Forty Thieves Peanut Butter - Crunchy",
+      "brand_a": "forty",
+      "brand_b": "forty",
+      "size_a": "500g",
+      "size_b": "500g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8965,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.9291,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 117155,
+      "product_id_b": 114688,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "La Boulangere 4 Brioche Burger Bun, 200g",
+      "name_b": "La Boulangere Brioche Burger Bun",
+      "brand_a": "la",
+      "brand_b": "la",
+      "size_a": "200g",
+      "size_b": "200g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8965,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.9291,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 117498,
+      "product_id_b": 114555,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Gardenia Wholemeal Banana Walnut Loaf 400g",
+      "name_b": "Gardenia Wholemeal Banana Walnut Loaf",
+      "brand_a": "gardenia",
+      "brand_b": "gardenia",
+      "size_a": "400g",
+      "size_b": "400g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8944,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.9286,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.89; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 114705,
+      "product_id_b": 111078,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Sunshine Enriched Soft White (Jumbo) Bread",
+      "name_b": "Sunshine Jumbo Pack Enriched Soft White Bread",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "550g",
+      "size_b": "550g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9323,
+      "variant_score": 0.7,
+      "packaging_score": 0.5,
+      "match_score": 0.9281,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.93; variant=0.70; packaging=0.50"
+    },
+    {
+      "product_id_a": 117086,
+      "product_id_b": 111288,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Fong Yit XO Kaya Less Sugar 270g",
+      "name_b": "Fong Yit XO Premium Kaya Spread - Less Sugar",
+      "brand_a": "fong",
+      "brand_b": "fong",
+      "size_a": "270g",
+      "size_b": "270g",
+      "variant_a": [
+        "less sugar"
+      ],
+      "variant_b": [
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7714,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9279,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.77; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117110,
+      "product_id_b": 114550,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Gardenia Sambal Ikan Bilis Bun 70g",
+      "name_b": "Gardenia Sambal Ikan Bilis Bun",
+      "brand_a": "gardenia",
+      "brand_b": "gardenia",
+      "size_a": "70g",
+      "size_b": "70g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8904,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.9276,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.89; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 117101,
+      "product_id_b": 114345,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Gardenia Fine Grain Wholemeal Bread 420g",
+      "name_b": "Gardenia Fine Grain Wholemeal Bread",
+      "brand_a": "gardenia",
+      "brand_b": "gardenia",
+      "size_a": "420g",
+      "size_b": "420g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8898,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.9275,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.89; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 117101,
+      "product_id_b": 111063,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Gardenia Fine Grain Wholemeal Bread 420g",
+      "name_b": "Gardenia Fine Grain Wholemeal Bread",
+      "brand_a": "gardenia",
+      "brand_b": "gardenia",
+      "size_a": "420g",
+      "size_b": "420g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8898,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.9275,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.89; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 117395,
+      "product_id_b": 114660,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Sunshine Poketto Sandwh Belgian Chocolate, 50g",
+      "name_b": "Sunshine Poketto Sandwich Belgian Chocolate Bread",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "50g",
+      "size_b": "50g",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7686,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9272,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.77; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 114457,
+      "product_id_b": 111071,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Gardenia Low GI Nutri Multi-Grain Sliced Bread",
+      "name_b": "Gardenia Low GI Nutri Multi-Grain Bread",
+      "brand_a": "gardenia",
+      "brand_b": "gardenia",
+      "size_a": "400g",
+      "size_b": "400g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8878,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.927,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.89; variant=0.70; packaging=0.70"
+    },
+    {
+      "product_id_a": 117393,
+      "product_id_b": 82197,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Sunshine Hokkaido Milk Toast Bread 400g",
+      "name_b": "Sunshine Hokkaido Milk Toast Bread",
+      "brand_a": "sunshine",
+      "brand_b": "sunshine",
+      "size_a": "400g",
+      "size_b": "400g",
+      "variant_a": [],
+      "variant_b": [],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8873,
+      "variant_score": 0.7,
+      "packaging_score": 0.7,
+      "match_score": 0.9268,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.89; variant=0.70; packaging=0.70"
+    }
+  ],
+  "canonical_products": [
+    {
+      "canonical_key": "bakery-breakfast-sunshine-ab8fdcf80c9c",
+      "canonical_name": "Sunshine Hokkaido Milk Toast Bread",
+      "brand": "sunshine",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 400.0,
+      "size_base_unit": "g",
+      "size_display": "400g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        82197,
+        111084,
+        114333
+      ],
+      "first_seen_at": "2026-04-04T18:36:16.15834",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-gardenia-cd0ebb30311c",
+      "canonical_name": "Gardenia Loaf - California Raisin",
+      "brand": "gardenia",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 400.0,
+      "size_base_unit": "g",
+      "size_display": "400g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        82207,
+        111068,
+        114322
+      ],
+      "first_seen_at": "2026-04-04T18:36:16.162118",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-mission-a43458cc5444",
+      "canonical_name": "Mission Wrap - Original 8 Per Pack",
+      "brand": "mission",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 360.0,
+      "size_base_unit": "g",
+      "size_display": "360g",
+      "pack_count": 1,
+      "packaging": "packet",
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        82219,
+        111021,
+        114473
+      ],
+      "first_seen_at": "2026-04-04T18:36:17.509983",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-sunshine-9e05686f1fb2",
+      "canonical_name": "Sunshine Australian Oat Soft Grain Wholemeal Bread (Jumbo) 550g",
+      "brand": "sunshine",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 550.0,
+      "size_base_unit": "g",
+      "size_display": "550g",
+      "pack_count": 1,
+      "packaging": "packet",
+      "variant_tokens": [
+        "oat"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111080,
+        114378,
+        117382
+      ],
+      "first_seen_at": "2026-04-05T15:03:44.442206",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-sunshine-a3cf5bc005ba",
+      "canonical_name": "Sunshine Australian Oat Soft Grain Wholemeal Bread 400g",
+      "brand": "sunshine",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 400.0,
+      "size_base_unit": "g",
+      "size_display": "400g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "oat"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111089,
+        114722,
+        117383
+      ],
+      "first_seen_at": "2026-04-05T15:03:44.442206",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-gardenia-c56f88e7b0b1",
+      "canonical_name": "Gardenia Enriched White Bread",
+      "brand": "gardenia",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 400.0,
+      "size_base_unit": "g",
+      "size_display": "400g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        82199,
+        114391
+      ],
+      "first_seen_at": "2026-04-04T18:36:16.159044",
+      "last_seen_at": "2026-04-05T15:08:33.940761"
+    },
+    {
+      "canonical_key": "bakery-breakfast-sunshine-9cce5ce81b8a",
+      "canonical_name": "Sunshine Bread - Jumbo Pack Enriched Soft White",
+      "brand": "sunshine",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 550.0,
+      "size_base_unit": "g",
+      "size_display": "550g",
+      "pack_count": 1,
+      "packaging": "packet",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        82209,
+        111078
+      ],
+      "first_seen_at": "2026-04-04T18:36:16.162858",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-quickbury-bcdc6787f203",
+      "canonical_name": "Quickbury Organic Whole Rye Bread",
+      "brand": "quickbury",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 500.0,
+      "size_base_unit": "g",
+      "size_display": "500g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        82385,
+        114579
+      ],
+      "first_seen_at": "2026-04-04T18:36:29.002787",
+      "last_seen_at": "2026-04-05T15:09:00.648898"
+    },
+    {
+      "canonical_key": "bakery-breakfast-quickbury-fb8e008607df",
+      "canonical_name": "Quickbury Whole Rye Bread",
+      "brand": "quickbury",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 500.0,
+      "size_base_unit": "g",
+      "size_display": "500g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        82483,
+        114553
+      ],
+      "first_seen_at": "2026-04-04T18:36:36.665808",
+      "last_seen_at": "2026-04-05T15:09:00.458474"
+    },
+    {
+      "canonical_key": "bakery-breakfast-quickbury-1acfceca6d7c",
+      "canonical_name": "Quickbury Organic Sunflower Seed Bread",
+      "brand": "quickbury",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 500.0,
+      "size_base_unit": "g",
+      "size_display": "500g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        82484,
+        114673
+      ],
+      "first_seen_at": "2026-04-04T18:36:36.666175",
+      "last_seen_at": "2026-04-05T15:09:16.483163"
+    },
+    {
+      "canonical_key": "bakery-breakfast-gardenia-d116c24e9844",
+      "canonical_name": "Gardenia Hokkaido Butter Rolls 6 Per Pack",
+      "brand": "gardenia",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 200.0,
+      "size_base_unit": "g",
+      "size_display": "200g",
+      "pack_count": 1,
+      "packaging": "packet",
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111060,
+        114489
+      ],
+      "first_seen_at": "2026-04-05T15:08:49.8586",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-gardenia-3bc8c017b44d",
+      "canonical_name": "Gardenia Fine Grain Wholemeal Bread",
+      "brand": "gardenia",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 420.0,
+      "size_base_unit": "g",
+      "size_display": "420g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111063,
+        114345
+      ],
+      "first_seen_at": "2026-04-05T15:08:28.541103",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-gardenia-d724b894227a",
+      "canonical_name": "Gardenia High Fibre White Bread",
+      "brand": "gardenia",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 400.0,
+      "size_base_unit": "g",
+      "size_display": "400g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111070,
+        114456
+      ],
+      "first_seen_at": "2026-04-05T15:08:44.551185",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-gardenia-b5ad03112e31",
+      "canonical_name": "Gardenia Super Soft Wholemeal White Bread",
+      "brand": "gardenia",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 400.0,
+      "size_base_unit": "g",
+      "size_display": "400g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111072,
+        114475
+      ],
+      "first_seen_at": "2026-04-05T15:08:49.752818",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-gardenia-5886285a8bd7",
+      "canonical_name": "Gardenia Super Soft Wholemeal White Bread (Jumbo 600)",
+      "brand": "gardenia",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 600.0,
+      "size_base_unit": "g",
+      "size_display": "600g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111073,
+        114339
+      ],
+      "first_seen_at": "2026-04-05T15:08:28.498398",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-gardenia-ba99c502e302",
+      "canonical_name": "Gardenia Raisin Buns 6's",
+      "brand": "gardenia",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 240.0,
+      "size_base_unit": "g",
+      "size_display": "240g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111074,
+        114493
+      ],
+      "first_seen_at": "2026-04-05T15:08:49.886705",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-sunshine-9ffe77675a96",
+      "canonical_name": "Sunshine 100% Whole Grains Ultra Fine Wholemeal Bread 400g",
+      "brand": "sunshine",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 400.0,
+      "size_base_unit": "g",
+      "size_display": "400g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111092,
+        117381
+      ],
+      "first_seen_at": "2026-04-05T15:03:44.442206",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-sunshine-a6c81c5dd135",
+      "canonical_name": "Sunshine California Walnut Wholemeal Bread, 320g",
+      "brand": "sunshine",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 320.0,
+      "size_base_unit": "g",
+      "size_display": "320g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111094,
+        117390
+      ],
+      "first_seen_at": "2026-04-05T15:03:44.442206",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-sunshine-99de0765fb6c",
+      "canonical_name": "Sunshine Extra Fine Wholemeal Burger Buns",
+      "brand": "sunshine",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 220.0,
+      "size_base_unit": "g",
+      "size_display": "220g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111099,
+        114429
+      ],
+      "first_seen_at": "2026-04-05T15:08:39.28738",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    },
+    {
+      "canonical_key": "bakery-breakfast-cowhead-08dbd178c154",
+      "canonical_name": "Cowhead Organic Rolled Oats (Quick Cooking)",
+      "brand": "cowhead",
+      "unified_category": "Bakery & Breakfast",
+      "size_total_value": 500.0,
+      "size_base_unit": "g",
+      "size_display": "500g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        111128,
+        114647
+      ],
+      "first_seen_at": "2026-04-05T15:09:11.235161",
+      "last_seen_at": "2026-04-05T15:30:27.117604"
+    }
+  ]
+}

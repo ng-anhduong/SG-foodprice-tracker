@@ -1,0 +1,23 @@
+{
+  "run_key": "staples-coldstorage_2026-04-05-fairprice_2026-04-05-redmart_2026-04-05-shengsiong_2026-04-05",
+  "category": "Staples",
+  "store_dates": {
+    "fairprice": "2026-04-05",
+    "coldstorage": "2026-04-05",
+    "redmart": "2026-04-05",
+    "shengsiong": "2026-04-05"
+  },
+  "input_products": 3792,
+  "strong_match_pairs_raw": 57,
+  "strong_match_pairs": 56,
+  "review_pairs": 230,
+  "canonical_groups": 3699,
+  "cross_store_groups": 54,
+  "generated_at": "2026-04-06T15:41:37.756185",
+  "supabase_sync": {
+    "synced": true,
+    "canonical_products_upserted": 3699,
+    "canonical_members_upserted": 3792,
+    "match_candidates_upserted": 286
+  }
+}

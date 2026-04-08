@@ -1,0 +1,1561 @@
+{
+  "strong_matches": [
+    {
+      "product_id_a": 117592,
+      "product_id_b": 95586,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Chobani No Sugar Added Greek Yogurt Strawberry 680g",
+      "name_b": "Chobani No Sugar Added Greek Yogurt Strawberry 680G",
+      "brand_a": "chobani",
+      "brand_b": "chobani",
+      "size_a": "680g",
+      "size_b": "680g",
+      "variant_a": [
+        "no sugar",
+        "strawberry"
+      ],
+      "variant_b": [
+        "no sugar",
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117735,
+      "product_id_b": 95412,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Marigold Greek Style Yoghurt Vanilla 1kg",
+      "name_b": "Marigold Greek Style Yoghurt - Vanilla 1KG",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "1kg",
+      "size_b": "1kg",
+      "variant_a": [
+        "vanilla"
+      ],
+      "variant_b": [
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103098,
+      "product_id_b": 112412,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Chobani Greek Yogurt - Natural Light",
+      "name_b": "CHOBANI Greek Yogurt - Natural Light",
+      "brand_a": "chobani",
+      "brand_b": "chobani",
+      "size_a": "160g",
+      "size_b": "160g",
+      "variant_a": [
+        "less sugar"
+      ],
+      "variant_b": [
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103089,
+      "product_id_b": 112418,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Chobani Greek Yogurt - Strawberry",
+      "name_b": "CHOBANI Greek Yogurt - Strawberry",
+      "brand_a": "chobani",
+      "brand_b": "chobani",
+      "size_a": "160g",
+      "size_b": "160g",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103260,
+      "product_id_b": 112467,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Greek Style Yoghurt - Vanilla",
+      "name_b": "Marigold Greek Style Yoghurt Vanilla",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "130g",
+      "size_b": "130g",
+      "variant_a": [
+        "vanilla"
+      ],
+      "variant_b": [
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103131,
+      "product_id_b": 112787,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Power Beans Fresh Soya Milk - Reduced Sugar",
+      "name_b": "Marigold Power Beans Fresh Soya Milk - Reduced Sugar",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "less sugar"
+      ],
+      "variant_b": [
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103071,
+      "product_id_b": 112236,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Power Beans Fresh Soya Milk - Unsweetened",
+      "name_b": "Marigold Power Beans Fresh Soya Milk - Unsweetened",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 95497,
+      "product_id_b": 112702,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "JJW Leaf Bun (Plain)",
+      "name_b": "JJW Leaf Bun (Plain)",
+      "brand_a": "jjw",
+      "brand_b": "jjw",
+      "size_a": "210g",
+      "size_b": "210g",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 1.0,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.985,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=1.00; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117785,
+      "product_id_b": 95322,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Meiji Low Fat High Protein Plain Milk 350ml",
+      "name_b": "Meiji Low Fat High Protein Milk Plain 350ml",
+      "brand_a": "meiji",
+      "brand_b": "meiji",
+      "size_a": "350ml",
+      "size_b": "350ml",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9527,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9732,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.95; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117651,
+      "product_id_b": 95311,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Farmers Union Greek Style Vanilla Bean Yogurt 950g",
+      "name_b": "Farmers Union Greek Style Vanilla Bean Yoghurt 950G",
+      "brand_a": "farmers",
+      "brand_b": "farmers",
+      "size_a": "950g",
+      "size_b": "950g",
+      "variant_a": [
+        "vanilla"
+      ],
+      "variant_b": [
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9406,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9701,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.94; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117615,
+      "product_id_b": 95479,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Dairy Farmers Thick & Creamy Yoghurt Strawberry 600g",
+      "name_b": "Dairy Farmers Thick And Creamy Strawberry Yoghurt 600G",
+      "brand_a": "dairy",
+      "brand_b": "dairy",
+      "size_a": "600g",
+      "size_b": "600g",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9364,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9691,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.94; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 118213,
+      "product_id_b": 103119,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Marigold Non Fat Yoghurt Natural No Sugar Added, 1Kg",
+      "name_b": "Marigold Non Fat Yoghurt - Natural (No Sugar Added)",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "1kg",
+      "size_b": "1kg",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.935,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9688,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.94; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117617,
+      "product_id_b": 95365,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Dairy Farmers Thick & Creamy Yoghurt Vanilla 600g",
+      "name_b": "Dairy Farmers Thick And Creamy Vanilla Yoghurt 600G",
+      "brand_a": "dairy",
+      "brand_b": "dairy",
+      "size_a": "600g",
+      "size_b": "600g",
+      "variant_a": [
+        "vanilla"
+      ],
+      "variant_b": [
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9317,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9679,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.93; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117591,
+      "product_id_b": 112420,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Chobani No Sugar Added Greek Yogurt Strawberry 150g",
+      "name_b": "CHOBANI No Sugar Added Greek Yogurt Strawberry",
+      "brand_a": "chobani",
+      "brand_b": "chobani",
+      "size_a": "150g",
+      "size_b": "150g",
+      "variant_a": [
+        "no sugar",
+        "strawberry"
+      ],
+      "variant_b": [
+        "no sugar",
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.922,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9655,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.92; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117749,
+      "product_id_b": 95561,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Marigold Peel Fresh Lime Juice, 1.89L",
+      "name_b": "Marigold Peel Fresh Juice Drink - Lime 1.89L",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "1.89l",
+      "size_b": "1.89l",
+      "variant_a": [
+        "lime"
+      ],
+      "variant_b": [
+        "lime"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9167,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9642,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.92; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117753,
+      "product_id_b": 95495,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Marigold Peel Fresh Power Juice No Sugar Added Kale & Veggie, 946ml",
+      "name_b": "Marigold Peel Fresh Powerjuice No Sugar Added Juice Drink - Kale And Veggie 946ML",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9144,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9636,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.91; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117754,
+      "product_id_b": 95447,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Marigold Peel Fresh Power Juice No Sugar Added Orange, 946ml",
+      "name_b": "Marigold Peel Fresh Powerjuice No Sugar Added Juice Drink - Orange 946ML",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "no sugar",
+        "orange"
+      ],
+      "variant_b": [
+        "no sugar",
+        "orange"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.905,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9613,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.91; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117735,
+      "product_id_b": 103135,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Marigold Greek Style Yoghurt Vanilla 1kg",
+      "name_b": "Marigold Greek Style Yoghurt - Vanilla",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "1kg",
+      "size_b": "1kg",
+      "variant_a": [
+        "vanilla"
+      ],
+      "variant_b": [
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9048,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9612,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103135,
+      "product_id_b": 95412,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Marigold Greek Style Yoghurt - Vanilla",
+      "name_b": "Marigold Greek Style Yoghurt - Vanilla 1KG",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "1kg",
+      "size_b": "1kg",
+      "variant_a": [
+        "vanilla"
+      ],
+      "variant_b": [
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9048,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9612,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103241,
+      "product_id_b": 112226,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold HL Milk - Strawberry",
+      "name_b": "Marigold HL Strawberry Milk",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.9028,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9607,
+      "match_status": "strong_match",
+      "explanation": "brand=1.00; size=1.00; title=0.90; variant=1.00; packaging=0.70"
+    }
+  ],
+  "review_matches": [
+    {
+      "product_id_a": 118176,
+      "product_id_b": 112781,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Yakult Ace Light Family Pack 10x80ml",
+      "name_b": "Yakult Ace Light Family Pack",
+      "brand_a": "yakult",
+      "brand_b": "yakult",
+      "size_a": "10 x 80ml",
+      "size_b": "10 x 80ml",
+      "variant_a": [
+        "less sugar"
+      ],
+      "variant_b": [
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.79,
+      "variant_score": 1.0,
+      "packaging_score": 1.0,
+      "match_score": 0.9475,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.79; variant=1.00; packaging=1.00"
+    },
+    {
+      "product_id_a": 95693,
+      "product_id_b": 112436,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Farmers Union Greek Style Peach Yoghurt Pouch 130G",
+      "name_b": "Farmers Union Greek Style Peach Pouch Yogurt",
+      "brand_a": "farmers",
+      "brand_b": "farmers",
+      "size_a": "130g",
+      "size_b": "130g",
+      "variant_a": [
+        "peach"
+      ],
+      "variant_b": [
+        "peach"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8186,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9396,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.82; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117903,
+      "product_id_b": 103121,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Yoplait Petit Miam Strawberry Yoghurt 70g",
+      "name_b": "Yoplait Petit Miam Yoghurt - Strawberry",
+      "brand_a": "yoplait",
+      "brand_b": "yoplait",
+      "size_a": "70g",
+      "size_b": "70g",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8181,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9395,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.82; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117749,
+      "product_id_b": 112338,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Peel Fresh Lime Juice, 1.89L",
+      "name_b": "Marigold Peel Fresh Lime Juice Drink",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "1.89l",
+      "size_b": "1.89l",
+      "variant_a": [
+        "lime"
+      ],
+      "variant_b": [
+        "lime"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8167,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9392,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.82; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117750,
+      "product_id_b": 112344,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Peel Fresh Lime Juice, 946ml",
+      "name_b": "Marigold Peel Fresh Lime Juice",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "lime"
+      ],
+      "variant_b": [
+        "lime"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8167,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9392,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.82; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 118302,
+      "product_id_b": 103078,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Marigold Low Fat Cup Yoghurt Strawberry, 130g",
+      "name_b": "Marigold Low Fat Yoghurt - Strawberry",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "130g",
+      "size_b": "130g",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8153,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9388,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.82; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117786,
+      "product_id_b": 103033,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Meiji Low Fat Mango Yoghurt 135g",
+      "name_b": "Meiji Low Fat Yoghurt - Mango",
+      "brand_a": "meiji",
+      "brand_b": "meiji",
+      "size_a": "135g",
+      "size_b": "135g",
+      "variant_a": [
+        "mango"
+      ],
+      "variant_b": [
+        "mango"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8153,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9388,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.82; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117556,
+      "product_id_b": 103351,
+      "store_a": "coldstorage",
+      "store_b": "fairprice",
+      "name_a": "Arla Protein Hazelnut Latte Pudding 200g",
+      "name_b": "Arla Protein Pudding - Hazelnut Latte",
+      "brand_a": "arla",
+      "brand_b": "arla",
+      "size_a": "200g",
+      "size_b": "200g",
+      "variant_a": [
+        "hazelnut"
+      ],
+      "variant_b": [
+        "hazelnut"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8123,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9381,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103119,
+      "product_id_b": 95345,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Marigold Non Fat Yoghurt - Natural (No Sugar Added)",
+      "name_b": "Marigold Non Fat Cup Yoghurt - Natural No Sugar 1KG",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "1kg",
+      "size_b": "1kg",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8103,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9376,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103178,
+      "product_id_b": 112343,
+      "store_a": "fairprice",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Peel Fresh Juice - Powerberries (No Sugar)",
+      "name_b": "Marigold Peel Fresh No Sugar Added Juice - Powerberries",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8081,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.937,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 95495,
+      "product_id_b": 112334,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Peel Fresh Powerjuice No Sugar Added Juice Drink - Kale And Veggie 946ML",
+      "name_b": "Marigold Peel Fresh No Sugar Added Juice - Kale & Veggie",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8061,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9365,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.81; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117614,
+      "product_id_b": 112424,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Dairy Farmers Thick & Creamy Yoghurt Strawberry 150g",
+      "name_b": "Dairy Farmers Thick & Creamy Field Strawberry Yoghurt",
+      "brand_a": "dairy",
+      "brand_b": "dairy",
+      "size_a": "150g",
+      "size_b": "150g",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8047,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9362,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117565,
+      "product_id_b": 95391,
+      "store_a": "coldstorage",
+      "store_b": "redmart",
+      "name_a": "Brownes Dairy Greek Unsweetened Yoghurt 1Kg",
+      "name_b": "Brownes Dairy The Greek Unsweetened Natural Yoghurt",
+      "brand_a": "brownes",
+      "brand_b": "brownes",
+      "size_a": "1kg",
+      "size_b": "1kg",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8036,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9359,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 118217,
+      "product_id_b": 112336,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Peel Fresh Less Sugar Pink Guava, 946ml",
+      "name_b": "Marigold Peel Fresh Less Sugar Pink Guava Juice",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "less sugar"
+      ],
+      "variant_b": [
+        "less sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8038,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9359,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 118209,
+      "product_id_b": 112226,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Marigold HL Milk Strawberry 946ml",
+      "name_b": "Marigold HL Strawberry Milk",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8024,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9356,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 95395,
+      "product_id_b": 112247,
+      "store_a": "redmart",
+      "store_b": "shengsiong",
+      "name_a": "Meiji Strawberry Flavour Milk 830 ML",
+      "name_b": "Meiji Low Fat Strawberry Flavour Milk",
+      "brand_a": "meiji",
+      "brand_b": "meiji",
+      "size_a": "830ml",
+      "size_b": "830ml",
+      "variant_a": [
+        "strawberry"
+      ],
+      "variant_b": [
+        "strawberry"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8015,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9354,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 103045,
+      "product_id_b": 95478,
+      "store_a": "fairprice",
+      "store_b": "redmart",
+      "name_a": "Marigold HL Milk - Plain",
+      "name_b": "Marigold HL Milk - Plain 946ML",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.8,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.935,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117753,
+      "product_id_b": 112334,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Marigold Peel Fresh Power Juice No Sugar Added Kale & Veggie, 946ml",
+      "name_b": "Marigold Peel Fresh No Sugar Added Juice - Kale & Veggie",
+      "brand_a": "marigold",
+      "brand_b": "marigold",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "no sugar"
+      ],
+      "variant_b": [
+        "no sugar"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7951,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9338,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.80; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117651,
+      "product_id_b": 112447,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Farmers Union Greek Style Vanilla Bean Yogurt 950g",
+      "name_b": "Farmers Union Greek Style All Natural Vanilla Bean Yogurt",
+      "brand_a": "farmers",
+      "brand_b": "farmers",
+      "size_a": "950g",
+      "size_b": "950g",
+      "variant_a": [
+        "vanilla"
+      ],
+      "variant_b": [
+        "vanilla"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7938,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9334,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.79; variant=1.00; packaging=0.70"
+    },
+    {
+      "product_id_a": 117662,
+      "product_id_b": 112205,
+      "store_a": "coldstorage",
+      "store_b": "shengsiong",
+      "name_a": "Farmhouse Low Fat Dark Chocolate Milk 946ml",
+      "name_b": "Farmhouse Dark Chocolate Low Fat Milk",
+      "brand_a": "farmhouse",
+      "brand_b": "farmhouse",
+      "size_a": "946ml",
+      "size_b": "946ml",
+      "variant_a": [
+        "choc"
+      ],
+      "variant_b": [
+        "choc"
+      ],
+      "brand_score": 1.0,
+      "size_score": 1.0,
+      "title_score": 0.7933,
+      "variant_score": 1.0,
+      "packaging_score": 0.7,
+      "match_score": 0.9333,
+      "match_status": "review",
+      "explanation": "brand=1.00; size=1.00; title=0.79; variant=1.00; packaging=0.70"
+    }
+  ],
+  "canonical_products": [
+    {
+      "canonical_key": "dairy-marigold-d58df7ca0d13",
+      "canonical_name": "Marigold Greek Style Yoghurt - Natural 1KG",
+      "brand": "marigold",
+      "unified_category": "Dairy",
+      "size_total_value": 1000.0,
+      "size_base_unit": "g",
+      "size_display": "1kg",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 4,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        95434,
+        103074,
+        112469,
+        117734
+      ],
+      "first_seen_at": "2026-04-04T18:41:04.547117",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    },
+    {
+      "canonical_key": "dairy-marigold-12bf46c75722",
+      "canonical_name": "Marigold Non Fat Yoghurt Natural No Sugar Added, 1Kg",
+      "brand": "marigold",
+      "unified_category": "Dairy",
+      "size_total_value": 1000.0,
+      "size_base_unit": "g",
+      "size_display": "1kg",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "no sugar"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95345,
+        103119,
+        118213
+      ],
+      "first_seen_at": "2026-04-04T18:40:53.646021",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-marigold-f28269eb026e",
+      "canonical_name": "Marigold Greek Style Yoghurt - Vanilla 1KG",
+      "brand": "marigold",
+      "unified_category": "Dairy",
+      "size_total_value": 1000.0,
+      "size_base_unit": "g",
+      "size_display": "1kg",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "vanilla"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95412,
+        103135,
+        117735
+      ],
+      "first_seen_at": "2026-04-04T18:40:59.333826",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-marigold-6a9483bbbd81",
+      "canonical_name": "Marigold Non Fat Cup Yoghurt - Peach Mango 1KG",
+      "brand": "marigold",
+      "unified_category": "Dairy",
+      "size_total_value": 1000.0,
+      "size_base_unit": "g",
+      "size_display": "1kg",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "mango",
+        "peach"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        95516,
+        103941,
+        112462
+      ],
+      "first_seen_at": "2026-04-04T18:41:15.279216",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    },
+    {
+      "canonical_key": "dairy-farmhouse-2adc84b9619a",
+      "canonical_name": "Farmhouse Dark Chocolate Low Fat Milk Fresh Milk 946ML",
+      "brand": "farmhouse",
+      "unified_category": "Dairy",
+      "size_total_value": 946.0,
+      "size_base_unit": "ml",
+      "size_display": "946ml",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "choc"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        95564,
+        112205,
+        117662
+      ],
+      "first_seen_at": "2026-04-04T18:41:20.693212",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    },
+    {
+      "canonical_key": "dairy-marigold-1b2c79a699aa",
+      "canonical_name": "Marigold Peel Fresh Juice Drink - Apple Aloe Vera 1.89L",
+      "brand": "marigold",
+      "unified_category": "Dairy",
+      "size_total_value": 1890.0,
+      "size_base_unit": "ml",
+      "size_display": "1.89l",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "apple"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        95636,
+        112341,
+        117747
+      ],
+      "first_seen_at": "2026-04-04T18:41:31.367633",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    },
+    {
+      "canonical_key": "dairy-marigold-9eb2d2488042",
+      "canonical_name": "Marigold Peel Fresh Select Juice Drink - Yuzu 1.89 L",
+      "brand": "marigold",
+      "unified_category": "Dairy",
+      "size_total_value": 1890.0,
+      "size_base_unit": "ml",
+      "size_display": "1.89l",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 3,
+      "stores_present": [
+        "fairprice",
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        95705,
+        103262,
+        112330
+      ],
+      "first_seen_at": "2026-04-04T18:41:42.017913",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    },
+    {
+      "canonical_key": "dairy-marigold-b4dd65cc9ce8",
+      "canonical_name": "Marigold Low Fat Yoghurt Peach 130g",
+      "brand": "marigold",
+      "unified_category": "Dairy",
+      "size_total_value": 130.0,
+      "size_base_unit": "g",
+      "size_display": "130g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "peach"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        103141,
+        112477,
+        118303
+      ],
+      "first_seen_at": "2026-04-05T15:00:59.623976",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    },
+    {
+      "canonical_key": "dairy-marigold-90fd1b16aa0e",
+      "canonical_name": "Marigold HL Milk Strawberry 946ml",
+      "brand": "marigold",
+      "unified_category": "Dairy",
+      "size_total_value": 946.0,
+      "size_base_unit": "ml",
+      "size_display": "946ml",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "strawberry"
+      ],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        103241,
+        112226,
+        118209
+      ],
+      "first_seen_at": "2026-04-05T15:01:06.755847",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    },
+    {
+      "canonical_key": "dairy-perfect-33ebe6c8d837",
+      "canonical_name": "Perfect Italiano Mozzarella Grated Cheese 450g",
+      "brand": "perfect",
+      "unified_category": "Dairy",
+      "size_total_value": 450.0,
+      "size_base_unit": "g",
+      "size_display": "450g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 3,
+      "stores_present": [
+        "coldstorage",
+        "fairprice",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        103283,
+        112395,
+        118124
+      ],
+      "first_seen_at": "2026-04-05T15:01:09.72323",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    },
+    {
+      "canonical_key": "dairy-meiji-efe03c66f77d",
+      "canonical_name": "Meiji Fresh Milk 2L",
+      "brand": "meiji",
+      "unified_category": "Dairy",
+      "size_total_value": 2000.0,
+      "size_base_unit": "ml",
+      "size_display": "2l",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95307,
+        117774
+      ],
+      "first_seen_at": "2026-04-04T18:40:48.242087",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-farmers-48fb6b990ded",
+      "canonical_name": "Farmers Union Greek Style Vanilla Bean Yoghurt 950G",
+      "brand": "farmers",
+      "unified_category": "Dairy",
+      "size_total_value": 950.0,
+      "size_base_unit": "g",
+      "size_display": "950g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "vanilla"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95311,
+        117651
+      ],
+      "first_seen_at": "2026-04-04T18:40:48.270693",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-greenfields-5c1b709e6b85",
+      "canonical_name": "Greenfields Fresh Milk 1.89L",
+      "brand": "greenfields",
+      "unified_category": "Dairy",
+      "size_total_value": 1890.0,
+      "size_base_unit": "ml",
+      "size_display": "1.89l",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95313,
+        118282
+      ],
+      "first_seen_at": "2026-04-04T18:40:48.285934",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-meiji-67abf063e002",
+      "canonical_name": "Meiji Low Fat High Protein Plain Milk 350ml",
+      "brand": "meiji",
+      "unified_category": "Dairy",
+      "size_total_value": 350.0,
+      "size_base_unit": "ml",
+      "size_display": "350ml",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "no sugar"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95322,
+        117785
+      ],
+      "first_seen_at": "2026-04-04T18:40:48.380547",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-ballgus-56e536a7d319",
+      "canonical_name": "Ballgus Beef Pepperoni",
+      "brand": "ballgus",
+      "unified_category": "Dairy",
+      "size_total_value": 180.0,
+      "size_base_unit": "g",
+      "size_display": "180g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        95328,
+        112636
+      ],
+      "first_seen_at": "2026-04-04T18:40:48.425584",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    },
+    {
+      "canonical_key": "dairy-farmhouse-2ff1c8a092f9",
+      "canonical_name": "Farmhouse Fresh Milk 946ml",
+      "brand": "farmhouse",
+      "unified_category": "Dairy",
+      "size_total_value": 946.0,
+      "size_base_unit": "ml",
+      "size_display": "946ml",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95333,
+        117661
+      ],
+      "first_seen_at": "2026-04-04T18:40:48.476554",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-hay-a67f74383e63",
+      "canonical_name": "Hay Dairies Original Goat Milk 800ml",
+      "brand": "hay",
+      "unified_category": "Dairy",
+      "size_total_value": 800.0,
+      "size_base_unit": "ml",
+      "size_display": "800ml",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "classic"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95339,
+        118286
+      ],
+      "first_seen_at": "2026-04-04T18:40:48.520587",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-tamar-22bc4d78105b",
+      "canonical_name": "Tamar Valley Kids Apple Pear Greek Style Yoghurt 110g",
+      "brand": "tamar",
+      "unified_category": "Dairy",
+      "size_total_value": 110.0,
+      "size_base_unit": "g",
+      "size_display": "110g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "apple"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95361,
+        118240
+      ],
+      "first_seen_at": "2026-04-04T18:40:53.826171",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-dairy-e59ff164051c",
+      "canonical_name": "Dairy Farmers Thick And Creamy Vanilla Yoghurt 600G",
+      "brand": "dairy",
+      "unified_category": "Dairy",
+      "size_total_value": 600.0,
+      "size_base_unit": "g",
+      "size_display": "600g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [
+        "vanilla"
+      ],
+      "member_count": 2,
+      "stores_present": [
+        "coldstorage",
+        "redmart"
+      ],
+      "source_product_ids": [
+        95365,
+        117617
+      ],
+      "first_seen_at": "2026-04-04T18:40:53.871097",
+      "last_seen_at": "2026-04-05T15:01:43.291742"
+    },
+    {
+      "canonical_key": "dairy-peng-565d7d71864f",
+      "canonical_name": "Peng Wang Cheese Tofu",
+      "brand": "peng",
+      "unified_category": "Dairy",
+      "size_total_value": 200.0,
+      "size_base_unit": "g",
+      "size_display": "200g",
+      "pack_count": 1,
+      "packaging": null,
+      "variant_tokens": [],
+      "member_count": 2,
+      "stores_present": [
+        "redmart",
+        "shengsiong"
+      ],
+      "source_product_ids": [
+        95366,
+        112577
+      ],
+      "first_seen_at": "2026-04-04T18:40:53.879111",
+      "last_seen_at": "2026-04-05T15:31:09.798518"
+    }
+  ]
+}

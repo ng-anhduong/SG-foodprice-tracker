@@ -6,7 +6,12 @@ venv/
 .DS_Store
 **/.DS_Store
 .ipynb_checkpoints/
-dataset/raw/
-dataset/processed/
-data/debug/
+data/raw/
 data/processed/
+data/matching/
+data/commodity_matching/
+data/price_comparison_preview/
+data/debug/
+pipeline/docs/matching_design.md
+pipeline/docs/meat_produce_matching_design.md
+pipeline/docs/
