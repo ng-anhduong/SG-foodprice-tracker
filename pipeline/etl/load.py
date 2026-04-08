@@ -20,7 +20,7 @@ load_dotenv()
 PROC_BASE = os.path.join("data", "processed")
 STORES = ["fairprice", "shengsiong", "redmart", "coldstorage"]
 
-BATCH_SIZE = 500  # Supabase REST API handles ~500 rows per request well
+BATCH_SIZE = 500  
 
 
 def get_client():

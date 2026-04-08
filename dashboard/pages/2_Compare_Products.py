@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import json, sys, os
+import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), "../../pipeline/etl"))
 from load import get_client
 
@@ -16,17 +16,31 @@ STORE_COLORS = {
     "shengsiong":  "#009B4E",
 }
 
+def fetch_all(table, date_col):
+    client = get_client()
+    all_rows = []
+    page = 0
+    page_size = 1000
+    while True:
+        res = (
+            client.table(table)
+            .select("*")
+            .order(date_col, desc=True)
+            .range(page * page_size, (page + 1) * page_size - 1)
+            .execute()
+        )
+        if not res.data:
+            break
+        all_rows.extend(res.data)
+        if len(res.data) < page_size:
+            break
+        page += 1
+    return all_rows
+
 @st.cache_data(ttl=300)
 def load_recommendations():
-    client = get_client()
-    res = (
-        client.table("canonical_product_daily_recommendations")
-        .select("*")
-        .order("scraped_date_sg", desc=True)
-        .limit(3000)
-        .execute()
-    )
-    df = pd.DataFrame(res.data)
+    rows = fetch_all("canonical_product_daily_recommendations", "scraped_date_sg")
+    df = pd.DataFrame(rows)
     if df.empty:
         return df
     latest = df["scraped_date_sg"].max()
@@ -34,15 +48,8 @@ def load_recommendations():
 
 @st.cache_data(ttl=300)
 def load_prices():
-    client = get_client()
-    res = (
-        client.table("canonical_product_daily_prices")
-        .select("*")
-        .order("scraped_date_sg", desc=True)
-        .limit(5000)
-        .execute()
-    )
-    df = pd.DataFrame(res.data)
+    rows = fetch_all("canonical_product_daily_prices", "scraped_date_sg")
+    df = pd.DataFrame(rows)
     if df.empty:
         return df
     latest = df["scraped_date_sg"].max()
@@ -138,7 +145,6 @@ if selected_name:
         )
         st.plotly_chart(fig, use_container_width=True)
 
-        # Store product names per store
         st.markdown("**Store-specific product names:**")
         name_table = price_rows[["store", "store_product_name", "price_sgd", "product_url"]].copy()
         name_table["price_sgd"] = name_table["price_sgd"].apply(lambda x: f"${x:.2f}")

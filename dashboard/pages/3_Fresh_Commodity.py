@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import json, sys, os
+import sys, os
 sys.path.append(os.path.join(os.path.dirname(__file__), "../../pipeline/etl"))
 from load import get_client
 
@@ -16,17 +16,31 @@ STORE_COLORS = {
     "shengsiong":  "#009B4E",
 }
 
+def fetch_all(table, date_col):
+    client = get_client()
+    all_rows = []
+    page = 0
+    page_size = 1000
+    while True:
+        res = (
+            client.table(table)
+            .select("*")
+            .order(date_col, desc=True)
+            .range(page * page_size, (page + 1) * page_size - 1)
+            .execute()
+        )
+        if not res.data:
+            break
+        all_rows.extend(res.data)
+        if len(res.data) < page_size:
+            break
+        page += 1
+    return all_rows
+
 @st.cache_data(ttl=300)
 def load_data():
-    client = get_client()
-    res = (
-        client.table("commodity_price_comparisons")
-        .select("*")
-        .order("scraped_date", desc=True)
-        .limit(2000)
-        .execute()
-    )
-    df = pd.DataFrame(res.data)
+    rows = fetch_all("commodity_price_comparisons", "scraped_date")
+    df = pd.DataFrame(rows)
     if df.empty:
         return df
     latest = df["scraped_date"].max()
@@ -68,7 +82,7 @@ st.markdown(f"**{len(filtered)} cuts found**")
 
 st.divider()
 
-# ── CHART: Cheapest store per cut ─────────────────────────────────────────────
+# ── CHART ─────────────────────────────────────────────────────────────────────
 
 st.subheader("Cheapest store per cut")
 
@@ -118,7 +132,6 @@ table.columns = [
     "Priciest Store", "Priciest ($)", "Priciest Product",
     "Spread ($)", "Stores"
 ]
-
 for col in ["Cheapest ($)", "Priciest ($)", "Spread ($)"]:
     table[col] = table[col].apply(lambda x: f"${x:.2f}" if pd.notna(x) else "-")
 

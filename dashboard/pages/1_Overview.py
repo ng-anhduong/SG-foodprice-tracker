@@ -16,18 +16,16 @@ STORE_COLORS = {
     "shengsiong":  "#009B4E",
 }
 
-@st.cache_data(ttl=300)
-def load_data():
+def fetch_all(table, date_col):
     client = get_client()
     all_rows = []
     page = 0
     page_size = 1000
-
     while True:
         res = (
-            client.table("canonical_product_daily_recommendations")
+            client.table(table)
             .select("*")
-            .order("scraped_date_sg", desc=True)
+            .order(date_col, desc=True)
             .range(page * page_size, (page + 1) * page_size - 1)
             .execute()
         )
@@ -37,8 +35,12 @@ def load_data():
         if len(res.data) < page_size:
             break
         page += 1
+    return all_rows
 
-    df = pd.DataFrame(all_rows)
+@st.cache_data(ttl=300)
+def load_data():
+    rows = fetch_all("canonical_product_daily_recommendations", "scraped_date_sg")
+    df = pd.DataFrame(rows)
     if df.empty:
         return df
     latest = df["scraped_date_sg"].max()
@@ -165,7 +167,6 @@ top = (
     .head(10)
     .reset_index(drop=True)
 )
-
 top.columns = [
     "Product", "Category",
     "Cheapest Store", "Cheapest ($)",

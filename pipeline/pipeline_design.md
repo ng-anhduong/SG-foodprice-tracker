@@ -97,7 +97,7 @@ The second transform layer reads from `products` and runs four matching algorith
 
 ### Algorithm 1A: Branded Product Matching
 
-**Script:** `pipeline/matching/matching.py` (written by teammates)
+**Script:** `pipeline/matching/matching.py` 
 
 **Categories:** Beverages, Dairy, Staples, Snacks & Confectionery, Bakery & Breakfast
 
