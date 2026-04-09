@@ -941,7 +941,7 @@ def sync_results_to_supabase(
     }
 
 
-def run(category: str = DEFAULT_CATEGORY) -> dict[str, Any]:
+def run(category: str = DEFAULT_CATEGORY, date_str: Optional[str] = None) -> dict[str, Any]:
     if category not in SUPPORTED_CATEGORIES:
         raise ValueError(
             f"matching.py only supports packaged-goods categories: {SUPPORTED_CATEGORIES}. "
@@ -952,22 +952,22 @@ def run(category: str = DEFAULT_CATEGORY) -> dict[str, Any]:
     supabase = get_client()
 
     print("=" * 70)
-    print(f"Matching category: {category}")
+    print(f"Matching category: {category}" + (f" for date {date_str}" if date_str else ""))
     print("=" * 70)
 
     products: list[ParsedProduct] = []
     store_dates: dict[str, str] = {}
 
     for store in STORE_ORDER:
-        latest_date = get_latest_date_for_store(supabase, store, category)
-        if not latest_date:
+        chosen_date = date_str or get_latest_date_for_store(supabase, store, category)
+        if not chosen_date:
             print(f"[{store}] No rows found for {category}")
             continue
-        store_dates[store] = latest_date
-        rows = fetch_products_for_store_date(supabase, store, category, latest_date)
-        print(f"[{store}] fetched {len(rows)} rows for {latest_date}")
+        store_dates[store] = chosen_date
+        rows = fetch_products_for_store_date(supabase, store, category, chosen_date)
+        print(f"[{store}] fetched {len(rows)} rows for {chosen_date}")
         for row in rows:
-            products.append(parse_product(row, latest_date))
+            products.append(parse_product(row, chosen_date))
 
     pair_matches = generate_pairwise_matches(products)
     strong_pairs_raw = [row for row in pair_matches if row["match_status"] == "strong_match"]
@@ -1025,4 +1025,5 @@ if __name__ == "__main__":
     import sys
 
     arg = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_CATEGORY
-    run(arg)
+    date_arg = sys.argv[2] if len(sys.argv) > 2 else None
+    run(arg, date_arg)

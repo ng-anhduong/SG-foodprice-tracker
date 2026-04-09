@@ -13,6 +13,7 @@ create table if not exists public.commodity_price_comparisons (
     cheapest_product_name text,
     priciest_store text not null,
     priciest_price_sgd numeric not null,        -- actual price at common_weight_g
+    priciest_product_name text,
     price_spread_sgd numeric not null,          -- actual $ difference at same pack size
     store_prices jsonb not null default '{}'::jsonb,  -- includes unit_price_per_100g per store for reference
     scraped_date date not null,

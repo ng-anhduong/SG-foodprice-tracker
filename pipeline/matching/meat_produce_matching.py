@@ -867,28 +867,28 @@ def sync_results_to_supabase(supabase, run_key, category, canonical_products, ca
 
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 
-def run(category: str) -> dict[str, Any]:
+def run(category: str, date_str: Optional[str] = None) -> dict[str, Any]:
     if category not in SUPPORTED_CATEGORIES:
         raise ValueError(f"Category must be one of: {SUPPORTED_CATEGORIES}")
 
     supabase = get_client()
     print("=" * 70)
-    print(f"Meat/Produce matching: {category}")
+    print(f"Meat/Produce matching: {category}" + (f" for date {date_str}" if date_str else ""))
     print("=" * 70)
 
     products: list[ParsedProduct] = []
     store_dates: dict[str, str] = {}
 
     for store in STORE_ORDER:
-        latest_date = get_latest_date_for_store(supabase, store, category)
-        if not latest_date:
+        chosen_date = date_str or get_latest_date_for_store(supabase, store, category)
+        if not chosen_date:
             print(f"[{store}] No rows found for {category}")
             continue
-        store_dates[store] = latest_date
-        rows = fetch_products_for_store_date(supabase, store, category, latest_date)
-        print(f"[{store}] fetched {len(rows)} rows for {latest_date}")
+        store_dates[store] = chosen_date
+        rows = fetch_products_for_store_date(supabase, store, category, chosen_date)
+        print(f"[{store}] fetched {len(rows)} rows for {chosen_date}")
         for row in rows:
-            products.append(parse_product(row, latest_date))
+            products.append(parse_product(row, chosen_date))
 
     pair_matches = generate_pairwise_matches(products)
     strong_pairs_raw = [r for r in pair_matches if r["match_status"] == "strong_match"]
@@ -934,7 +934,9 @@ def run(category: str) -> dict[str, Any]:
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python3 pipeline/matching/meat_produce_matching.py <category>")
+        print("Usage: python3 pipeline/matching/meat_produce_matching.py <category> [date]")
         print(f"  Categories: {SUPPORTED_CATEGORIES}")
+        print("  date: optional, e.g. 2026-04-06 (defaults to latest)")
         sys.exit(1)
-    run(sys.argv[1])
+    date_arg = sys.argv[2] if len(sys.argv) > 2 else None
+    run(sys.argv[1], date_arg)
