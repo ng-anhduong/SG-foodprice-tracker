@@ -372,6 +372,7 @@ def build_commodity_comparisons(rows: list[dict]) -> list[dict]:
             "cheapest_product_name": cheapest["name"],
             "priciest_store": priciest["store"],
             "priciest_price_sgd": priciest["price_sgd"],
+            "priciest_product_name": priciest["name"],
             "price_spread_sgd": round(priciest["price_sgd"] - cheapest["price_sgd"], 4),
             "store_prices": store_prices,
             "scraped_date": cheapest["scraped_date"],

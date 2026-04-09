@@ -31,7 +31,7 @@ PRICE_REFRESH_CATEGORIES = PACKAGED_CATEGORIES + FRESH_CANONICAL_CATEGORIES
 @dag(
     dag_id="product_matching_pipeline",
     description="Runs category-specific matching and cached price-table refresh after ETL load",
-    schedule="45 8 * * *",  # 4:45 PM SGT (8:45 AM UTC)
+    schedule="45 6 * * *",  # 2:45 PM SGT (6:45 AM UTC)
     start_date=datetime(2026, 4, 7),
     catchup=False,
     tags=["matching", "pricing", "supabase"],
@@ -41,10 +41,12 @@ PRICE_REFRESH_CATEGORIES = PACKAGED_CATEGORIES + FRESH_CANONICAL_CATEGORIES
     },
 )
 def product_matching_pipeline():
+    # etl_transform_load runs at 06:35 UTC, matching runs at 06:45 UTC → delta = 10min
     wait_for_load = ExternalTaskSensor(
         task_id="wait_for_etl_load",
         external_dag_id="etl_transform_load",
         external_task_id="run_load",
+        execution_delta=timedelta(minutes=10),
         timeout=7200,
         mode="reschedule",
         poke_interval=60,

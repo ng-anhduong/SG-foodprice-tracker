@@ -720,25 +720,25 @@ def sync_results_to_supabase(supabase, run_key, canonical_products, canonical_me
 
 # ── MAIN ──────────────────────────────────────────────────────────────────────
 
-def run():
+def run(date_str: Optional[str] = None):
     supabase = get_client()
     print("=" * 70)
-    print(f"Produce matching: {CATEGORY}")
+    print(f"Produce matching: {CATEGORY}" + (f" for date {date_str}" if date_str else ""))
     print("=" * 70)
 
     products: list[ParsedProduce] = []
     store_dates: dict[str, str] = {}
 
     for store in STORE_ORDER:
-        latest_date = get_latest_date_for_store(supabase, store)
-        if not latest_date:
+        chosen_date = date_str or get_latest_date_for_store(supabase, store)
+        if not chosen_date:
             print(f"[{store}] No rows found")
             continue
-        store_dates[store] = latest_date
-        rows = fetch_products_for_store_date(supabase, store, latest_date)
-        print(f"[{store}] fetched {len(rows)} rows for {latest_date}")
+        store_dates[store] = chosen_date
+        rows = fetch_products_for_store_date(supabase, store, chosen_date)
+        print(f"[{store}] fetched {len(rows)} rows for {chosen_date}")
         for row in rows:
-            products.append(parse_produce(row, latest_date))
+            products.append(parse_produce(row, chosen_date))
 
     pair_matches = generate_pairwise_matches(products)
     strong_pairs_raw = [r for r in pair_matches if r["match_status"] == "strong_match"]
@@ -778,4 +778,5 @@ def run():
 
 
 if __name__ == "__main__":
-    run()
+    date_arg = sys.argv[1] if len(sys.argv) > 1 else None
+    run(date_arg)
