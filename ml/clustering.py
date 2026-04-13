@@ -2,14 +2,19 @@
 # Importing the libraries
 # =============================================================================
 from supabase import create_client, Client
+from dotenv import load_dotenv
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import sys
-print(sys.executable)
 
-SUPABASE_URL="https://oivfwiolsqrtekwjyfgn.supabase.co"
-SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9pdmZ3aW9sc3FydGVrd2p5ZmduIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTMwODIxMCwiZXhwIjoyMDkwODg0MjEwfQ.3LHiWOwZQHuelCuq3Mvvaa8ne7wC6qXfQP0PxhEw5Io"
+load_dotenv()
+
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+
+print(sys.executable)
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
@@ -23,17 +28,12 @@ start = 0
 while True:
     response = (
         supabase
-        .table("canonical_product_daily_recommendations")
+        .table("canonical_product_daily_prices")
         .select("""
             canonical_product_id,
             canonical_name,
             scraped_date_sg,
-            cheapest_store,
-            cheapest_price_sgd,
-            priciest_store,
-            priciest_price_sgd,
-            price_spread_sgd,
-            stores_seen_for_day
+            price_sgd
         """)
         .range(start, start + batch_size - 1)
         .execute()
@@ -54,28 +54,44 @@ while True:
 
 dataFrame = pd.DataFrame(all_data)
 
-#group dataset by productId & canonical name
+# =============================================================================
+# Basic cleaning
+# =============================================================================
+dataFrame["price_sgd"] = pd.to_numeric(dataFrame["price_sgd"], errors="coerce")
+dataFrame = dataFrame.dropna(subset=["canonical_product_id", "canonical_name", "price_sgd"])
+
+# group dataset by productId & canonical name
 prod_df = (
     dataFrame.groupby(["canonical_product_id", "canonical_name"], as_index=False)
       .agg({
-          "cheapest_price_sgd": "mean",
-          "priciest_price_sgd": "mean",
-          "price_spread_sgd": "mean",
-          "stores_seen_for_day": "mean"
+          "price_sgd": ["mean", "median", "min", "max", "std", "count"]
       })
 )
 
-#create estimated avg price column for each product
-#  = (cheapest price + priciest price)/2
-prod_df["estimated_avg_price"] = (
-    prod_df["cheapest_price_sgd"] + prod_df["priciest_price_sgd"]
-) / 2
+# flatten multi-level column names
+prod_df.columns = [
+    "canonical_product_id",
+    "canonical_name",
+    "mean_price",
+    "median_price",
+    "min_price",
+    "max_price",
+    "std_price",
+    "num_observations"
+]
 
-price_fields = ["estimated_avg_price", "cheapest_price_sgd", "priciest_price_sgd"]
+# default fill std for products with only 1 observation
+prod_df["std_price"] = prod_df["std_price"].fillna(0)
+
+# create price range column
+prod_df["price_range"] = prod_df["max_price"] - prod_df["min_price"]
+
+
+price_fields = ["mean_price", "median_price", "std_price", "price_range"]
 X = prod_df[price_fields].dropna()
 
 # =============================================================================
-# Feature Scaling
+# Feature scaling
 # =============================================================================
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
@@ -95,7 +111,8 @@ for i in range(kmin, kmax):
     kmeans.fit(scaled_X)
     wcss.append(kmeans.inertia_)
 
-plt.plot(range(kmin, kmax), wcss)
+plt.figure(figsize=(8,6))
+plt.plot(range(kmin, kmax), wcss, marker='o')
 plt.scatter(range(kmin, kmax), wcss)
 plt.title('The Elbow Method')
 plt.xlabel('Number of Clusters')
@@ -107,51 +124,54 @@ plt.show()
 # Training the K-Means model on the dataset
 # =============================================================================
 from sklearn.cluster import KMeans
-k_optimized = 3
-kmeans = KMeans(n_clusters=k_optimized,init='k-means++',random_state=42, n_init=10)
+k_optimized = 4
+kmeans = KMeans(n_clusters=k_optimized, init='k-means++', random_state=42, n_init=10)
 y_kmeans = kmeans.fit_predict(scaled_X)
 prod_df["cluster"] = y_kmeans
 
 # =============================================================================
-# Visualizing the Clusters
+# Visualizing the clusters
 # =============================================================================
 # For visualization purpose, X and cluster center will be converted to unscaled X, cluster center.
 unscaled_X = scaler.inverse_transform(scaled_X)
 cluster_center = scaler.inverse_transform(kmeans.cluster_centers_)
 
+plt.figure(figsize=(8,6))
+
 for j in range(k_optimized):
-    color=['red','blue','green','yellow','cyan']
-    clusterlabel="Cluster" + str(j+1)
-    plt.scatter(unscaled_X[y_kmeans==j,1],
-                unscaled_X[y_kmeans==j,2],
-                s=100,c=color[j],
+    color = ['red', 'blue', 'green', 'yellow', 'cyan']
+    clusterlabel = "Cluster" + str(j+1)
+    plt.scatter(unscaled_X[y_kmeans==j,0],
+                unscaled_X[y_kmeans==j,3],
+                s=100, c=color[j],
                 label=clusterlabel)
     
-plt.scatter(cluster_center[:, 1],
-            cluster_center[:,2],
-            s=100,marker='X',
+plt.scatter(cluster_center[:, 0],
+            cluster_center[:, 3],
+            s=100, marker='X',
             color='Magenta',
             label="centroid")
 
 plt.title('Product Clusters')
-plt.xlabel("Cheapest Price (SGD)")
-plt.ylabel("Priciest Price (SGD)")
+plt.xlabel("Mean Price (SGD)")
+plt.ylabel("Price Range (SGD)")
 plt.legend()
 plt.show()
 
 # =============================================================================
-# Create Summary for Clusters
+# Create Summary for Cluster
 # =============================================================================
-
 eachCluster_price = (
     prod_df.groupby("cluster")[[
-        "estimated_avg_price",
-        "cheapest_price_sgd",
-        "priciest_price_sgd",
-        "price_spread_sgd"
+        "mean_price",
+        "median_price",
+        "min_price",
+        "max_price",
+        "std_price",
+        "price_range"
     ]]
     .mean()
-    .sort_values("estimated_avg_price")
+    .sort_values("mean_price")
 )
 
 print(eachCluster_price)
@@ -161,10 +181,11 @@ clusterList = eachCluster_price.index.tolist()
 
 map_clusters = {
     clusterList[0]: "Budget",
-    clusterList[1]: "Mid-range",
-    clusterList[2]: "Premium"
+    clusterList[1]: "Lower Mid-range",
+    clusterList[2]: "Upper Mid-range",
+    clusterList[3]: "Premium"
 }
 
 prod_df["price_tier"] = prod_df["cluster"].map(map_clusters)
 
-print(prod_df[["canonical_name", "estimated_avg_price", "price_tier"]].head(10))
+print(prod_df[["canonical_name", "mean_price", "price_range", "price_tier"]].head(20))
