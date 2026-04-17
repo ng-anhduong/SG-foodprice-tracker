@@ -309,7 +309,7 @@ if not df_com.empty:
     fig_sav.update_layout(
         **{**PLOTLY_BASE, "margin": dict(t=40, b=20, l=10, r=130)},
         showlegend=False,
-        height=270,
+        height=250,
         xaxis_title="How much you save (SGD) by choosing the cheapest store",
     )
     apply_base_axes(fig_sav)
