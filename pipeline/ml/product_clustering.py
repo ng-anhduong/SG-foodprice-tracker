@@ -13,7 +13,6 @@ import sys
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
 from supabase import create_client, Client
 from dotenv import load_dotenv
 from sklearn.preprocessing import StandardScaler
@@ -26,8 +25,11 @@ SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 print(f"Python: {sys.executable}")
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+OUTPUT_DIR = os.path.join(BASE_DIR, "data", "ml")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # =============================================================================
 # Step 1: Fetch data from Supabase
@@ -86,8 +88,10 @@ df_raw = df_raw[df_raw["matched_store_count_for_day"] >= 2]
 
 # Aggregate to product level
 prod_df = (
-    df_raw.groupby(["canonical_product_id", "canonical_name", "unified_category"])
+    df_raw.groupby(["canonical_product_id"])
     .agg(
+        canonical_name=("canonical_name", "first"),
+        unified_category=("unified_category", "first"),
         mean_price=("price_sgd", "mean"),
         median_price=("price_sgd", "median"),
         min_price=("price_sgd", "min"),
@@ -98,6 +102,9 @@ prod_df = (
     )
     .reset_index()
 )
+
+#After aggregation make final clustered products comparable across stores
+prod_df = prod_df[prod_df["num_stores"] >= 2]
 
 # Fill std for single-observation products
 prod_df["std_price"] = prod_df["std_price"].fillna(0)
@@ -131,7 +138,6 @@ X = prod_df[feature_cols].copy()
 
 scaler = StandardScaler()
 scaled_X = scaler.fit_transform(X)
-
 
 # =============================================================================
 # Step 4: Elbow method + Silhouette score to find optimal k
@@ -172,7 +178,7 @@ axes[1].spines["right"].set_visible(False)
 
 plt.suptitle("Optimal k Selection", fontsize=16, fontweight="bold", y=1.02)
 plt.tight_layout()
-plt.savefig("data/ml/elbow_silhouette.png", dpi=150, bbox_inches="tight")
+plt.savefig(os.path.join(OUTPUT_DIR, "elbow_silhouette.png"), dpi=150, bbox_inches="tight")
 plt.show()
 print("  Saved → data/ml/elbow_silhouette.png")
 
@@ -286,7 +292,7 @@ axes[1].spines["right"].set_visible(False)
 
 plt.suptitle("Product Price Tier Clusters", fontsize=16, fontweight="bold", y=1.02)
 plt.tight_layout()
-plt.savefig("data/ml/clusters_visualisation.png", dpi=150, bbox_inches="tight")
+plt.savefig(os.path.join(OUTPUT_DIR, "clusters_visualisation.png"), dpi=150, bbox_inches="tight")
 plt.show()
 print("  Saved → data/ml/clusters_visualisation.png")
 
@@ -336,7 +342,7 @@ ax.spines["top"].set_visible(False)
 ax.spines["right"].set_visible(False)
 plt.xticks(rotation=25, ha="right")
 plt.tight_layout()
-plt.savefig("data/ml/tier_by_category.png", dpi=150, bbox_inches="tight")
+plt.savefig(os.path.join(OUTPUT_DIR, "tier_by_category.png"), dpi=150, bbox_inches="tight")
 plt.show()
 print("  Saved → data/ml/tier_by_category.png")
 
@@ -429,6 +435,7 @@ for col in ["mean_price", "median_price", "min_price", "max_price",
     cluster_output[col] = cluster_output[col].round(4)
 
 records = cluster_output.to_dict(orient="records")
+cluster_output = cluster_output.drop_duplicates(subset=["canonical_product_id"], keep="first")
 
 BATCH_SIZE = 200
 for i in range(0, len(records), BATCH_SIZE):
