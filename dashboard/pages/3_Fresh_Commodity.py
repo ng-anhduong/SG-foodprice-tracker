@@ -76,6 +76,7 @@ def fetch_all(table, date_col):
         page += 1
     return rows
 
+
 @st.cache_data(ttl=300)
 def load_data():
     df = pd.DataFrame(fetch_all("commodity_price_comparisons", "scraped_date"))
@@ -379,3 +380,77 @@ else:
             fig_h2.update_xaxes(gridcolor="#f0ede8", linecolor="#e0dbd2", zeroline=False)
             fig_h2.update_yaxes(gridcolor="#f0ede8", linecolor="#e0dbd2", zeroline=False)
             st.plotly_chart(fig_h2, width='stretch')
+
+# ── TOP SAVINGS — FRESH GOODS (COMMODITY) ─────────────────────────────────────
+
+st.subheader("Top savings right now — fresh goods")
+st.markdown("### Same cut, same pack size — the most reliable cross-store comparison")
+
+if not df.empty:
+    top_com = (
+        df[[
+            "cut", "unified_category", "frozen_flag", "common_weight_g",
+            "cheapest_store", "cheapest_price_sgd",
+            "priciest_store", "priciest_price_sgd",
+            "cheapest_product_name", "priciest_product_name",
+            "price_spread_sgd",
+        ]]
+        .sort_values("price_spread_sgd", ascending=False)
+        .head(8)
+        .reset_index(drop=True)
+    )
+    top_com["cheapest_label"] = top_com["cheapest_store"].map(STORE_LABELS).fillna(
+        top_com["cheapest_store"]
+    )
+    top_com["priciest_label"] = top_com["priciest_store"].map(STORE_LABELS).fillna(
+        top_com["priciest_store"]
+    )
+
+    best = top_com.iloc[0]
+    st.markdown(
+        f"<div class='insight-box'>"
+        f"Biggest saving today: <b>{best['cut']}</b> "
+        f"({best['common_weight_g']:.0f}g, {best['frozen_flag']}) — "
+        f"buy at <b>{best['cheapest_label']}</b> (${best['cheapest_price_sgd']:.2f}) "
+        f"instead of <b>{best['priciest_label']}</b> "
+        f"(${best['priciest_price_sgd']:.2f}) "
+        f"and save <b>${best['price_spread_sgd']:.2f}</b>."
+        f"</div>",
+        unsafe_allow_html=True
+    )
+
+    fig_sav = go.Figure()
+    for _, row in top_com.sort_values("price_spread_sgd", ascending=True).iterrows():
+        bar_label = f"{row['cut']} ({row['common_weight_g']:.0f}g · {row['frozen_flag']})"
+        fig_sav.add_trace(go.Bar(
+            y=[bar_label],
+            x=[row["price_spread_sgd"]],
+            orientation="h",
+            marker_color=STORE_COLORS.get(row["cheapest_store"], "#aaa"),
+            text=f"  Save ${row['price_spread_sgd']:.2f}",
+            textposition="outside",
+            name=row["cheapest_label"],
+            hovertemplate=(
+                f"<b>{row['cut']}</b><br>"
+                f"Pack: {row['common_weight_g']:.0f}g · {row['frozen_flag']}<br>"
+                f"Buy at: {row['cheapest_label']} "
+                f"${row['cheapest_price_sgd']:.2f}<br>"
+                f"Avoid: {row['priciest_label']} "
+                f"${row['priciest_price_sgd']:.2f}<br>"
+                f"Save: ${row['price_spread_sgd']:.2f}<extra></extra>"
+            ),
+        ))
+
+    fig_sav.update_layout(
+        **{**PLOTLY_BASE, "margin": dict(t=10, b=20, l=10, r=130)},
+        showlegend=False,
+        height=300,
+        xaxis_title="How much you save (SGD) by choosing the cheapest store",
+    )
+    apply_base_axes(fig_sav)
+    fig_sav.update_yaxes(gridcolor="rgba(0,0,0,0)", linecolor="rgba(0,0,0,0)")
+    st.plotly_chart(fig_sav, use_container_width=True)
+else:
+    st.info("No commodity data available for today.")
+
+st.divider()
