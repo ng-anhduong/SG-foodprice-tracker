@@ -93,6 +93,30 @@ def clean_discount(discount, price, original_price):
     return round(d, 2)
 
 
+def reconcile_price(store, price, original_price, discount):
+    """
+    Normalize effective selling price when store metadata exposes a discount
+    but leaves the current price equal to the original price.
+    """
+    if price is None:
+        return None
+
+    if store != "fairprice":
+        return round(price, 2)
+
+    if original_price is None or discount is None:
+        return round(price, 2)
+
+    if discount <= 0:
+        return round(price, 2)
+
+    # FairPrice sometimes reports final_price == mrp even when a discount exists.
+    if abs(price - original_price) <= 0.01:
+        return round(max(original_price - discount, 0.0), 2)
+
+    return round(price, 2)
+
+
 def clean_product_url(url, store):
     """Normalize product URLs per store."""
     if not url:
@@ -120,11 +144,12 @@ def build_unified(product: dict, store: str) -> dict | None:
     if unified_category is None:
         return None
 
-    price          = to_float(product.get("price_sgd"))
+    raw_price      = to_float(product.get("price_sgd"))
     original_price = to_float(product.get("original_price_sgd"))
     discount       = clean_discount(
-        product.get("discount_sgd"), price, original_price
+        product.get("discount_sgd"), raw_price, original_price
     )
+    price          = reconcile_price(store, raw_price, original_price, discount)
 
     return {
         "name":                product.get("name"),
