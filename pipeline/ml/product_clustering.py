@@ -122,6 +122,33 @@ print(f"  Products after cleaning: {len(prod_df)}")
 print(f"  Categories: {prod_df['unified_category'].nunique()}")
 print(prod_df[["mean_price", "price_range", "cv", "num_stores"]].describe().round(3))
 
+#Outlier removal
+prod_df = prod_df.reset_index(drop=True)
+
+def iqr(series, multiplier=3.0):
+    q1 = series.quantile(0.25)
+    q3 = series.quantile(0.75)
+    return q3 + multiplier * (q3 - q1)
+
+mean_cap = iqr(prod_df["mean_price"])
+range_cap = iqr(prod_df["price_range"])
+cv_cap = iqr(prod_df["cv"])
+
+outliers = (
+    (prod_df["mean_price"] > mean_cap) |
+    (prod_df["price_range"] > range_cap) |
+    (prod_df["cv"] > cv_cap)
+)
+
+print(f"  No. of removed before clustering: {outliers.sum()}")
+prod_df = prod_df[~outliers].reset_index(drop=True)
+print(f"  No. of products after outlier removal: {len(prod_df)}")
+
+prod_df["spread_flag"] = pd.cut(
+    prod_df["price_range"],
+    bins=[-0.01, 1, 10, float("inf")],
+    labels=["Spread: Low", "Spread: Medium", "Spread: High"]
+)
 
 # =============================================================================
 # Step 3: Feature selection and scaling
@@ -133,7 +160,7 @@ print(prod_df[["mean_price", "price_range", "cv", "num_stores"]].describe().roun
 # =============================================================================
 print("\n[3] Scaling features...")
 
-feature_cols = ["mean_price", "price_range", "cv", "num_stores"]
+feature_cols = ["mean_price", "median_price"]
 X = prod_df[feature_cols].copy()
 
 scaler = StandardScaler()
@@ -185,12 +212,12 @@ print("  Saved → data/ml/elbow_silhouette.png")
 
 # =============================================================================
 # Step 5: Train final K-Means model
-# k=4 gives interpretable tiers: Budget / Lower Mid / Upper Mid / Premium
+# k=4 gives interpretable tiers: Budget / Mid-range / Premium
 # Adjust if elbow/silhouette suggest differently
 # =============================================================================
 print("\n[5] Training final K-Means model...")
 
-K_FINAL = 4
+K_FINAL = 3
 kmeans = KMeans(n_clusters=K_FINAL, init="k-means++", random_state=42, n_init=10)
 y_kmeans = kmeans.fit_predict(scaled_X)
 prod_df["cluster"] = y_kmeans
@@ -215,9 +242,8 @@ print(cluster_summary.round(3))
 cluster_order = cluster_summary.index.tolist()
 tier_labels = {
     cluster_order[0]: "Budget",
-    cluster_order[1]: "Lower Mid-range",
-    cluster_order[2]: "Upper Mid-range",
-    cluster_order[3]: "Premium",
+    cluster_order[1]: "Mid-range",
+    cluster_order[2]: "Premium",
 }
 prod_df["price_tier"] = prod_df["cluster"].map(tier_labels)
 
@@ -236,13 +262,9 @@ print("\n[7] Visualising clusters...")
 
 TIER_COLORS = {
     "Budget": "#00843D",
-    "Lower Mid-range": "#005BAC",
-    "Upper Mid-range": "#F5821F",
+    "Mid-range": "#005BAC",
     "Premium": "#C8102E",
 }
-
-unscaled_X = scaler.inverse_transform(scaled_X)
-cluster_centers_unscaled = scaler.inverse_transform(kmeans.cluster_centers_)
 
 fig, axes = plt.subplots(1, 2, figsize=(16, 6))
 
@@ -250,16 +272,11 @@ fig, axes = plt.subplots(1, 2, figsize=(16, 6))
 for tier, color in TIER_COLORS.items():
     mask = prod_df["price_tier"] == tier
     axes[0].scatter(
-        unscaled_X[mask, 0],   # mean_price
-        unscaled_X[mask, 1],   # price_range
+        prod_df.loc[mask, "mean_price"],
+        prod_df.loc[mask, "price_range"],
         s=30, c=color, alpha=0.5, label=tier
     )
 
-for i, center in enumerate(cluster_centers_unscaled):
-    axes[0].scatter(
-        center[0], center[1],
-        s=200, marker="X", color="black", zorder=10
-    )
 
 axes[0].set_title("Mean Price vs Price Range", fontsize=13, fontweight="bold")
 axes[0].set_xlabel("Mean Price (SGD)")
@@ -272,15 +289,9 @@ axes[0].spines["right"].set_visible(False)
 for tier, color in TIER_COLORS.items():
     mask = prod_df["price_tier"] == tier
     axes[1].scatter(
-        unscaled_X[mask, 0],   # mean_price
-        unscaled_X[mask, 2],   # cv
+        prod_df.loc[mask, "mean_price"],
+        prod_df.loc[mask, "cv"],
         s=30, c=color, alpha=0.5, label=tier
-    )
-
-for i, center in enumerate(cluster_centers_unscaled):
-    axes[1].scatter(
-        center[0], center[2],
-        s=200, marker="X", color="black", zorder=10
     )
 
 axes[1].set_title("Mean Price vs Price Volatility (CV)", fontsize=13, fontweight="bold")
@@ -311,7 +322,7 @@ cat_tier = (
 cat_pivot = cat_tier.pivot(index="unified_category", columns="price_tier", values="count").fillna(0)
 cat_pivot_pct = cat_pivot.div(cat_pivot.sum(axis=1), axis=0) * 100
 
-tier_order = ["Budget", "Lower Mid-range", "Upper Mid-range", "Premium"]
+tier_order = ["Budget", "Mid-range", "Premium"]
 cat_pivot_pct = cat_pivot_pct[[t for t in tier_order if t in cat_pivot_pct.columns]]
 
 fig, ax = plt.subplots(figsize=(12, 6))
@@ -369,17 +380,11 @@ def shopping_advice(row):
         else:
             return "Budget product with stable pricing — consistent across stores"
 
-    elif tier == "Lower Mid-range":
+    elif tier == "Mid-range":
         if cv > CV_VOLATILE_THRESHOLD:
-            return "Mid-range product with some price variation — worth checking stores"
+            return "Mid-range product with price variation — worth checking stores"
         else:
             return "Mid-range product with stable pricing — similar across stores"
-
-    elif tier == "Upper Mid-range":
-        if cv > CV_VOLATILE_THRESHOLD:
-            return "Higher-priced product with noticeable price differences — compare stores"
-        else:
-            return "Higher-priced product with stable pricing"
 
     elif tier == "Premium":
         if cv > CV_VOLATILE_THRESHOLD:
@@ -404,6 +409,12 @@ print(
     .to_string(index=False)
 )
 
+#Summary table for spread flag
+print("\nSpread flag distribution by tier:")
+print(
+    pd.crosstab(prod_df["price_tier"], prod_df["spread_flag"], normalize="index")
+    .round(3) * 100
+)
 
 # =============================================================================
 # Step 10: Sync results to Supabase
@@ -434,8 +445,8 @@ for col in ["mean_price", "median_price", "min_price", "max_price",
             "std_price", "price_range", "cv"]:
     cluster_output[col] = cluster_output[col].round(4)
 
-records = cluster_output.to_dict(orient="records")
 cluster_output = cluster_output.drop_duplicates(subset=["canonical_product_id"], keep="first")
+records = cluster_output.to_dict(orient="records")
 
 BATCH_SIZE = 200
 for i in range(0, len(records), BATCH_SIZE):
