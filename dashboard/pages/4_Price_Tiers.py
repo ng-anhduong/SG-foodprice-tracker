@@ -126,6 +126,9 @@ else:
     df["unified_category"] = "—"
     df["canonical_brand"] = "—"
 
+# Drop products with no name resolved from recommendations
+df = df[df["canonical_name"].notna() & (df["canonical_name"] != "—")]
+
 # Only keep known tiers, sorted
 tiers_present = [t for t in TIER_ORDER if t in df["price_tier"].unique()]
 df = df[df["price_tier"].isin(tiers_present)]
@@ -287,6 +290,9 @@ if "unified_category" in df.columns and df["unified_category"].notna().any():
             sub["pct"] = (sub["count"] / total * 100).round(1) if total > 0 else 0
             sub = sub.sort_values("pct", ascending=True)
 
+            max_label_len = sub["unified_category"].str.len().max() if not sub.empty else 10
+            left_margin = max(80, int(max_label_len * 7))
+
             fig_t = go.Figure(go.Bar(
                 x=sub["pct"], y=sub["unified_category"],
                 orientation="h",
@@ -296,7 +302,7 @@ if "unified_category" in df.columns and df["unified_category"].notna().any():
                 hovertemplate="<b>%{y}</b><br>%{x:.1f}%<extra></extra>",
             ))
             fig_t.update_layout(
-                **{**PLOTLY_BASE, "margin": dict(t=10, b=10, l=10, r=50)},
+                **{**PLOTLY_BASE, "margin": dict(t=40, b=10, l=left_margin, r=50)},
                 title=dict(text=tier, font=dict(size=14, color=TIER_COLORS.get(tier, "#aaa")), x=0),
                 showlegend=False, height=300,
                 xaxis=dict(range=[0, sub["pct"].max() * 1.35 if not sub.empty else 100], showticklabels=False),
