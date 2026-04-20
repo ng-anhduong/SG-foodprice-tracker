@@ -30,6 +30,17 @@ h3 { font-size: 0.72rem !important; font-weight: 600 !important;
     font-family: 'DM Serif Display', serif !important; font-size: 1.8rem !important;
 }
 hr { border-color: #ebe7e0 !important; }
+.section-header {
+    font-family: 'DM Sans', sans-serif; font-size: 1.2rem; font-weight: 700;
+    color: #1a1a1a; letter-spacing: -0.01em; margin: 0 0 4px 0;
+    padding-bottom: 10px; border-bottom: 2px solid #ebe7e0;
+}
+.section-sub { font-size: 0.85rem; color: #888; margin-top: 2px; margin-bottom: 16px; }
+.insight-box {
+    background: #f9f7f4; border-left: 3px solid #F5821F; border-radius: 6px;
+    padding: 14px 18px; margin-bottom: 16px; font-size: 0.95rem;
+    color: #1a1a1a; line-height: 1.6;
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -133,15 +144,16 @@ with col2:
     frozen_opts = ["All"] + sorted(df["frozen_flag"].dropna().unique().tolist())
     selected_frozen = st.selectbox("Fresh / Frozen", frozen_opts)
 with col3:
-    search = st.text_input("Search cut", placeholder="chicken breast, broccoli, salmon…")
+    cut_opts = ["All"] + sorted(df["cut"].dropna().unique().tolist())
+    selected_cut_filter = st.selectbox("Cut", cut_opts)
 
 filtered = df.copy()
 if selected_cat != "All":
     filtered = filtered[filtered["unified_category"] == selected_cat]
 if selected_frozen != "All":
     filtered = filtered[filtered["frozen_flag"] == selected_frozen]
-if search:
-    filtered = filtered[filtered["cut"].str.contains(search, case=False, na=False)]
+if selected_cut_filter != "All":
+    filtered = filtered[filtered["cut"] == selected_cut_filter]
 
 # ── KPI ROW ───────────────────────────────────────────────────────────────────
 
@@ -165,13 +177,10 @@ if filtered.empty:
     st.info("No cuts match your filters.")
     st.stop()
 
-# ── UNIT PRICE PER 100G SCATTER ───────────────────────────────────────────────
+# ── BAR CHART: CHEAPEST UNIT PRICE PER CUT ────────────────────────────────────
 
-st.subheader("Unit price per 100g by store")
-st.markdown(
-    "### Each point is one cut at one store — "
-    "computed from the unit_price_per_100g field the commodity algorithm produces"
-)
+st.markdown("<div class='section-header'>Cheapest unit price per cut</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-sub'>Lowest price per 100g available today — bar colour shows which store is cheapest</div>", unsafe_allow_html=True)
 
 unit_rows = []
 for _, row in filtered.iterrows():
@@ -181,153 +190,167 @@ for _, row in filtered.iterrows():
                 "cut": row["cut"],
                 "store": store,
                 "store_label": STORE_LABELS.get(store, store),
-                "unit_price_per_100g": upr,
+                "unit_price_per_100g": float(upr),
                 "frozen_flag": row["frozen_flag"],
+                "common_weight_g": row.get("common_weight_g"),
             })
 
 if unit_rows:
     unit_df = pd.DataFrame(unit_rows)
+    cheapest_unit = (
+        unit_df.sort_values("unit_price_per_100g")
+        .drop_duplicates("cut")
+        .sort_values("unit_price_per_100g", ascending=False)
+        .reset_index(drop=True)
+    )
 
-    fig_scatter = px.strip(
-        unit_df,
-        x="unit_price_per_100g",
-        y="cut",
-        color="store",
-        color_discrete_map=STORE_COLORS,
-        hover_data=["store_label", "frozen_flag"],
-        labels={
-            "unit_price_per_100g": "Price per 100g (SGD)",
-            "cut": "",
-            "store": "Store",
-        },
-        stripmode="overlay",
-    )
-    fig_scatter.update_traces(marker=dict(size=10, opacity=0.8))
-    for trace in fig_scatter.data:
-        trace.name = STORE_LABELS.get(trace.name, trace.name)
-    fig_scatter.update_layout(
-        **{**PLOTLY_BASE, "margin": dict(t=30, b=10, l=10, r=20)},
-        height=max(380, len(filtered) * 22),
+    fig_bar = go.Figure()
+    for _, row in cheapest_unit.iterrows():
+        fig_bar.add_trace(go.Bar(
+            y=[row["cut"]],
+            x=[row["unit_price_per_100g"]],
+            orientation="h",
+            marker_color=STORE_COLORS.get(row["store"], "#aaa"),
+            text=f"  ${row['unit_price_per_100g']:.2f}",
+            textposition="outside",
+            textfont=dict(size=12, color="#1a1a1a"),
+            name=row["store_label"],
+            hovertemplate=(
+                f"<b>{row['cut']}</b><br>"
+                f"Store: {row['store_label']}<br>"
+                f"Price per 100g: ${row['unit_price_per_100g']:.2f}<br>"
+                f"Pack: {row['common_weight_g']:.0f}g · {row['frozen_flag']}"
+                f"<extra></extra>"
+            ),
+        ))
+
+    # legend entries per store
+    seen = set()
+    for trace in fig_bar.data:
+        if trace.name in seen:
+            trace.showlegend = False
+        else:
+            seen.add(trace.name)
+            trace.showlegend = True
+
+    fig_bar.update_layout(
+        **{**PLOTLY_BASE, "margin": dict(t=10, b=10, l=10, r=80)},
+        height=max(320, len(cheapest_unit) * 28),
+        showlegend=True,
+        legend=dict(orientation="h", yanchor="bottom", y=1.01, xanchor="right", x=1, title=""),
         xaxis_title="Price per 100g (SGD)",
-        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, title=""),
     )
-    fig_scatter.update_xaxes(gridcolor="#f0ede8", linecolor="#e0dbd2", zeroline=False)
-    fig_scatter.update_yaxes(gridcolor="rgba(0,0,0,0)", linecolor="rgba(0,0,0,0)", zeroline=False,
-                              autorange="reversed")
-    st.plotly_chart(fig_scatter, width='stretch')
+    fig_bar.update_xaxes(gridcolor="#f0ede8", linecolor="#e0dbd2", zeroline=False)
+    fig_bar.update_yaxes(gridcolor="rgba(0,0,0,0)", linecolor="rgba(0,0,0,0)")
+    st.plotly_chart(fig_bar, use_container_width=True)
 else:
     st.info("No unit price data available for the current filters.")
 
 st.divider()
 
-# ── CHEAPEST + SPREAD SIDE BY SIDE ────────────────────────────────────────────
+# ── TABLE: CHEAPEST / PRICIEST / SPREAD PER 100G ──────────────────────────────
 
-col_l, col_r = st.columns(2, gap="large")
+st.markdown("<div class='section-header'>Store comparison table</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-sub'>Cheapest vs priciest store per cut — with price spread per 100g</div>", unsafe_allow_html=True)
 
-with col_l:
-    st.subheader("Cheapest store per cut")
-    st.markdown("### At the most common pack size")
-
-    chart_df = filtered.sort_values("cheapest_price_sgd", ascending=True).head(30)
-
-    fig2 = go.Figure()
-    for _, row in chart_df.iterrows():
-        fig2.add_trace(go.Bar(
-            y=[row["cut"]],
-            x=[row["cheapest_price_sgd"]],
-            orientation="h",
-            marker_color=STORE_COLORS.get(row["cheapest_store"], "#aaa"),
-            text=f"  ${row['cheapest_price_sgd']:.2f}",
-            textposition="outside",
-            name=STORE_LABELS.get(row["cheapest_store"], row["cheapest_store"]),
-            hovertemplate=(
-                f"<b>{row['cut']}</b><br>"
-                f"Store: {STORE_LABELS.get(row['cheapest_store'], row['cheapest_store'])}<br>"
-                f"Price: ${row['cheapest_price_sgd']:.2f} ({row['common_weight_g']:.0f}g)"
-                f"<extra></extra>"
-            ),
-        ))
-    fig2.update_layout(
-        **PLOTLY_BASE,
-        showlegend=False,
-        height=max(380, len(chart_df) * 26),
-        xaxis_title="Price (SGD)",
+if unit_rows:
+    cheapest_by_cut = (
+        unit_df.sort_values("unit_price_per_100g")
+        .drop_duplicates("cut")
+        .rename(columns={
+            "store_label": "cheapest_store_label",
+            "unit_price_per_100g": "cheapest_per_100g",
+        })[["cut", "cheapest_store_label", "cheapest_per_100g"]]
     )
-    apply_base_axes(fig2)
-    fig2.update_yaxes(autorange="reversed")
-    st.plotly_chart(fig2, width='stretch')
-
-with col_r:
-    st.subheader("Price spread per cut")
-    st.markdown("### Savings from switching to the cheapest store")
-
-    spread_df = (
-        filtered[filtered["price_spread_sgd"] > 0]
-        .sort_values("price_spread_sgd", ascending=True)
-        .head(30)
+    priciest_by_cut = (
+        unit_df.sort_values("unit_price_per_100g", ascending=False)
+        .drop_duplicates("cut")
+        .rename(columns={
+            "store_label": "priciest_store_label",
+            "unit_price_per_100g": "priciest_per_100g",
+        })[["cut", "priciest_store_label", "priciest_per_100g"]]
     )
+    tbl = cheapest_by_cut.merge(priciest_by_cut, on="cut")
+    tbl["spread_per_100g"] = (tbl["priciest_per_100g"] - tbl["cheapest_per_100g"]).round(2)
+    tbl = tbl[tbl["spread_per_100g"] > 0].sort_values("spread_per_100g", ascending=False).reset_index(drop=True)
 
-    fig3 = go.Figure()
-    for _, row in spread_df.iterrows():
-        fig3.add_trace(go.Bar(
-            y=[row["cut"]],
-            x=[row["price_spread_sgd"]],
-            orientation="h",
-            marker_color=STORE_COLORS.get(row["cheapest_store"], "#aaa"),
-            text=f"  ${row['price_spread_sgd']:.2f}",
-            textposition="outside",
-            name=STORE_LABELS.get(row["cheapest_store"], row["cheapest_store"]),
-            hovertemplate=(
-                f"<b>{row['cut']}</b><br>"
-                f"Cheapest: {STORE_LABELS.get(row['cheapest_store'], '')} "
-                f"${row['cheapest_price_sgd']:.2f}<br>"
-                f"Priciest: {STORE_LABELS.get(row['priciest_store'], '')} "
-                f"${row['priciest_price_sgd']:.2f}<br>"
-                f"Spread: ${row['price_spread_sgd']:.2f}<extra></extra>"
-            ),
-        ))
-    fig3.update_layout(
-        **PLOTLY_BASE,
-        showlegend=False,
-        height=max(380, len(spread_df) * 26),
-        xaxis_title="Price Spread (SGD)",
-    )
-    apply_base_axes(fig3)
-    fig3.update_yaxes(autorange="reversed")
-    st.plotly_chart(fig3, width='stretch')
+    for col in ["cheapest_per_100g", "priciest_per_100g", "spread_per_100g"]:
+        tbl[col] = tbl[col].apply(lambda x: f"${x:.2f}")
+
+    tbl.columns = ["Cut", "Cheapest Store", "Cheapest /100g", "Priciest Store", "Priciest /100g", "Spread /100g"]
+    st.dataframe(tbl, use_container_width=True, hide_index=True)
+    st.caption("Only cuts available at 2+ stores with a price difference are shown.")
+else:
+    st.info("No unit price data to compare.")
 
 st.divider()
 
-# ── FULL TABLE ────────────────────────────────────────────────────────────────
+# ── TOP SAVINGS ───────────────────────────────────────────────────────────────
 
-st.subheader("Full comparison table")
+st.markdown("<div class='section-header'>Top savings right now</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-sub'>Biggest price spread across stores — same cut, same pack size</div>", unsafe_allow_html=True)
 
-table = (
-    filtered[[
-        "cut", "unified_category", "frozen_flag", "common_weight_g",
-        "cheapest_store_label", "cheapest_price_sgd", "cheapest_product_name",
-        "priciest_store_label", "priciest_price_sgd", "priciest_product_name",
-        "price_spread_sgd", "stores_seen",
-    ]]
+top_com = (
+    filtered[filtered["price_spread_sgd"] > 0]
     .sort_values("price_spread_sgd", ascending=False)
+    .head(10)
     .reset_index(drop=True)
 )
-table.columns = [
-    "Cut", "Category", "Fresh/Frozen", "Pack (g)",
-    "Cheapest Store", "Cheapest", "Cheapest Product",
-    "Priciest Store", "Priciest", "Priciest Product",
-    "Spread", "Stores",
-]
-for col in ["Cheapest", "Priciest", "Spread"]:
-    table[col] = table[col].apply(lambda x: f"${x:.2f}" if pd.notna(x) else "—")
-st.dataframe(table, width='stretch', hide_index=True)
+
+if not top_com.empty:
+    top_com["cheapest_label"] = top_com["cheapest_store"].map(STORE_LABELS).fillna(top_com["cheapest_store"])
+    top_com["priciest_label"] = top_com["priciest_store"].map(STORE_LABELS).fillna(top_com["priciest_store"])
+
+    best = top_com.iloc[0]
+    st.markdown(
+        f"<div class='insight-box'>"
+        f"Biggest saving today: <b>{best['cut']}</b> "
+        f"({best['common_weight_g']:.0f}g · {best['frozen_flag']}) — "
+        f"buy at <b>{best['cheapest_label']}</b> (${best['cheapest_price_sgd']:.2f}) "
+        f"instead of <b>{best['priciest_label']}</b> (${best['priciest_price_sgd']:.2f}) "
+        f"and save <b>${best['price_spread_sgd']:.2f}</b>."
+        f"</div>",
+        unsafe_allow_html=True
+    )
+
+    fig_sav = go.Figure()
+    for _, row in top_com.sort_values("price_spread_sgd", ascending=True).iterrows():
+        bar_label = f"{row['cut']} ({row['common_weight_g']:.0f}g · {row['frozen_flag']})"
+        fig_sav.add_trace(go.Bar(
+            y=[bar_label],
+            x=[row["price_spread_sgd"]],
+            orientation="h",
+            marker_color=STORE_COLORS.get(row["cheapest_store"], "#aaa"),
+            text=f"  Save ${row['price_spread_sgd']:.2f}",
+            textposition="outside",
+            textfont=dict(size=12, color="#1a1a1a"),
+            name=row["cheapest_label"],
+            hovertemplate=(
+                f"<b>{row['cut']}</b><br>"
+                f"Pack: {row['common_weight_g']:.0f}g · {row['frozen_flag']}<br>"
+                f"Buy at: {row['cheapest_label']} ${row['cheapest_price_sgd']:.2f}<br>"
+                f"Avoid: {row['priciest_label']} ${row['priciest_price_sgd']:.2f}<br>"
+                f"Save: ${row['price_spread_sgd']:.2f}<extra></extra>"
+            ),
+        ))
+    fig_sav.update_layout(
+        **{**PLOTLY_BASE, "margin": dict(t=10, b=10, l=10, r=100)},
+        showlegend=False,
+        height=max(320, len(top_com) * 36),
+        xaxis_title="Price spread (SGD)",
+    )
+    fig_sav.update_xaxes(gridcolor="#f0ede8", linecolor="#e0dbd2", zeroline=False)
+    fig_sav.update_yaxes(gridcolor="rgba(0,0,0,0)", linecolor="rgba(0,0,0,0)")
+    st.plotly_chart(fig_sav, use_container_width=True)
+else:
+    st.info("No price spread data for the current filters.")
 
 st.divider()
 
 # ── HISTORICAL TRENDS ─────────────────────────────────────────────────────────
 
-st.subheader("Commodity price trends over time")
-st.markdown("### Average cheapest price per cut type — daily")
+st.markdown("<div class='section-header'>Price trends over time</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-sub'>Average cheapest price and spread per cut — daily</div>", unsafe_allow_html=True)
 
 with st.spinner("Loading historical data..."):
     df_all = load_all_dates()
@@ -356,7 +379,7 @@ else:
         col_h1, col_h2 = st.columns(2, gap="large")
 
         with col_h1:
-            st.markdown("#### Avg cheapest price")
+            st.markdown("<div class='section-sub' style='margin-bottom:8px'>Avg cheapest price</div>", unsafe_allow_html=True)
             fig_h1 = px.line(
                 hist_trend,
                 x="scraped_date", y="avg_cheapest",
@@ -369,7 +392,7 @@ else:
             st.plotly_chart(fig_h1, width='stretch')
 
         with col_h2:
-            st.markdown("#### Avg price spread")
+            st.markdown("<div class='section-sub' style='margin-bottom:8px'>Avg price spread</div>", unsafe_allow_html=True)
             fig_h2 = px.line(
                 hist_trend,
                 x="scraped_date", y="avg_spread",
@@ -381,76 +404,3 @@ else:
             fig_h2.update_yaxes(gridcolor="#f0ede8", linecolor="#e0dbd2", zeroline=False)
             st.plotly_chart(fig_h2, width='stretch')
 
-# ── TOP SAVINGS — FRESH GOODS (COMMODITY) ─────────────────────────────────────
-
-st.subheader("Top savings right now — fresh goods")
-st.markdown("### Same cut, same pack size — the most reliable cross-store comparison")
-
-if not df.empty:
-    top_com = (
-        df[[
-            "cut", "unified_category", "frozen_flag", "common_weight_g",
-            "cheapest_store", "cheapest_price_sgd",
-            "priciest_store", "priciest_price_sgd",
-            "cheapest_product_name", "priciest_product_name",
-            "price_spread_sgd",
-        ]]
-        .sort_values("price_spread_sgd", ascending=False)
-        .head(8)
-        .reset_index(drop=True)
-    )
-    top_com["cheapest_label"] = top_com["cheapest_store"].map(STORE_LABELS).fillna(
-        top_com["cheapest_store"]
-    )
-    top_com["priciest_label"] = top_com["priciest_store"].map(STORE_LABELS).fillna(
-        top_com["priciest_store"]
-    )
-
-    best = top_com.iloc[0]
-    st.markdown(
-        f"<div class='insight-box'>"
-        f"Biggest saving today: <b>{best['cut']}</b> "
-        f"({best['common_weight_g']:.0f}g, {best['frozen_flag']}) — "
-        f"buy at <b>{best['cheapest_label']}</b> (${best['cheapest_price_sgd']:.2f}) "
-        f"instead of <b>{best['priciest_label']}</b> "
-        f"(${best['priciest_price_sgd']:.2f}) "
-        f"and save <b>${best['price_spread_sgd']:.2f}</b>."
-        f"</div>",
-        unsafe_allow_html=True
-    )
-
-    fig_sav = go.Figure()
-    for _, row in top_com.sort_values("price_spread_sgd", ascending=True).iterrows():
-        bar_label = f"{row['cut']} ({row['common_weight_g']:.0f}g · {row['frozen_flag']})"
-        fig_sav.add_trace(go.Bar(
-            y=[bar_label],
-            x=[row["price_spread_sgd"]],
-            orientation="h",
-            marker_color=STORE_COLORS.get(row["cheapest_store"], "#aaa"),
-            text=f"  Save ${row['price_spread_sgd']:.2f}",
-            textposition="outside",
-            name=row["cheapest_label"],
-            hovertemplate=(
-                f"<b>{row['cut']}</b><br>"
-                f"Pack: {row['common_weight_g']:.0f}g · {row['frozen_flag']}<br>"
-                f"Buy at: {row['cheapest_label']} "
-                f"${row['cheapest_price_sgd']:.2f}<br>"
-                f"Avoid: {row['priciest_label']} "
-                f"${row['priciest_price_sgd']:.2f}<br>"
-                f"Save: ${row['price_spread_sgd']:.2f}<extra></extra>"
-            ),
-        ))
-
-    fig_sav.update_layout(
-        **{**PLOTLY_BASE, "margin": dict(t=10, b=20, l=10, r=130)},
-        showlegend=False,
-        height=300,
-        xaxis_title="How much you save (SGD) by choosing the cheapest store",
-    )
-    apply_base_axes(fig_sav)
-    fig_sav.update_yaxes(gridcolor="rgba(0,0,0,0)", linecolor="rgba(0,0,0,0)")
-    st.plotly_chart(fig_sav, use_container_width=True)
-else:
-    st.info("No commodity data available for today.")
-
-st.divider()

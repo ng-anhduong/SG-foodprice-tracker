@@ -155,10 +155,22 @@ if df.empty:
     st.error("No data. Run the pipeline first.")
     st.stop()
 
-# canonical_product_id is the true identifier — use it for all filtering
-# df_multi = products with a real cross-store comparison available today
-df_multi = df[df["stores_seen_for_day"] >= 2].copy()
 latest_date = df["scraped_date_sg"].max()
+
+# True cross-store count from df_prices (distinct stores per canonical product)
+if not df_prices.empty:
+    _store_counts = (
+        df_prices.groupby("canonical_product_id")["store"]
+        .nunique()
+        .reset_index()
+        .rename(columns={"store": "actual_store_count"})
+    )
+    comparable_count = int((_store_counts["actual_store_count"] >= 2).sum())
+    df = df.merge(_store_counts, on="canonical_product_id", how="left")
+else:
+    comparable_count = 0
+
+df_multi = df  # all products used for charts
 
 # ── HEADER ────────────────────────────────────────────────────────────────────
 
@@ -183,12 +195,12 @@ c1.metric(
 )
 c2.metric(
     "Products You Can Compare",
-    f"{len(df_multi):,}",
-    help="Products matched across 2 or more stores — these have a real price comparison"
+    f"{comparable_count:,}",
+    help="Products available at 2 or more stores today — based on actual price data"
 )
 c3.metric(
     "Avg Price Spread",
-    f"${df_multi['price_spread_sgd'].mean():.2f}" if not df_multi.empty else "—",
+    f"${df['price_spread_sgd'].mean():.2f}" if not df.empty else "—",
     help="Average saving from choosing the cheapest over priciest store for the same product"
 )
 c4.metric("Categories", f"{df['unified_category'].nunique()}")
@@ -313,121 +325,10 @@ st.plotly_chart(fig2, use_container_width=True)
 
 st.divider()
 
-# ── SAVINGS POTENTIAL SUMMARY ─────────────────────────────────────────────────
-st.markdown("<div class='section-header'>Savings Potential Summary</div>", unsafe_allow_html=True)
-if not df_multi.empty:
-    total = len(df_multi)
-    over_1 = (df_multi["price_spread_sgd"] > 1).sum()
-    over_2 = (df_multi["price_spread_sgd"] > 2).sum()
-    over_5 = (df_multi["price_spread_sgd"] > 5).sum()
-    zero = (df_multi["price_spread_sgd"] == 0).sum()
-
-    col_a, col_b, col_c, col_d = st.columns(4)
-    col_a.metric(
-        "Same price everywhere",
-        f"{zero:,}",
-        help="Products priced identically across all stores today — no benefit in shopping around"
-    )
-    col_b.metric(
-        "Save over $1",
-        f"{over_1:,}",
-        help="Products where choosing the cheapest store saves you more than $1"
-    )
-    col_c.metric(
-        "Save over $2",
-        f"{over_2:,}",
-        help="Products where choosing the cheapest store saves you more than $2"
-    )
-    col_d.metric(
-        "Save over $5",
-        f"{over_5:,}",
-        help="Products where choosing the cheapest store saves you more than $5"
-    )
-
-    pct_worth = round((over_1 / total) * 100, 1) if total > 0 else 0
-    st.markdown(
-        f"<div class='insight-box'>"
-        f"<b>{pct_worth}%</b> of comparable products today have a price difference of more than $1 "
-        f"between stores — for these products, it's worth checking which store to buy from. "
-        f"The remaining {100 - pct_worth:.1f}% are priced similarly enough that it doesn't matter."
-        f"</div>",
-        unsafe_allow_html=True
-    )
-
-# ── PRICE SPREAD BY CATEGORY — VERTICAL BAR ──────────────────────────────────
-
-st.markdown("<div class='section-header'>How much prices vary by category</div>", unsafe_allow_html=True)
-st.markdown("<div class='section-sub'>Median price spread — the typical saving from choosing the cheapest over the most expensive store</div>", unsafe_allow_html=True)
-
-spread_df = df_multi[df_multi["price_spread_sgd"] > 0].copy()
-
-if not spread_df.empty:
-    cat_spreads = (
-        spread_df.groupby("unified_category")["price_spread_sgd"]
-        .agg(
-            median_spread="median",
-            mean_spread="mean",
-            product_count="count",
-        )
-        .reset_index()
-        .sort_values("median_spread", ascending=False)
-    )
-
-    highest = cat_spreads.iloc[0]
-    lowest = cat_spreads.iloc[-1]
-
-    st.markdown(
-        f"<div class='insight-box'>"
-        f"<b>{highest['unified_category']}</b> has the most price variation today "
-        f"(median spread: <b>${highest['median_spread']:.2f}</b>) — "
-        f"always worth comparing stores before buying. "
-        f"<b>{lowest['unified_category']}</b> is the most consistent "
-        f"(median spread: <b>${lowest['median_spread']:.2f}</b>) — "
-        f"prices are similar wherever you shop."
-        f"</div>",
-        unsafe_allow_html=True
-    )
-
-    fig_spread = go.Figure()
-    fig_spread.add_trace(go.Bar(
-        x=cat_spreads["unified_category"],
-        y=cat_spreads["median_spread"],
-        marker_color="#F5821F",
-        marker_opacity=0.85,
-        text=cat_spreads["median_spread"].apply(lambda x: f"${x:.2f}"),
-        textposition="outside",
-        textfont=dict(color="#1a1a1a", size=13, family="DM Sans"),
-        customdata=cat_spreads[["mean_spread", "product_count"]].values,
-        hovertemplate=(
-            "<b>%{x}</b><br>"
-            "Median spread: $%{y:.2f}<br>"
-            "Mean spread: $%{customdata[0]:.2f}<br>"
-            "Products with price diff: %{customdata[1]:,}<extra></extra>"
-        ),
-    ))
-
-    fig_spread.update_layout(
-        **{**PLOTLY_BASE, "margin": dict(t=40, b=20, l=10, r=20)},
-        height=320,
-        showlegend=False,
-        yaxis_title="Median Price Spread (SGD)",
-        yaxis=dict(rangemode="tozero"),
-    )
-    apply_base_axes(fig_spread)
-    fig_spread.update_xaxes(gridcolor="rgba(0,0,0,0)", linecolor="rgba(0,0,0,0)")
-    st.plotly_chart(fig_spread, use_container_width=True)
-
-    st.caption(
-        "Only products with a measurable price difference across stores are included. "
-        "Median is used over mean to avoid skew from outliers. Hover for mean and product count."
-    )
-
-st.divider()
-
 # ── STORE DISCOUNT ACTIVITY ───────────────────────────────────────────────────
 
 st.markdown(
-    "<div class='section-header'>Store discount activity today</div>",
+    "<div class='section-header'>Store discount activity today across all tracked products</div>",
     unsafe_allow_html=True
 )
 st.markdown(
@@ -553,4 +454,120 @@ if not df_prices.empty and "original_price_sgd" in df_prices.columns:
         st.info("No discounted products found today.")
 else:
     st.info("Price data not available.")
+
+st.divider()
+
+# ── SAVINGS POTENTIAL SUMMARY ─────────────────────────────────────────────────
+st.markdown("<div class='section-header'> Price Variation Summary</div>", unsafe_allow_html=True)
+if not df.empty:
+    spread_all = df["price_spread_sgd"].dropna()
+    total = len(spread_all)
+    over_1 = (spread_all > 1).sum()
+    over_2 = (spread_all > 2).sum()
+    over_5 = (spread_all > 5).sum()
+    zero = (spread_all == 0).sum()
+
+    col_a, col_b, col_c, col_d = st.columns(4)
+    col_a.metric(
+        "Same price everywhere",
+        f"{zero:,}",
+        help="Products priced identically across all stores today"
+    )
+    col_b.metric(
+        "Save over $1",
+        f"{over_1:,}",
+        help="Products where choosing the cheapest store saves you more than $1"
+    )
+    col_c.metric(
+        "Save over $2",
+        f"{over_2:,}",
+        help="Products where choosing the cheapest store saves you more than $2"
+    )
+    col_d.metric(
+        "Save over $5",
+        f"{over_5:,}",
+        help="Products where choosing the cheapest store saves you more than $5"
+    )
+
+    pct_worth = round((over_1 / total) * 100, 1) if total > 0 else 0
+    st.markdown(
+        f"<div class='insight-box'>"
+        f"<b>{pct_worth}%</b> of all tracked products today have a price difference of more than $1 "
+        f"between stores — worth comparing before buying. "
+        f"The remaining {100 - pct_worth:.1f}% are priced similarly wherever you shop."
+        f"</div>",
+        unsafe_allow_html=True
+    )
+
+# ── CATEGORY PRICE SPREAD DASHBOARD ──────────────────────────────────────────
+
+st.divider()
+st.markdown("<div class='section-header'>Category price spread</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-sub'>Distribution of price spread across products in each category — how spread out the savings are</div>", unsafe_allow_html=True)
+
+spread_df = df[
+    df["price_spread_sgd"].notna() &
+    (df["price_spread_sgd"] > 0) &
+    (df.get("actual_store_count", pd.Series(0, index=df.index)) >= 2)
+].copy()
+
+if not spread_df.empty:
+    categories = sorted(spread_df["unified_category"].dropna().unique().tolist())
+    selected_cat_spread = st.selectbox(
+        "Select a category",
+        options=categories,
+        key="cat_spread_select",
+    )
+
+    cat_data = spread_df[spread_df["unified_category"] == selected_cat_spread]["price_spread_sgd"]
+    median_val = cat_data.median()
+    mean_val = cat_data.mean()
+    n = len(cat_data)
+
+    col_s1, col_s2, col_s3 = st.columns(3)
+    col_s1.metric("Products", f"{n:,}")
+    col_s2.metric("Median Spread", f"${median_val:.2f}")
+    col_s3.metric("Mean Spread", f"${mean_val:.2f}")
+
+    fig_hist = go.Figure()
+    fig_hist.add_trace(go.Violin(
+        x=cat_data,
+        orientation="h",
+        side="positive",
+        line_color="#F5821F",
+        fillcolor="rgba(245,130,31,0.1)",
+        meanline_visible=True,
+        meanline=dict(color="#F5821F", width=2),
+        points="all",
+        pointpos=-0.5,
+        marker=dict(color="#F5821F", opacity=0.4, size=5),
+        hovertemplate="Spread: $%{x:.2f}<extra></extra>",
+        showlegend=False,
+    ))
+    fig_hist.add_vline(
+        x=median_val,
+        line_dash="dash",
+        line_color="#1a1a1a",
+        annotation_text=f"Median ${median_val:.2f}",
+        annotation_position="top right",
+        annotation_font=dict(size=12, color="#1a1a1a"),
+    )
+    fig_hist.update_layout(
+        **{**PLOTLY_BASE, "margin": dict(t=40, b=30, l=10, r=20)},
+        height=300,
+        showlegend=False,
+        xaxis_title="Price Spread (SGD)",
+        yaxis=dict(visible=False),
+    )
+    apply_base_axes(fig_hist)
+    fig_hist.update_yaxes(visible=False)
+    st.plotly_chart(fig_hist, use_container_width=True)
+    st.caption(
+        "Only products available at 2+ stores with a non-zero price difference are included. "
+        "The dashed line marks the median spread."
+    )
+
+st.divider()
+
+
 
