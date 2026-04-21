@@ -58,12 +58,29 @@ def normalize_numeric(value):
     return None if value is None else float(value)
 
 
+def parse_iso_datetime(value: Optional[str]) -> datetime:
+    if not value:
+        return datetime.min
+    return datetime.fromisoformat(value.replace("Z", "+00:00"))
+
+
 def table_exists(supabase, table_name: str) -> bool:
     try:
         supabase.table(table_name).select("*").limit(1).execute()
         return True
     except Exception:
         return False
+
+
+def choose_preferred_row(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    return max(
+        rows,
+        key=lambda row: (
+            1 if row.get("price_sgd") is not None else 0,
+            parse_iso_datetime(row.get("scraped_at")),
+            row.get("product_id") or 0,
+        ),
+    )
 
 
 def build_rows(category: Optional[str] = None):
@@ -104,7 +121,6 @@ def build_rows(category: Optional[str] = None):
     )
     product_by_id = {row["id"]: row for row in products if row["id"] in product_ids}
 
-    detail_rows: list[dict[str, Any]] = []
     grouped: dict[tuple[int, str], list[dict[str, Any]]] = defaultdict(list)
 
     for member in members:
@@ -138,14 +154,22 @@ def build_rows(category: Optional[str] = None):
             "unit": product.get("unit"),
             "product_url": product.get("product_url"),
         }
-        detail_rows.append(detail)
         grouped[(canonical["id"], scraped_date_sg)].append(detail)
 
+    detail_rows: list[dict[str, Any]] = []
     recommendation_rows: list[dict[str, Any]] = []
     refreshed_at = datetime.now().isoformat()
 
     for (canonical_product_id, scraped_date_sg), rows in grouped.items():
-        priced_rows = [row for row in rows if row["price_sgd"] is not None]
+        rows_by_store: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for row in rows:
+            store_key = row.get("store") or f"product:{row['product_id']}"
+            rows_by_store[store_key].append(row)
+
+        distinct_store_rows = [
+            choose_preferred_row(store_rows) for store_rows in rows_by_store.values()
+        ]
+        priced_rows = [row for row in distinct_store_rows if row["price_sgd"] is not None]
         if not priced_rows:
             continue
 
@@ -154,7 +178,7 @@ def build_rows(category: Optional[str] = None):
         priciest = max(priced_rows, key=lambda row: (row["price_sgd"], row["store"] or ""))
         cheapest_price = cheapest["price_sgd"]
         priciest_price = priciest["price_sgd"]
-        store_count = len(priced_rows)
+        store_count = len({row["store"] for row in priced_rows if row.get("store")})
 
         for rank, row in enumerate(priced_rows, start=1):
             row["cheapest_price_for_day"] = cheapest_price
@@ -164,6 +188,7 @@ def build_rows(category: Optional[str] = None):
             row["is_cheapest_for_day"] = row["price_sgd"] == cheapest_price
             row["matched_store_count_for_day"] = store_count
             row["refreshed_at"] = refreshed_at
+            detail_rows.append(row)
 
         store_prices = {}
         for row in priced_rows:
@@ -178,6 +203,9 @@ def build_rows(category: Optional[str] = None):
                 "price_gap_from_cheapest": row["price_gap_from_cheapest"],
                 "is_cheapest_for_day": row["is_cheapest_for_day"],
             }
+
+        if store_count < 2:
+            continue
 
         recommendation_rows.append(
             {
@@ -207,8 +235,26 @@ def build_rows(category: Optional[str] = None):
     return detail_rows, recommendation_rows
 
 
-def sync_rows(detail_rows: list[dict[str, Any]], recommendation_rows: list[dict[str, Any]]):
+def clear_table_slice(supabase, table_name: str, category: Optional[str]) -> None:
+    query = supabase.table(table_name).delete()
+    if category:
+        query = query.eq("unified_category", category)
+    else:
+        query = query.gte("id", 0)
+    query.execute()
+
+
+def sync_rows(
+    detail_rows: list[dict[str, Any]],
+    recommendation_rows: list[dict[str, Any]],
+    category: Optional[str] = None,
+):
     supabase = get_client()
+
+    # These are cache tables derived entirely from matching outputs.
+    # Clear the target slice first so reruns remove stale single-store rows.
+    clear_table_slice(supabase, "canonical_product_daily_prices", category)
+    clear_table_slice(supabase, "canonical_product_daily_recommendations", category)
 
     for batch in batched(detail_rows):
         supabase.table("canonical_product_daily_prices").upsert(
@@ -225,7 +271,7 @@ def sync_rows(detail_rows: list[dict[str, Any]], recommendation_rows: list[dict[
 
 def main(category: Optional[str] = None):
     detail_rows, recommendation_rows = build_rows(category)
-    sync_rows(detail_rows, recommendation_rows)
+    sync_rows(detail_rows, recommendation_rows, category)
     print(
         json.dumps(
             {
