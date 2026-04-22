@@ -364,7 +364,10 @@ if selected_label:
         price_rows["store_label"] = price_rows["store"].map(STORE_LABELS).fillna(
             price_rows["store"]
         )
-        price_rows = price_rows.sort_values("price_sgd")
+        price_rows = (
+            price_rows.sort_values("price_sgd")
+            .drop_duplicates(subset=["store"], keep="first")
+        )
         min_price = price_rows["price_sgd"].min()
         max_price = price_rows["price_sgd"].max()
 
