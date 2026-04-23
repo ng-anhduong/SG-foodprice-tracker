@@ -174,6 +174,17 @@ def run():
     print(f"RMSE(Test): ${rmse:.3f}")
     print(f"R²(Test): {r2:.4f}")
 
+    metrics_row = {
+        "model_run_date": pd.Timestamp.today().strftime("%Y-%m-%d"),
+        "mae": float(mae),
+        "rmse": float(rmse),
+        "r2": float(r2),
+    }
+    
+    supabase.table("price_prediction_metrics").upsert(
+        metrics_row,
+        on_conflict="model_run_date"
+    ).execute()
     # =============================================================================
     # Step 5: Predicted vs Actual price scatter
     # =============================================================================
@@ -230,9 +241,27 @@ def run():
     output["error"] = output["price_sgd"] - output["predicted_price"]
     output["abs_error"] = output["error"].abs()
 
+    output = output.drop_duplicates(
+        subset=["canonical_product_id", "store", "scraped_date_sg"],
+        keep="first"
+    ).copy()
+
+    # Convert date for Supabase
+    output["scraped_date_sg"] = pd.to_datetime(output["scraped_date_sg"]).dt.strftime("%Y-%m-%d")
+    output["model_run_date"] = pd.Timestamp.today().strftime("%Y-%m-%d")
+
+    #save prediction output to Supabase
+    records = output.to_dict(orient="records")
+
+    if records:
+        supabase.table("product_price_predictions").upsert(
+            records,
+            on_conflict="canonical_product_id,store,scraped_date_sg"
+        ).execute()
+
     # Display 20 rows
     print("\nProduct Predictions:")
-    print(output.head(10).to_string(index=False))
+    print(output.head(20).to_string(index=False))
 
     # =============================================================================
     # Step 7: Summary
@@ -246,6 +275,13 @@ def run():
     print(f"RMSE (Test): ${rmse:.3f}")
     print(f"R² (Test): {r2:.4f}")
     print()
+    
+    return {
+        "mae": mae,
+        "rmse": rmse,
+        "r2": r2,
+        "output": output
+    }
 
 if __name__ == "__main__":
     run()

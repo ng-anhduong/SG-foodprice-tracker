@@ -8,7 +8,7 @@ sys.path.insert(0, str(REPO_ROOT))
 
 from pipeline.ml.product_clustering import run as run_clustering
 from pipeline.ml.anomaly_detector import run as run_anomaly
-from pipeline.ml.price_prediction import run as run_prediction
+from pipeline.ml.future_price import run as run_prediction
 
 @dag(
     dag_id="ml_pipeline",
