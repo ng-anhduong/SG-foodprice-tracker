@@ -325,87 +325,97 @@ with st.spinner("Loading..."):
         st.plotly_chart(fig_status, use_container_width=True)
 
     with col_chart2:
-        st.subheader("Top Products with Good Deals")
+        st.subheader("Good Deals by Store")
 
-        top = filtered_preview[
-            filtered_preview["Deal Status"] == "Good deal"
-        ].copy()
+        good_deals_store = (
+            filtered_preview[filtered_preview["Deal Status"] == "Good deal"]
+            .groupby("Store")
+            .size()
+            .sort_values(ascending=False)
+        )
 
-        top = top.sort_values("Price Difference (%)").head(5)
+        if len(good_deals_store) > 0:
+            stores = good_deals_store.index.tolist()
+            labels = [STORE_LABELS.get(s, s) for s in stores]
+            values = good_deals_store.values.tolist()
+            colors = [STORE_COLORS.get(s, "#999999") for s in stores]
+            fig = go.Figure()
 
-        top["Savings from Expected Price(%)"] = -top["Price Difference (%)"]
-        top["Shorten Name"] = top["Product"].str.slice(0, 25) + "..."
+            fig.add_trace(go.Bar(
+                x=labels,
+                y=values,
+                marker_color=colors,
+                text=[str(v) for v in values],
+                textposition="outside",
+                textfont=dict(color="#1a1a1a", size=13, family="DM Sans"),
+                hovertemplate="<b>%{x}</b><br>Good deals: %{y}<extra></extra>",
+            ))
+
+            fig.update_layout(
+                **PLOTLY_BASE,
+                showlegend=False,
+                height=360,
+                yaxis_title="Number of good deals",
+                yaxis=dict(rangemode="tozero"),
+            )
+
+            apply_base_axes(fig)
+
+            fig.update_xaxes(
+                gridcolor="rgba(0,0,0,0)",
+                linecolor="rgba(0,0,0,0)",
+                tickangle=0
+            )
+
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.info("No good deals with current filters")
+
+
+
+    st.subheader("Top Products with Good Deals")
+    st.markdown("### Products with the largest savings compared with expected price")
+
+    top = filtered_preview[
+        filtered_preview["Deal Status"] == "Good deal"
+    ].copy()
+
+    top = top.sort_values("Price Difference (%)").head(10)
+
+    if top.empty:
+        st.info("No good deals found for the selected filters.")
+    else:
+        top["Savings from Expected Price (%)"] = -top["Price Difference (%)"]
+        top["Short Name"] = top["Product"].str.slice(0, 45) + "..."
+        top = top.sort_values("Savings from Expected Price (%)", ascending=True)
 
         fig = go.Figure()
 
         fig.add_trace(go.Bar(
-            x=top["Shorten Name"],
-            y=top["Savings from Expected Price(%)"],
-            text=top["Savings from Expected Price(%)"].round(1).astype(str) + "%",
+            y=top["Short Name"],
+            x=top["Savings from Expected Price (%)"],
+            orientation="h",
+            text=top["Savings from Expected Price (%)"].round(1).astype(str) + "%",
             textposition="outside",
             marker_color="#178E4F",
+            hovertemplate="<b>%{y}</b><br>Savings: %{x:.1f}%<extra></extra>",
         ))
 
         fig.update_layout(
-            **PLOTLY_BASE,
-            yaxis_title="Savings from Expected Price(%)",
-            height=360,
-        )
-
-        fig.update_yaxes(rangemode="tozero")
-
-        apply_base_axes(fig)
-
-        fig.update_xaxes(tickangle=0)
-
-        st.plotly_chart(fig, use_container_width=True)
-
-
-    st.subheader("Good Deals by Store")
-
-    good_deals_store = (
-        filtered_preview[filtered_preview["Deal Status"] == "Good deal"]
-        .groupby("Store")
-        .size()
-        .sort_values(ascending=False)
-    )
-
-    if len(good_deals_store) > 0:
-        stores = good_deals_store.index.tolist()
-        labels = [STORE_LABELS.get(s, s) for s in stores]
-        values = good_deals_store.values.tolist()
-        colors = [STORE_COLORS.get(s, "#999999") for s in stores]
-        fig = go.Figure()
-
-        fig.add_trace(go.Bar(
-            x=labels,
-            y=values,
-            marker_color=colors,
-            text=[str(v) for v in values],
-            textposition="outside",
-            textfont=dict(color="#1a1a1a", size=13, family="DM Sans"),
-            hovertemplate="<b>%{x}</b><br>Good deals: %{y}<extra></extra>",
-        ))
-
-        fig.update_layout(
-            **PLOTLY_BASE,
+            **{**PLOTLY_BASE, "margin": dict(t=30, b=20, l=10, r=50)},
+            height=420,
             showlegend=False,
-            height=320,
-            yaxis_title="Number of good deals",
-            yaxis=dict(rangemode="tozero"),
+            xaxis_title="Savings from Expected Price (%)",
+            yaxis_title="",
         )
 
         apply_base_axes(fig)
-
-        fig.update_xaxes(
+        fig.update_yaxes(
             gridcolor="rgba(0,0,0,0)",
-            linecolor="rgba(0,0,0,0)",
-            tickangle=0
+            linecolor="rgba(0,0,0,0)"
         )
 
         st.plotly_chart(fig, use_container_width=True)
-    else:
-        st.info("No good deals with current filters")
 
     #Check trend over time for each product by filtering by product and store
     product_list = sorted(results["canonical_name"].dropna().unique())
@@ -427,32 +437,51 @@ with st.spinner("Loading..."):
         store_key = {v: k for k, v in STORE_LABELS.items()}[trend_store]
         trend_data = trend_data[trend_data["store"] == store_key]
 
-    trend_data = trend_data.groupby("scraped_date_sg")[["price_sgd","predicted_price"]].mean().reset_index()
+    trend_data = (
+    trend_data.groupby("scraped_date_sg")[["price_sgd", "predicted_price"]]
+    .mean()
+    .reset_index()
+)
 
-    fig = go.Figure()
-    fig.add_trace(go.Scatter(
-        x=trend_data["scraped_date_sg"], y=trend_data["price_sgd"],
-        mode="lines+markers", name="Actual price",
-        line=dict(color="#F5821F", width=2.5),
-        fill="tozeroy", fillcolor="rgba(245,130,31,0.08)"
-    ))
-    fig.add_trace(go.Scatter(
-        x=trend_data["scraped_date_sg"], y=trend_data["predicted_price"],
-        mode="lines", name="Predicted price",
-        line=dict(color="#888", width=1.5, dash="dash")
-    ))
-    fig.update_layout(**PLOTLY_BASE, height=320, yaxis_title="Price (SGD)")
-    apply_base_axes(fig)
-    st.plotly_chart(fig, use_container_width=True)
+    if trend_data.empty or trend_data["scraped_date_sg"].nunique() < 2:
+        st.info("Insufficient data available to display price trend for this product.")
+    else:
+        fig = go.Figure()
 
-    # tag of trend
-    if len(trend_data) >= 2:
+        fig.add_trace(go.Scatter(
+            x=trend_data["scraped_date_sg"],
+            y=trend_data["price_sgd"],
+            mode="lines+markers",
+            name="Actual price",
+            line=dict(color="#F5821F", width=2.5),
+        ))
+
+        fig.add_trace(go.Scatter(
+            x=trend_data["scraped_date_sg"],
+            y=trend_data["predicted_price"],
+            mode="lines",
+            name="Predicted price",
+            line=dict(color="#888", width=1.5, dash="dash"),
+        ))
+
+        fig.update_layout(
+            **PLOTLY_BASE,
+            height=300,
+            yaxis_title="Price (SGD)"
+        )
+
+        fig.update_xaxes(tickformat="%Y-%m-%d")
+        apply_base_axes(fig)
+
+        st.plotly_chart(fig, use_container_width=True)
+
         first_p = trend_data["price_sgd"].iloc[0]
-        last_p  = trend_data["price_sgd"].iloc[-1]
+        last_p = trend_data["price_sgd"].iloc[-1]
         chg_pct = (last_p - first_p) / first_p * 100
+
         if chg_pct > 2:
-            st.warning(f"↑ Price up {chg_pct:.1f}% since first observation — consider buying soon")
+            st.warning(f"↑ Price up {chg_pct:.1f}% since first observation — Consider buying soon...")
         elif chg_pct < -2:
-            st.success(f"↓ Price down {abs(chg_pct):.1f}% since first observation — good time to buy")
+            st.success(f"↓ Price down {abs(chg_pct):.1f}% since first observation — Time to buy it now!")
         else:
             st.info("→ Price has been stable")
