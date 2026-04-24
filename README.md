@@ -133,6 +133,7 @@ python -m playwright install chromium
 
 ## Running The Dashboard
 Open the deployed dashboard here: [https://sg-foodprice-tracker.streamlit.app]
+
 Run locally:
 
 ```powershell
