@@ -7,6 +7,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "../../pipeline/etl"))
 sys.path.append(os.path.join(os.path.dirname(__file__), "../../pipeline/ml"))
 from load import get_client
 
+st.set_page_config(page_title="Price Predictions", layout="wide")
+
 st.title("Price Predictions")
 st.markdown(
     "<p style='color:#888; font-size:1.1rem; margin-top:-12px'>"
@@ -17,18 +19,51 @@ st.markdown(
 
 st.markdown("""
 <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+html, body, [class*="css"] { 
+    font-family: 'DM Sans', sans-serif; 
+}
+
+h1 { 
+    font-family: 'DM Serif Display', serif !important; 
+    font-size: 3rem !important;
+    letter-spacing: -0.02em; 
+    color: #1a1a1a; 
+}
+
+h2 { 
+    font-family: 'DM Serif Display', serif !important; 
+    font-size: 1.9rem !important;
+    color: #1a1a1a; 
+    font-weight: 400 !important; 
+    letter-spacing: -0.01em; 
+}
+
+h3 { 
+    font-size: 0.95rem !important; 
+    font-weight: 500 !important;
+    letter-spacing: 0.1em; 
+    text-transform: uppercase; 
+    color: #888 !important; 
+}
+
+hr { 
+    border-color: #ebe7e0 !important; 
+}
+
 .insight-box {
-    background-color: #f7f5f2;
-    padding: 16px 20px;
-    border-radius: 10px;
-    border-left: 5px solid #F5821F;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    background: #f9f7f4;
+    border-left: 3px solid #F5821F;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    line-height: 1.6;
 }
 </style>
 """, unsafe_allow_html=True)
-
 
 STORE_COLORS = {
     "fairprice":   "#F5821F",
@@ -241,49 +276,89 @@ with st.spinner("Loading..."):
         </div>
         """, unsafe_allow_html=True)
     st.divider()
+
+    st.markdown("### Distribution of deal status & top savings opportunities")
     
-    st.subheader("Product Price Status Overview")
+    col_chart1, col_chart2 = st.columns(2, gap="large")
+    with col_chart1:
+        st.subheader("Product Price Status Overview")
 
-    status_counts = (
-        filtered_preview["Deal Status"]
-        .value_counts()
-        .reindex(["Good deal", "Normal price", "Overpriced"], fill_value=0)
-    )
+        status_counts = (
+            filtered_preview["Deal Status"]
+            .value_counts()
+            .reindex(["Good deal", "Normal price", "Overpriced"], fill_value=0)
+        )
 
-    status_colors = {
-        "Good deal": "#00843D",
-        "Normal price": "#005BAC",
-        "Overpriced": "#C8102E"
-    }
+        status_colors = {
+            "Good deal": "#00843D",
+            "Normal price": "#005BAC",
+            "Overpriced": "#C8102E"
+        }
 
-    fig_status = go.Figure()
+        fig_status = go.Figure()
 
-    fig_status.add_trace(go.Bar(
-        x=status_counts.index.tolist(),
-        y=status_counts.values.tolist(),
-        marker_color=[status_colors[s] for s in status_counts.index],
-        text=[str(v) for v in status_counts.values],
-        textposition="outside",
-        textfont=dict(color="#1a1a1a", size=13, family="DM Sans"),
-        hovertemplate="<b>%{x}</b><br>Rows: %{y}<extra></extra>",
-    ))
+        fig_status.add_trace(go.Bar(
+            x=status_counts.index.tolist(),
+            y=status_counts.values.tolist(),
+            marker_color=[status_colors[s] for s in status_counts.index],
+            text=[str(v) for v in status_counts.values],
+            textposition="outside",
+            textfont=dict(color="#1a1a1a", size=13, family="DM Sans"),
+            hovertemplate="<b>%{x}</b><br>Rows: %{y}<extra></extra>",
+        ))
 
-    fig_status.update_layout(
-        **PLOTLY_BASE,
-        showlegend=False,
-        height=320,
-        yaxis_title="Number of rows",
-        yaxis=dict(rangemode="tozero"),
-    )
+        fig_status.update_layout(
+            **PLOTLY_BASE,
+            showlegend=False,
+            height=360,
+            yaxis_title="Number of rows",
+            yaxis=dict(rangemode="tozero"),
+        )
 
-    apply_base_axes(fig_status)
-    fig_status.update_xaxes(
+        apply_base_axes(fig_status)
+        fig_status.update_xaxes(
         gridcolor="rgba(0,0,0,0)",
         linecolor="rgba(0,0,0,0)",
         tickangle=0
-    )
+        )
 
-    st.plotly_chart(fig_status, use_container_width=True)
+        st.plotly_chart(fig_status, use_container_width=True)
+
+    with col_chart2:
+        st.subheader("Top Products with Good Deals")
+
+        top = filtered_preview[
+            filtered_preview["Deal Status"] == "Good deal"
+        ].copy()
+
+        top = top.sort_values("Price Difference (%)").head(5)
+
+        top["Savings from Expected Price(%)"] = -top["Price Difference (%)"]
+        top["Shorten Name"] = top["Product"].str.slice(0, 25) + "..."
+
+        fig = go.Figure()
+
+        fig.add_trace(go.Bar(
+            x=top["Shorten Name"],
+            y=top["Savings from Expected Price(%)"],
+            text=top["Savings from Expected Price(%)"].round(1).astype(str) + "%",
+            textposition="outside",
+            marker_color="#178E4F",
+        ))
+
+        fig.update_layout(
+            **PLOTLY_BASE,
+            yaxis_title="Savings from Expected Price(%)",
+            height=360,
+        )
+
+        fig.update_yaxes(rangemode="tozero")
+
+        apply_base_axes(fig)
+
+        fig.update_xaxes(tickangle=0)
+
+        st.plotly_chart(fig, use_container_width=True)
 
 
     st.subheader("Good Deals by Store")
@@ -332,36 +407,52 @@ with st.spinner("Loading..."):
     else:
         st.info("No good deals with current filters")
 
-    st.subheader("Top Products with Good Deals")
+    #Check trend over time for each product by filtering by product and store
+    product_list = sorted(results["canonical_name"].dropna().unique())
+    st.divider()
 
-    top = filtered_preview[
-        filtered_preview["Deal Status"] == "Good deal"
-    ].copy()
+    st.subheader("Price Trend over time")
+    st.markdown("### Historical trends of actual vs predicted price")
 
-    top = top.sort_values("Price Difference (%)").head(5)
+    col_a, col_b = st.columns([2, 1])
+    with col_a:
+        trend_product = st.selectbox("Product", product_list, key="trend_prod")
+    with col_b:
+        trend_store = st.selectbox("Store", ["All stores"] + list(STORE_LABELS.values()), key="trend_store")
 
-    top["Savings from Expected Price(%)"] = -top["Price Difference (%)"]
-    top["Shorten Name"] = top["Product"].str.slice(0, 25) + "..."
+    trend_data = results[results["canonical_name"] == trend_product].copy()
+    trend_data["scraped_date_sg"] = pd.to_datetime(trend_data["scraped_date_sg"])
+
+    if trend_store != "All stores":
+        store_key = {v: k for k, v in STORE_LABELS.items()}[trend_store]
+        trend_data = trend_data[trend_data["store"] == store_key]
+
+    trend_data = trend_data.groupby("scraped_date_sg")[["price_sgd","predicted_price"]].mean().reset_index()
 
     fig = go.Figure()
-
-    fig.add_trace(go.Bar(
-        x=top["Shorten Name"],
-        y=top["Savings from Expected Price(%)"],
-        text=top["Savings from Expected Price(%)"].round(1).astype(str) + "%",
-        textposition="outside",
-        marker_color="#178E4F",
+    fig.add_trace(go.Scatter(
+        x=trend_data["scraped_date_sg"], y=trend_data["price_sgd"],
+        mode="lines+markers", name="Actual price",
+        line=dict(color="#F5821F", width=2.5),
+        fill="tozeroy", fillcolor="rgba(245,130,31,0.08)"
     ))
-
-    fig.update_layout(
-        **PLOTLY_BASE,
-        yaxis_title="Savings from Expected Price(%)",
-    )
-
-    fig.update_yaxes(rangemode="tozero")
-
+    fig.add_trace(go.Scatter(
+        x=trend_data["scraped_date_sg"], y=trend_data["predicted_price"],
+        mode="lines", name="Predicted price",
+        line=dict(color="#888", width=1.5, dash="dash")
+    ))
+    fig.update_layout(**PLOTLY_BASE, height=320, yaxis_title="Price (SGD)")
     apply_base_axes(fig)
-
-    fig.update_xaxes(tickangle=0)
-
     st.plotly_chart(fig, use_container_width=True)
+
+    # tag of trend
+    if len(trend_data) >= 2:
+        first_p = trend_data["price_sgd"].iloc[0]
+        last_p  = trend_data["price_sgd"].iloc[-1]
+        chg_pct = (last_p - first_p) / first_p * 100
+        if chg_pct > 2:
+            st.warning(f"↑ Price up {chg_pct:.1f}% since first observation — consider buying soon")
+        elif chg_pct < -2:
+            st.success(f"↓ Price down {abs(chg_pct):.1f}% since first observation — good time to buy")
+        else:
+            st.info("→ Price has been stable")
