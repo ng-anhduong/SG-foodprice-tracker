@@ -2,6 +2,8 @@
 
 A data pipeline and interactive dashboard for tracking, matching, and comparing grocery prices across Singapore's four major supermarkets: FairPrice, RedMart, Cold Storage, and Sheng Siong.
 
+**Live Dashboard:** [https://sg-foodprice-tracker.streamlit.app](https://sg-foodprice-tracker.streamlit.app)
+
 ## Overview
 
 This project collects supermarket price data daily, standardises it into a unified schema, matches comparable products across stores, and exposes the results through a Streamlit dashboard.
@@ -130,6 +132,7 @@ python -m playwright install chromium
 ```
 
 ## Running The Dashboard
+Open the deployed dashboard here: [https://sg-foodprice-tracker.streamlit.app]
 
 Run locally:
 
