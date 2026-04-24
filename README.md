@@ -95,6 +95,8 @@ Notes:
 
 Recommended Python version: `3.11`
 
+Core project dependencies:
+
 PowerShell:
 
 ```powershell
@@ -113,13 +115,15 @@ cp .env.example .env
 pip install -r requirements.txt
 ```
 
-Optional Airflow dependencies:
+Additional setup for optional components:
+
+If you want to run the Airflow DAGs locally, install the Airflow dependencies as an additional step:
 
 ```powershell
 pip install -r requirements-airflow.txt
 ```
 
-Optional Playwright browser install for the Playwright-based scrapers:
+If you want to run the Playwright-based scrapers, install the Chromium browser binary used by Playwright:
 
 ```powershell
 python -m playwright install chromium
