@@ -467,16 +467,26 @@ if selected_label:
             cand_res = (
                 client.table("product_match_candidates")
                 .select(
+                    "product_id_a,product_id_b,"
                     "name_a,name_b,store_a,store_b,"
                     "brand_score,size_score,title_score,variant_score,"
                     "match_score,match_status,explanation"
                 )
                 .in_("product_id_a", product_ids)
                 .eq("match_status", "strong_match")
-                .limit(20)
+                .limit(100)
                 .execute()
             )
             cands = pd.DataFrame(cand_res.data or [])
+
+            if not cands.empty:
+                # Keep only pairs where both sides belong to this canonical product
+                cands = cands[cands["product_id_b"].isin(product_ids)]
+                # Deduplicate symmetric pairs (A↔B and B↔A are the same pair)
+                cands["_pair_key"] = cands.apply(
+                    lambda r: tuple(sorted([r["product_id_a"], r["product_id_b"]])), axis=1
+                )
+                cands = cands.drop_duplicates(subset=["_pair_key"]).drop(columns=["_pair_key", "product_id_a", "product_id_b"])
 
             if not cands.empty:
                 for _, cand in cands.iterrows():
